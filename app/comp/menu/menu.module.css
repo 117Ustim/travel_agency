@@ -1,0 +1,284 @@
+.menu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.scrolled {
+  height: 60px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.navItem {
+  margin: 0 40px;
+  color: rgba(0, 0, 0, 1);
+  font-family: Forum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navItem:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+  transition: width 0.3s ease;
+}
+
+.navItem:hover:after {
+  width: 100%;
+}
+
+.blockButton {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: clamp(120px, 18vw, 156px);
+  aspect-ratio: 156 / 40;
+}
+
+/* Классы для изображений в блоке кнопки */
+.image1 {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.image2 {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.image3 {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.callButton {
+  background: none;
+
+  color: rgba(0, 0, 0, 1);
+  font-family: Forum;
+  font-size: clamp(12px, 1.2vw, 16px);
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+
+/* Гамбургер-меню */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(246, 241, 241);
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Большие экраны */
+@media (min-width: 1440px) {
+  .menu {
+    height: 100px;
+    padding: 0 60px;
+  }
+  
+  .menu.scrolled {
+    height: 70px;
+  }
+  
+  .navItem {
+    margin: 0 50px;
+    font-size: 18px;
+  }
+  
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  .navItem {
+    margin: 0 25px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .blockButton { right: 20px; }
+  
+  .menu {
+    padding: 0 20px;
+  }
+  
+  .menu.scrolled {
+    height: 60px;
+  }
+}
+
+/* Средние экраны (650-1024px) */
+@media (max-width: 768px) {
+  .navItem {
+    margin: 0 15px;
+    font-size: 13px;
+  }
+}
+
+/* Экраны между планшетами и мобильными (550-768px) */
+@media (max-width: 650px) {
+  .navItem {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+}
+
+/* Мобильные устройства */
+@media (max-width: 550px) {
+  .menu {
+    height: 60px;
+    padding: 0 15px;
+    justify-content: flex-start;
+  }
+  
+  .menu.scrolled {
+    height: 50px;
+  }
+  
+  .hamburger {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .navLinks {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transform: none;
+    transition: left 0.3s ease;
+    box-shadow: none;
+    z-index: 1000;
+  }
+  
+  .navLinks.open {
+    left: 0;
+    background-color: #e2d3ceec;
+  }
+  
+  .navItem {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 2%;
+    white-space: nowrap;
+  }
+  
+  .navItem:after {
+    bottom: -3px;
+  }
+  .blockButton { top: 10px; right: 10px; width: clamp(110px, 32vw, 140px); }
+  .image2 { bottom: -6px; }
+  .image3 { top: -6px; }
+}
+
+/* Маленькие мобильные устройства */
+@media (max-width: 480px) {
+  .menu {
+    height: 50px;
+    padding: 0 10px;
+  }
+  
+  .menu.scrolled {
+    height: 45px;
+  }
+  
+  .navLinks {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .navItem {
+    font-size: 14px;
+  }
+  .blockButton { width: clamp(100px, 36vw, 130px); }
+}
+
+

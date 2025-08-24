@@ -1,0 +1,686 @@
+.section2 {
+  position: relative;
+  width: 100%;
+  height: 1800px;
+  background: linear-gradient(to bottom, #e2d3ce 0%, #d2d7c6 50%);
+ 
+}
+
+.backgroundImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 981px;
+  background-image: url('/comp_2/bg_comp_222.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
+  
+} 
+
+.blurredSpot {
+  position: absolute;
+  top: 280px;
+  left: -10%;
+  width: 700px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(52, 43, 226, 0.6) 0%, rgba(30, 0, 130, 0.4) 50%, rgba(129, 32, 220, 0.2) 100%);
+  border-radius: 50%;
+  filter: blur(140px);
+  z-index: 2;
+}
+
+
+.centerImage {
+position: absolute;
+top: 40%;
+width:100%;
+height: 600px;
+transform: rotate(180.00deg);
+background: linear-gradient(180.00deg, rgba(226, 211, 206, 0),rgba(144.81875610351562, 199.75, 186.56651306152344, 1) 41%,rgba(211, 215, 198, 1) 100%);
+z-index: 3;
+}
+
+
+
+
+
+/* Luxury Packages Block */
+.luxuryBlock {
+  position: absolute;
+  top: 360px;
+  left: 170px;
+  z-index: 5;
+}
+
+.luxuryTitle {
+  color: var(--Style, rgba(12, 11, 16, 1));
+  font-family: Forum;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.luxurySubtitle {
+  color: var(--Style, rgba(12, 11, 16, 1));
+  font-family: Forum;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.luxurySubtitle h3 {
+  color: var(--Style, rgba(12, 11, 16, 1));
+  font-family: Forum;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+}
+
+.viewAllButton {
+  width: 139.91px;
+  height: 38px;
+  background: transparent;
+  color: rgba(12, 11, 16, 1);
+  border: 1px solid rgba(12, 11, 16, 1);
+  border-radius: 19px;
+  font-family: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.viewAllButton:hover {
+  background: rgba(12, 11, 16, 1);
+  color: white;
+}
+
+.cardsContainer {
+  position: relative;
+  top: -8vh;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+/* Desktop Cards Container */
+.desktopCards {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile Carousel Container */
+.mobileCarousel {
+  display: none;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card {
+  position: absolute;
+  width: 350px;
+  height: 570px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 12px;
+ 
+}
+
+.verticalLabel {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  color:  rgba(255, 255, 255, 1);
+  transform: translateX(-50%);
+  font-family: Forum;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.diamondWrap {
+   position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%); 
+  
+}
+
+.diamondOuter {
+   position: relative;
+  width: 257px; 
+  height: 135px; 
+  transform: rotate(90.00deg);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+ 
+}
+
+.diamondInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 231px; 
+  height: 121px; 
+  backdrop-filter: blur(20px);
+  background-color: rgba(145, 145, 145, 0.14);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+
+.diamondContent {
+  transform: rotate(-90deg);
+  text-align: center;
+  color:  rgba(255, 255, 255, 1);
+   font-family: Forum;
+   font-weight: 400;
+ 
+}
+
+.count {
+  font-size: 46px;
+  
+  line-height: 1;
+}
+
+.places {
+ 
+  margin-top: 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  
+}
+.arrow_block {
+  margin-top: 10px;
+}
+.arrow {
+  position: relative;
+  top: 0;
+ 
+}
+.arrowLine {
+  position: absolute;
+  top: 4px;
+ left: -5px;
+  width: 12px;
+  height: 0;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+ 
+}
+
+.card1 { right: 160px; top: 240px; }
+.card2 { right: 160px; top: calc(240px + 570px + 30px); }
+
+/* Two cards to the left: 30px left from those and 120px lower */
+.card3 { right: calc(160px + 350px + 30px); top: calc(240px + 120px); }
+.card4 { right: calc(160px + 350px + 30px); top: calc(240px + 120px + 570px + 30px); }
+
+/* One more to the left: 30px left from them and 370px lower */
+.card5 { right: calc(160px + 350px + 30px + 350px + 30px); top: calc(240px + 120px + 370px); }
+
+
+
+
+
+@media (min-width: 1536px) {
+  .centerImage {
+    height: 360px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .centerImage {
+    height: 220px;
+  }
+}
+@media (min-width: 1460px) {
+  .centerImage {
+    display: block;
+  }
+}
+
+/* Адаптивность для экранов меньше 1350px */
+@media (max-width: 1349px) {
+  .cardsContainer {
+   
+   top: -4vh;
+   
+  }
+  .card {
+    width: 280px;
+    height: 456px;
+  }
+  
+  .verticalLabel {
+    font-size: 28px;
+    line-height: 32px;
+    top: 48px;
+  }
+  
+  .diamondOuter {
+    width: 205px;
+    height: 108px;
+  }
+  
+  .diamondInner {
+    width: 184px;
+    height: 96px;
+  }
+  
+  .count {
+    font-size: 36px;
+  }
+  
+  .places {
+    font-size: 14px;
+  }
+  
+  /* .arrow {
+    width: 11px;
+  }
+  
+  .arrowLine {
+    left: 5px;
+    width: 10px;
+  } */
+  
+  /* Пересчитываем позиции карточек */
+  .card1 { right: 128px; top: 192px; }
+  .card2 { right: 128px; top: calc(192px + 456px + 24px); }
+  
+  .card3 { right: calc(128px + 280px + 24px); top: calc(192px + 96px); }
+  .card4 { right: calc(128px + 280px + 24px); top: calc(192px + 96px + 456px + 24px); }
+  
+  .card5 { right: calc(128px + 280px + 24px + 280px + 24px); top: calc(192px + 96px + 296px); }
+  
+  /* Уменьшаем размеры других элементов */
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 48px;
+    line-height: 46px;
+  }
+  
+  .luxuryBlock {
+    left: 136px;
+    top: 288px;
+  }
+  
+  .blurredSpot {
+    width: 560px;
+    height: 80px;
+  }
+}
+
+/* Адаптивность для экранов меньше 1100px */
+@media (max-width: 1099px) {
+  .cardsContainer {
+   
+   
+   }
+  .card {
+    width: 224px;
+    height: 365px;
+  }
+  
+  .verticalLabel {
+    font-size: 22px;
+    line-height: 26px;
+    top: 38px;
+  }
+  
+  .diamondOuter {
+    width: 164px;
+    height: 86px;
+  }
+  
+  .diamondInner {
+    width: 147px;
+    height: 77px;
+  }
+  
+  .count {
+    font-size: 28px;
+  }
+  
+  .places {
+    font-size: 12px;
+  }
+  
+  .arrow {
+    width: 10px;
+  }
+  
+  .arrowLine {
+    left: -1px;
+    width: 10px;
+  }
+  
+  /* Пересчитываем позиции карточек */
+  .card1 { right: 102px; top: 154px; }
+  .card2 { right: 102px; top: calc(154px + 365px + 20px); }
+  
+  .card3 { right: calc(102px + 224px + 20px); top: calc(154px + 77px); }
+  .card4 { right: calc(102px + 224px + 20px); top: calc(154px + 77px + 365px + 20px); }
+  
+  .card5 { right: calc(102px + 224px + 20px + 224px + 20px); top: calc(154px + 77px + 237px); }
+  
+  /* Уменьшаем размеры других элементов */
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 38px;
+    line-height: 36px;
+  }
+  
+  .luxuryBlock {
+    left: 109px;
+    top: 230px;
+  }
+  
+  .blurredSpot {
+    width: 448px;
+    height: 64px;
+  }
+}
+
+/* Адаптивность для экранов меньше 880px  */
+
+@media (max-width: 880px) {
+  .card {
+  margin-top: 100px;
+  }
+ 
+  
+  
+  .card5 {
+    display: none;
+  }
+  
+  
+  .luxuryBlock {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 100px;
+    text-align:center;
+  }
+  
+  .blurredSpot {
+    filter: blur(53px);
+    top: 130px;
+    width: 400px;
+    height: 50px;
+    left: 20%;
+    transform: translateX(-50%);
+  }
+ 
+}
+
+/* Адаптивные стили для больших планшетов */
+@media (max-width: 1200px) {
+  .section2 {
+    height: 1600px;
+  }
+  
+  .luxuryBlock {
+    left: 120px;
+    top: 300px;
+  }
+  
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 48px;
+    line-height: 46px;
+  }
+  
+  .backgroundImage {
+    height: 800px;
+  }
+  
+  .centerImage {
+    height: 500px;
+  }
+  
+  .blurredSpot {
+    width: 600px;
+    height: 80px;
+    top: 240px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section2 {
+    height: 1400px;
+  }
+  
+  .luxuryBlock {
+    left: 80px;
+    top: 280px;
+  }
+  
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+  
+  .backgroundImage {
+    height: 700px;
+  }
+  
+  .centerImage {
+    height: 400px;
+  }
+  
+  .blurredSpot {
+    width: 500px;
+    height: 60px;
+    top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2 {
+    height: 1300px;
+  }
+  
+  .luxuryBlock {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 36px;
+    line-height: 34px;
+    text-align: center;
+  }
+  
+  .backgroundImage {
+    height: 600px;
+  }
+  
+  .centerImage {
+    height: 300px;
+  }
+  
+  .blurredSpot {
+    width: 400px;
+    height: 50px;
+    top: 160px;
+  }
+}
+
+@media (max-width: 649px) {
+  .section2 {
+    height: 1200px;
+  }
+  
+.centerImage {
+  
+  background: none;
+  
+  }
+  .cardsContainer {
+    
+    position: relative;
+    top: 0;
+    left: 2vh;
+    height: 900px;
+    z-index: 8;
+  }
+  
+  /* Скрываем десктопные карточки */
+  .desktopCards {
+    display: none;
+  }
+  
+  /* Показываем мобильную карусель */
+  .mobileCarousel {
+  
+    display: block;
+  }
+  
+  /* Адаптируем другие элементы */
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 28px;
+    line-height: 26px;
+  }
+  
+  .luxuryBlock {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: flex-start;
+  }
+  
+  .luxuryTitle {
+    margin-bottom: 10px;
+  }
+  
+  .luxurySubtitle {
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .viewAllButton {
+    margin-left: 100px;
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+  
+  .blurredSpot {
+    filter: blur(40px);
+    top: 140px;
+    width: 600px;
+    height: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .centerImage {
+    height: 200px;
+  }
+  
+  .backgroundImage {
+    height: 600px;
+  }
+  .arrow {
+  
+  
+    width: 15px;
+    height: auto;
+  }
+  .arrowLine {
+
+    top: 5px;
+   left: 4px;
+    width: 12px;
+    
+   
+    
+  }
+
+}
+
+/* Дополнительные стили для очень маленьких экранов */
+@media (max-width: 480px) {
+  .section2 {
+    height: 1100px;
+  }
+  
+  .luxuryBlock {
+    top: 100px;
+    width: 90%;
+  }
+  
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 30px;
+    line-height: 22px;
+  }
+  
+  .backgroundImage {
+    height: 500px;
+  }
+  
+  .centerImage {
+    height: 150px;
+  }
+  
+  .blurredSpot {
+    width: 300px;
+    height: 30px;
+    top: 120px;
+  }
+  
+  .viewAllButton {
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+  }
+}

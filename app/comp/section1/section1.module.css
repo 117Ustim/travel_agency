@@ -1,0 +1,204 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background:#E2D3CE;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 13vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+}
+
+.title {
+    color:  rgba(12, 11, 16, 1);
+font-family: Forum;
+font-size: clamp(36px, 10vw, 60px);
+font-weight: 400;
+line-height: 1.1;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.title div:last-child {
+    font-size: clamp(36px, 10vw, 60px);
+    line-height: 1;
+}
+
+.continents {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 3vw;
+    color: rgba(12, 11, 16, 0.7);
+    font-family: Inter, Arial, sans-serif;
+    font-size: clamp(8px, 2vw, 18px);
+    line-height: 1.4;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.rhombus {
+    position: absolute;
+    top: 9vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 112px;
+    height: 211.77px;
+    object-fit: contain;
+    z-index: 3;
+}
+.carouselWrap {
+    position: absolute;
+    top: 37vh;
+   right: 0;
+  
+    bottom: 6vh;
+    width: min(1200px, 92vw);
+    z-index: 4;
+}
+
+
+
+
+@media (min-width: 1750px) and (max-width:2300px){
+  .carouselWrap {
+   
+   left: 7%;
+  
+   
+    width: 100%;
+   
+}
+} 
+
+/* Адаптивные стили для больших планшетов */
+@media (max-width: 1200px) {
+  .header {
+    top: 15vh;
+  }
+  
+  .rhombus {
+    top: 11vh;
+    width: 100px;
+    height: 190px;
+  }
+  
+  .carouselWrap {
+    top: 40vh;
+    width: 85vw;
+  }
+  
+  .continents {
+    margin-top: 50px;
+    gap: 2.5vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    top: 20vh;
+  }
+  
+  .rhombus {
+    top: 16vh;
+    width: 90px;
+    height: 170px;
+  }
+  
+  .carouselWrap {
+    top: 45vh;
+    width: 90vw;
+  }
+  
+  .continents {
+    margin-top: 45px;
+    gap: 2vw;
+  }
+}
+
+@media (max-width: 768px){
+  .header {
+    top: 27vh;
+  }
+  
+  .rhombus {
+    top: 23vh;
+    width: 84px;
+    height: 158.76px;
+  }
+  
+  .carouselWrap {
+    top: 51vh;
+    width: 95vw;
+  }
+  
+  .continents {
+    margin-top: 40px;
+    gap: 1.5vw;
+    font-size: clamp(6px, 1.5vw, 14px);
+  }
+}
+
+@media (max-width: 480px){
+  .header {
+    top: 25vh;
+  }
+  
+  .rhombus {
+    width: 70px;
+    height: 132px;
+    top: 33vh;
+  }
+  
+  .carouselWrap {
+    top: 58vh;
+    width: 98vw;
+  }
+  
+  .continents {
+    margin-top: 70px;
+    gap: 1vw;
+    font-size: clamp(8px, 2vw, 14px);
+  }
+  
+  .title {
+  margin-top: 32%;
+    font-size: clamp(28px, 8vw, 36px);
+  }
+  
+  .title div:last-child {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+}
+
+/* Дополнительные стили для очень маленьких экранов */
+@media (max-width: 360px) {
+  .header {
+    top: 22vh;
+  }
+  
+  .rhombus {
+    width: 60px;
+    height: 113px;
+    top: 18vh;
+  }
+  
+  .carouselWrap {
+    top: 45vh;
+  }
+  
+  .continents {
+    margin-top: 30px;
+    gap: 0.8vw;
+  }
+}
+
