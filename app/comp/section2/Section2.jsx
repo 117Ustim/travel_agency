@@ -92,7 +92,7 @@ export default function Section2() {
       <div className={styles.luxuryBlock}>
         <h2 className={styles.luxuryTitle}>Luxury</h2>
         <div className={styles.luxurySubtitle}>
-          <h3>Packages</h3>
+          <h2>Packages</h2>
           <button className={styles.viewAllButton} aria-label="View all luxury packages">
             view all
           </button>

@@ -338,8 +338,46 @@ z-index: 3;
     width: 560px;
     height: 80px;
   }
+  .viewAllButton {
+    margin-top: 20px;
+  }
 }
 
+/* Адаптивные стили для больших планшетов */
+@media (max-width: 1200px) {
+  .section2 {
+    height: 1600px;
+  }
+  
+  .luxuryBlock {
+    left: 120px;
+    top: 250px;
+  }
+  
+  .luxuryTitle,
+  .luxurySubtitle,
+  .luxurySubtitle h3 {
+    font-size: 48px;
+    line-height: 46px;
+  }
+  
+  .backgroundImage {
+    height: 800px;
+  }
+  
+  .centerImage {
+    height: 500px;
+  }
+  
+  .blurredSpot {
+    width: 600px;
+    height: 80px;
+    top: 240px;
+  }
+  .viewAllButton {
+    margin-top: 20px;
+}
+}
 /* Адаптивность для экранов меньше 1100px */
 @media (max-width: 1099px) {
   .cardsContainer {
@@ -428,54 +466,23 @@ z-index: 3;
   
   .luxuryBlock {
     left: 20%;
-    transform: translateX(-50%);
-    top: 100px;
-    text-align:center;
+    /* transform: translateX(-50%); */
+    top: 50px;
+    /* text-align:center; */
   }
   
   .blurredSpot {
     filter: blur(53px);
     top: 130px;
     width: 400px;
-    height: 50px;
+    height: 100px;
     left: 20%;
     transform: translateX(-50%);
   }
  
 }
 
-/* Адаптивные стили для больших планшетов */
-@media (max-width: 1200px) {
-  .section2 {
-    height: 1600px;
-  }
-  
-  .luxuryBlock {
-    left: 120px;
-    top: 300px;
-  }
-  
-  .luxuryTitle,
-  .luxurySubtitle,
-  .luxurySubtitle h3 {
-    font-size: 48px;
-    line-height: 46px;
-  }
-  
-  .backgroundImage {
-    height: 800px;
-  }
-  
-  .centerImage {
-    height: 500px;
-  }
-  
-  .blurredSpot {
-    width: 600px;
-    height: 80px;
-    top: 240px;
-  }
-}
+
 
 @media (max-width: 900px) {
   .section2 {
@@ -484,7 +491,7 @@ z-index: 3;
   
   .luxuryBlock {
     left: 80px;
-    top: 280px;
+    top: 120px;
   }
   
   .luxuryTitle,
@@ -507,6 +514,7 @@ z-index: 3;
     height: 60px;
     top: 200px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -515,9 +523,9 @@ z-index: 3;
   }
   
   .luxuryBlock {
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
-    top: 200px;
+    top: 110px;
     text-align: center;
     align-items: center;
   }
@@ -578,15 +586,15 @@ z-index: 3;
   /* Адаптируем другие элементы */
   .luxuryTitle,
   .luxurySubtitle,
-  .luxurySubtitle h3 {
-    font-size: 28px;
+  .luxurySubtitle h2 {
+    font-size: 38px;
     line-height: 26px;
   }
   
   .luxuryBlock {
     left: 50%;
     transform: translateX(-50%);
-    top: 120px;
+    top: 80px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -595,21 +603,22 @@ z-index: 3;
   }
   
   .luxuryTitle {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+   
   }
   
   .luxurySubtitle {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     display: flex;
     align-items: flex-end;
-    gap: 20px;
+    /* gap: 20px; */
     width: 100%;
   }
   
   .viewAllButton {
     margin-left: 100px;
-    align-self: flex-end;
-    margin-bottom: 0;
+    /* align-self: flex-start;
+    margin-bottom: 0; */
   }
   
   .blurredSpot {
@@ -651,7 +660,7 @@ z-index: 3;
   .section2 {
     height: 1100px;
   }
-  
+ 
   .luxuryBlock {
     top: 100px;
     width: 90%;
@@ -660,7 +669,7 @@ z-index: 3;
   .luxuryTitle,
   .luxurySubtitle,
   .luxurySubtitle h3 {
-    font-size: 30px;
+    font-size: 34px;
     line-height: 22px;
   }
   
@@ -673,9 +682,10 @@ z-index: 3;
   }
   
   .blurredSpot {
-    width: 300px;
-    height: 30px;
-    top: 120px;
+    width: 400px;
+    height: 70px;
+    top: 100px;
+    filter: blur(65px);
   }
   
   .viewAllButton {

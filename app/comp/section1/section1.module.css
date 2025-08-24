@@ -156,7 +156,7 @@ text-align: center;
   .rhombus {
     width: 70px;
     height: 132px;
-    top: 33vh;
+    top: 30vh;
   }
   
   .carouselWrap {
@@ -165,13 +165,13 @@ text-align: center;
   }
   
   .continents {
-    margin-top: 70px;
-    gap: 1vw;
+    margin-top: 90px;
+    gap: 2.5vw;
     font-size: clamp(8px, 2vw, 14px);
   }
   
   .title {
-  margin-top: 32%;
+  margin-top: 20%;
     font-size: clamp(28px, 8vw, 36px);
   }
   

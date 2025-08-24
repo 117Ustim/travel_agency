@@ -19,7 +19,7 @@
     touch-action: pan-x pan-y;
     max-width: 100%; /* Ограничиваем максимальную ширину */
 }
-.track::-webkit-scrollbar { display: none; }
+/* .track::-webkit-scrollbar { display: none; } */
 
 .card {
     position: relative;
@@ -440,8 +440,8 @@
 
 @media (max-width: 550px) {
     .carousel {
-        height: 320px;
-        --card-width: 240px;
+        height: 400px;
+        --card-width: 220px;
     }
     
     .track {

@@ -378,8 +378,8 @@ text-align: left;
 
 @media (max-width: 480px){
     .carousel {
-        height: calc(590px * 0.55);
-        --card-width: calc(360px * 0.55);
+        height: calc(650px * 0.55);
+        --card-width: calc(400px * 0.55);
     }
     
     .track {
