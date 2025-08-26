@@ -4,6 +4,7 @@ import Main from "./comp/main/Main";
 import Section1 from "./comp/section1/Section1";
 import Section2 from "./comp/section2/Section2";
 import Section3 from "./comp/section3/Section3";
+import Section4 from "./comp/section4/Section4";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
      <Section1/>
      <Section2/>
      <Section3/>
+     <Section4/>
     </div>
   );
 }

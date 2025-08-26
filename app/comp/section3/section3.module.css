@@ -329,6 +329,11 @@
   }
 }
 @media (max-width: 480px) {
+  .section3 {
+  
+    min-height: 94vh;
+    
+  }
   .titleContainer {
     top: -23%;
     width: 110px;
