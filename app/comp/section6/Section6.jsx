@@ -4,6 +4,30 @@ import styles from './section6.module.css';
 export default function Section6() {
   return (
     <section className={styles.section6}>
+      <Image
+        src="/comp_6/Rectangle_comp_6_1.png"
+        alt="decorative shape"
+        width={1083.11}
+        height={778.96}
+        className={styles.decorTopRight}
+        priority
+      />
+      <Image
+        src="/comp_6/Rectangle_comp_6_2.png"
+        alt="decorative shape 2"
+        width={720}
+        height={518}
+        className={styles.decorRight_2}
+        priority
+      />
+      <Image
+        src="/comp_6/Rectangle_comp_6_3.png"
+        alt="decorative shape 3"
+        width={720}
+        height={518}
+        className={styles.decorLeft_3}
+        priority
+      />
       <div className={styles.title}>Customise your trip with us</div>
       <div className={styles.block_row}>
         <div className={styles.leftBlock}>
@@ -33,6 +57,7 @@ export default function Section6() {
             </p>
           </div>
         </div>
+        <button className={styles.blockRowButton}>Start a trip request</button>
       </div>
     </section>
   );
