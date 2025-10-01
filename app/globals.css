@@ -46,6 +46,10 @@ body {
   transform: translateZ(0);
   /* Улучшаем производительность скролла */
   will-change: scroll-position;
+  /* Максимальная ширина страницы и светло-серый фон */
+  max-width: 2300px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
 }
 
 

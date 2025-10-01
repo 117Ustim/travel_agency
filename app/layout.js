@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Forum, Manrope } from "next/font/google";
 import "./globals.css";
 import Menu from "./comp/menu/Menu";
 
@@ -11,6 +11,20 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const forum = Forum({
+  variable: "--font-forum",
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -34,7 +48,7 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="/comp_1/carousel/image_carousel_1.png" as="image" />
         <link rel="preload" href="/comp_1/rhombus.png" as="image" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ overflowX: 'hidden' }}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${forum.variable} ${manrope.variable}`} style={{ overflowX: 'hidden' }}>
         {/* <Menu /> */}
         {children}
       </body>

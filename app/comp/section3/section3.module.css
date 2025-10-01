@@ -103,6 +103,7 @@
   align-items: center;
   overflow: hidden;
   border-radius: 10px;
+ 
 }
 
 /* Изображение карточки */
@@ -111,6 +112,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  
 }
 
 /* Заголовок карточки */
@@ -343,12 +345,15 @@
     top: 10px;
     width: 95%;
     gap: 15px;
+   
+    z-index: 5;
   }
   
   .card {
     height: 140px;
+    
   }
-  
+ 
   .cardTitle {
     font-size: 20px;
     line-height: 24px;

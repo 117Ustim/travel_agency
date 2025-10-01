@@ -1,11 +1,11 @@
-.page {
+/* .page {
   width: 100%;
   min-height: 100vh;
   position: relative;
   max-width: 100vw;
 }
 
-/* Адаптивные стили для разных размеров экрана */
+
 @media (max-width: 1200px) {
   .page {
     min-height: 100vh;
@@ -20,6 +20,6 @@
 
 @media (max-width: 480px) {
   .page {
-    min-height: 100vh;
+    min-height: 100svh;
   }
-}
+} */
