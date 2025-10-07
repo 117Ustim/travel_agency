@@ -4,7 +4,7 @@ import styles from './section6.module.css';
 export default function Section6() {
   return (
     <section className={styles.section6}>
-      <Image
+       <Image
         src="/comp_6/Rectangle_comp_6_1.png"
         alt="decorative shape"
         width={1083.11}
@@ -29,7 +29,7 @@ export default function Section6() {
         priority
       />
       <div className={styles.title}>Customise your trip with us</div>
-      <div className={styles.block_row}>
+     <div className={styles.block_row}>
         <div className={styles.leftBlock}>
           <div className={styles.diamond}>1</div>
           <div className={styles.connector}></div>
@@ -58,7 +58,39 @@ export default function Section6() {
           </div>
         </div>
         <button className={styles.blockRowButton}>Start a trip request</button>
+      </div> 
+       {/* Subscribe card */}
+      <div className={styles.subscribeCard}>
+        <Image
+          src="/comp_6/image_80.png"
+          alt="Newsletter background"
+          fill
+          className={styles.subscribeCardImage}
+          sizes="(max-width: 1110px) 100vw, 1110px"
+          priority={false}
+        />
+        <span className={styles.subscribeCardIcon} aria-hidden="true"></span>
+        <h2 className={styles.subscribeTitle}>Get weekly inspiration and expert advice</h2>
+        <p className={styles.subscribeSubtitle}>Sign up for our Weekly Newsletter</p>
+        <div className={styles.subscribeFormRow}>
+          <input className={styles.emailInput} type="email" placeholder="Email address" aria-label="Email address" />
+          <button className={styles.subscribeButton} type="button">
+            <span className={styles.subscribeButtonText}>Subscribe</span>
+          </button>
+        </div>
+        
       </div>
+      <Image
+        src="/comp_6/img_button_comp_6.png"
+        alt="bottom decorative"
+        width={2114}
+        height={1409}
+        className={styles.bottomImage}
+        quality={55}
+        loading="lazy"
+        sizes="100vw"
+      />
+     <div className={styles.line}></div>
     </section>
   );
 }

@@ -7,6 +7,7 @@ import Section3 from "./comp/section3/Section3";
 import Section4 from "./comp/section4/Section4";
 import Section5 from "./comp/section5/Section5";
 import Section6 from "./comp/section6/Section6";
+import Section7 from "./comp/section7/Section7";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
      <Section4/>
      <Section5/>
      <Section6/>
+     <Section7/>
     </div>
   );
 }

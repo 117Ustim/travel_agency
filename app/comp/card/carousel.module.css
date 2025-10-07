@@ -1,0 +1,241 @@
+.carousel {
+    position: relative;
+    width: 1492px;
+    height: 659px;
+  margin: 7% 0 0 12%;
+  z-index: 7;
+    --card-width: 636px;
+}
+
+.track {
+    display: flex;
+    gap: 90px;
+  
+    height: 100%;
+    padding: 0 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch; /* Улучшает скроллинг на iOS */
+    touch-action: pan-x pan-y; /* Разрешает горизонтальные свайпы и вертикальную прокрутку страницы */
+}
+.track::-webkit-scrollbar { display: none; }
+
+
+.card {
+    position: relative;
+    /* Фиксированная ширина карточки: карточки не уменьшаются */
+    flex: 0 0 var(--card-width);
+    height: 659px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-top: none; /* верхняя граница будет нарисована псевдоэлементами */
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    background: rgba(226, 211, 206, 0.2);
+    overflow: hidden;
+   
+}
+
+/* Верхняя граница: по 40% слева и справа, 20% зазор по центру */
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card::before {
+    left: 0;
+    width: 40%;
+}
+
+.card::after {
+    right: 0;
+    width: 40%;
+}
+
+/* Иконка в центре верхнего разрыва */
+.cardTopIcon {
+    position: absolute;
+    top: -23px; /* внутри карточки, чтобы не отсекалось overflow: hidden */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 52px;
+    background-image: url('/comp_6/Layer 4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 8;
+    pointer-events: none;
+}
+
+.avatarWrap {
+    position: absolute;
+    left: 90px;
+    top: 65px;
+    width: 140px;
+    height: 140px;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote {
+    position: absolute;
+    left: 90px;
+    top: 205px; /* 65 + 80 (avatar) + 60 spacing */
+    width: 481px;
+    height: 210px;
+    color: rgba(29, 26, 26, 1);
+    font-family: Manrope;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 37px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.personBlock {
+    position: absolute;
+    left: 90px;
+    top: 500px; /* 205 + 210 (quote) + 20 approx spacing to name block */
+}
+
+.personName {
+    width: 171.72px;
+    height: 18.15px;
+    color: rgba(29, 26, 26, 1);
+    font-family: Manrope;
+    font-size: 19.55px;
+    font-weight: 600;
+    line-height: 94.5%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.personSurname {
+    width: 127.04px;
+    height: 15.36px;
+    color: rgba(29, 26, 26, 1);
+    font-family: Manrope;
+    font-size: 16.75px;
+    font-weight: 300;
+    line-height: 94.5%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+.cardBottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 16px 18px 20px 18px;
+    /* background: rgba(226, 211, 206, 0.95); */
+}
+
+.leftBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+
+/* Навигация: коричневый ромб между 3 и 4 карточкой */
+.navNext {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    left: auto;
+    transform: translate(0, -50%) rotate(45deg);
+    z-index: 50;
+    width: 68px;
+    height: 68px;
+    background: #6B4E3D;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto; /* ensure button is clickable above overlays */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navNextInner {
+    transform: rotate(-45deg);
+    display: inline-flex;
+    align-items: center;
+    z-index: 19;
+}
+
+.arrowSvg {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Right-side gradient fade inside card; keep below the nav button and non-interactive */
+.rightBlur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 100%;
+    pointer-events: none; /* allow clicks to pass through to button */
+    z-index: 5;
+    background: linear-gradient(270deg, rgba(226, 211, 206, 0.8) 0%, rgba(226, 211, 206, 0) 100%);
+}
+
+
+/* Горизонтальная линия слева от стрелки */
+.arrowLine {
+    width: 17px;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    margin-right: -11px;
+    display: inline-block;
+}
+
+/* Шрифт Forum для всего содержимого карточки */
+.countryName, .lineText, .from, .price, .ratingValue {
+    font-family: Forum, Inter, Arial, sans-serif;
+}
+
+/* Bottom navigation bars 50px below carousel */
+.navBars {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px; 
+    display: flex;
+    gap: 12px;
+    z-index: 60;
+}
+
+.navBar {
+    width: 100px; 
+    height: 1px;  
+    background: rgba(245, 244, 244, 0.35);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.navBarActive,
+.navBar:hover,
+.navBar:focus-visible {
+    background: rgba(245, 244, 244, 0.984);
+    height: 3px;
+}

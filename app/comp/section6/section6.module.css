@@ -1,8 +1,21 @@
 .section6 {
   width: 100%;
-  height: 150svh;
+  height: 200svh;
   background-color: #e0d2ca;
   position: relative;
+  /* margin-top: -1px; overlap previous section by 1px to hide seam */
+}
+
+.bottomImage {
+  position: absolute;
+  bottom: -20vh;
+  left: -112vh;
+  right: auto;
+  transform: none;
+  width: 350vh;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .title {
@@ -30,13 +43,14 @@
   max-width: 700px;
   margin: 0 auto;
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;
+  z-index: 5;
 }
 
 .blockRowButton {
@@ -180,7 +194,286 @@
   pointer-events: none;
 }
 
+/* Subscription card */
+.subscribeCard {
+  position: absolute;
+  bottom: -19vh;
+
+  transform: translateX(-50%);
+  left: 54%;
+
+  width: 1610px;
+  height: 1065px;
+  border-radius: 50px;
+  overflow: visible;
+  z-index: 5;
+}
+
+/* Full-width white divider 20px below the subscribe card */
+.subscribeCardDivider {
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50vw);
+  bottom: -20px;
+  width: 100vw;
+  height: 1px;
+  background: #ffffff;
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+
+.subscribeTitle {
+  position: absolute;
+
+  top: 300px;
+  left: 200px;
+  width: 520px;
+  height: 212px;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: Forum, serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+}
+
+.subscribeSubtitle {
+  position: absolute;
+
+  top: calc(350px + 212px - 58px);
+  left: 200px;
+  width: 350px;
+  height: 29px;
+  font-size: 20px;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: Manrope, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+
+  font-weight: 400;
+  line-height: 179.8%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0;
+}
+
+.subscribeFormRow {
+  position: absolute;
+
+  left: 200px;
+  top: calc(350px + 212px + 60px);
+
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.emailInput {
+  width: 486px;
+  height: 55px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 95px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.14);
+  color: rgba(12, 11, 16, 1);
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.emailInput::placeholder {
+  color: rgba(12, 11, 16, 1);
+  font-family: Manrope, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 179.8%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.subscribeButton {
+  position: absolute;
+  top: 0;
+  left: 280px;
+  width: 330px;
+  height: 55px;
+  border-radius: 74px;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.subscribeButtonText {
+  width: 114px;
+  height: 26px;
+  color: rgba(12, 11, 16, 1);
+  font-family: Forum, serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 1440px) and (max-width: 1800px) {
+  .section6 {
+    height: 200vh;
+  }
+  .block_row {
+    top: 33%;
+  }
+  .bottomImage {
+    bottom: -5vh;
+    left: -87vh;
+
+    width: 270vh;
+  }
+
+  /* Subscription card */
+  .subscribeCard {
+    bottom: -5vh;
+    left: 54%;
+
+    width: 1310px;
+    height: 765px;
+    border-radius: 40px;
+  }
+  .subscribeTitle {
+    top: 170px;
+    left: 185px;
+    width: 520px;
+    height: 212px;
+
+    font-size: 64px;
+  }
+
+  .subscribeSubtitle {
+    top: calc(210px + 212px - 58px);
+    left: 185px;
+    width: 247px;
+    height: 29px;
+
+    font-size: 18px;
+  }
+
+  .subscribeFormRow {
+    left: 185px;
+    top: calc(170px + 212px + 60px);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .section6 {
+    height: 200vh;
+  }
+  .block_row {
+    top: 33%;
+  }
+  .bottomImage {
+    bottom: 5vh;
+    left: -70vh;
+
+    width: 220vh;
+  }
+  .subscribeCard {
+    bottom: -5vh;
+    left: 54%;
+
+    width: 1210px;
+    height: 750px;
+    border-radius: 40px;
+  }
+  .subscribeTitle {
+    top: 190px;
+    left: 185px;
+    width: 520px;
+    height: 212px;
+
+    font-size: 60px;
+  }
+
+  .subscribeSubtitle {
+    top: calc(230px + 212px - 58px);
+    left: 185px;
+    width: 247px;
+    height: 29px;
+
+    font-size: 16px;
+  }
+
+  .subscribeFormRow {
+    left: 185px;
+    top: calc(200px + 212px + 60px);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .section6 {
+    height: 180vh;
+  }
+  .block_row {
+    top: 40%;
+  }
+  .bottomImage {
+    bottom: 0vh;
+    left: -65vh;
+
+    width: 190vh;
+  }
+  .subscribeCard {
+    bottom: -6vh;
+    left: 54%;
+
+    width: 1040px;
+    height: 700px;
+    border-radius: 60px;
+  }
+  .subscribeTitle {
+    top: 200px;
+    left: 165px;
+    width: 400px;
+    height: 212px;
+    line-height: 48px;
+    font-size: 46px;
+  }
+
+  .subscribeSubtitle {
+    top: calc(200px + 212px - 58px);
+    left: 165px;
+    width: 247px;
+    height: 29px;
+
+    font-size: 16px;
+  }
+
+  .subscribeFormRow {
+    left: 165px;
+    top: calc(170px + 212px + 60px);
+  }
+}
 @media (max-width: 992px) {
+  .section6 {
+    height: 180vh;
+  }
+  .block_row {
+    top: 40%;
+  }
+  .title {
+    font-size: 50px;
+  }
   .decorTopRight {
     position: absolute;
     top: -5vh;
@@ -202,15 +495,67 @@
     width: 620px;
     height: 418px;
   }
+
+  .bottomImage {
+    bottom: -10vh;
+    left: -65vh;
+
+    width: 190vh;
+  }
+  .subscribeCard {
+    bottom: -5vh;
+    left: 54%;
+
+    width: 840px;
+    height: 600px;
+    border-radius: 50px;
+  }
+  .subscribeTitle {
+    top: 150px;
+    left: 135px;
+    width: 350px;
+    height: 212px;
+    line-height: 48px;
+    font-size: 44px;
+  }
+
+  .subscribeSubtitle {
+    top: calc(150px + 212px - 58px);
+    left: 135px;
+    width: 247px;
+    height: 29px;
+
+    font-size: 16px;
+  }
+
+  .subscribeFormRow {
+    left: 135px;
+    top: calc(100px + 212px + 60px);
+  }
+  .subscribeButton {
+    left: 280px;
+    width: 220px;
+    height: 55px;
+  }
 }
 
 @media (min-width: 620px) and (max-width: 768px) {
+  .section6 {
+    height: 170vh;
+  }
+  .block_row {
+    top: 40%;
+  }
   .decorTopRight {
     position: absolute;
     top: 15vh;
     right: -40vh;
     width: 900px;
     height: 500px;
+  }
+  .blockRowButton {
+    width: 70%;
+    height: 50px;
   }
 
   .decorRight_2 {
@@ -226,9 +571,82 @@
     width: 620px;
     height: 418px;
   }
+  .bottomImage {
+    bottom: 5vh;
+    left: -65vh;
+
+    width: 150vh;
+  }
+  .subscribeCard {
+    bottom: -8vh;
+    left: 54%;
+
+    width: 640px;
+    height: 600px;
+    border-radius: 70px;
+  }
+  .subscribeTitle {
+    top: 150px;
+    left: 100px;
+    width: 250px;
+    height: 212px;
+    line-height: 38px;
+    font-size: 32px;
+  }
+  .subscribeSubtitle {
+    top: calc(140px + 212px - 58px);
+    left: 100px;
+    width: 247px;
+    height: 29px;
+
+    font-size: 12px;
+  }
+  .subscribeFormRow {
+    left: 100px;
+    top: calc(110px + 212px + 60px);
+  }
+
+  .emailInput {
+    width: 286px;
+    height: 40px;
+
+    border-radius: 95px;
+
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .emailInput::placeholder {
+    font-size: 14px;
+
+    line-height: 179.8%;
+  }
+
+  .subscribeButton {
+    top: 0;
+    left: 180px;
+    width: 200px;
+    height: 40px;
+    border-radius: 74px;
+  }
+
+  .subscribeButtonText {
+    width: 114px;
+    height: 26px;
+
+    font-size: 20px;
+
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 620px) {
+  .section6 {
+    height: 168vh;
+  }
+  .block_row {
+    top: 35%;
+  }
   .title {
     font-size: 50px;
   }
@@ -264,11 +682,217 @@
     width: 520px;
     height: 318px;
   }
+  .bottomImage {
+    bottom: 26vh;
+    left: -52vh;
+  
+    width: 120vh;
+  }
+  .blockRowButton {
+    font-size: 22px;
+    width: 60%;
+    height: 50px;
+  }
+  .subscribeCard {
+    bottom: -11vh;
+    left: 54%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 750px;
+    border-radius: 70px;
+    overflow: visible;
+   
+  }
+ 
+
+  .subscribeTitle {
+    top: 170px;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 332px;
+    height: 158px;
+    line-height: 38px;
+    font-size: 44px;
+    text-align: center;
+  }
+  .subscribeSubtitle {
+    top: calc(140px + 158px + 10px);
+    left: 45%;
+    transform: translateX(-50%);
+    width: 158px;
+    height: 77px;
+
+    font-size: 18px;
+    text-align: center;
+  }
+  .subscribeFormRow {
+    left: 45%;
+    transform: translateX(-50%);
+    top: calc(140px + 158px + 10px + 77px + 40px);
+    display: block;
+    height: 110px;
+  }
+
+  .emailInput {
+    width: 286px;
+    height: 55px;
+
+    border-radius: 95px;
+
+    padding-left: 30px;
+    padding-right: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .emailInput::placeholder {
+    font-size: 16px;
+
+    line-height: 179.8%;
+  }
+
+  .subscribeButton {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 286px;
+    height: 55px;
+    border-radius: 74px;
+  }
+
+  .subscribeButtonText {
+    width: 114px;
+    height: 26px;
+
+    font-size: 24px;
+
+    line-height: 26px;
+  }
 }
 
+
+
 @media (max-width: 480px) {
+  .section6 {
+    height: 182vh;
+  }
   .block_row {
     gap: 0px;
+  }
+  .subscribeCard {
+    bottom: -120px;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 750px;
+    border-radius: 50px;
+   
+   
+  }
+
+  .subscribeCard::before,
+  .subscribeCard::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    width: 40vw;
+    height: 1px;
+    background: #ffffff;
+    z-index: 6;
+  }
+
+  .subscribeCard::before {
+    left: -30px;
+  }
+
+  .subscribeCard::after {
+    right: 0;
+  }
+
+  .subscribeCardIcon {
+    position: absolute;
+    top: 70px;
+    left: 46%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 20.02px;
+    background-image: url('/comp_6/Layer 4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 7;
+  }
+  .line {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    z-index: 6;
+  }
+
+  .subscribeTitle {
+    top: 170px;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 332px;
+    height: 158px;
+    line-height: 38px;
+    font-size: 44px;
+    text-align: center;
+  }
+  .subscribeSubtitle {
+    top: calc(140px + 158px + 10px);
+    left: 45%;
+    transform: translateX(-50%);
+    width: 158px;
+    height: 77px;
+
+    font-size: 18px;
+    text-align: center;
+  }
+  .subscribeFormRow {
+    left: 45%;
+    transform: translateX(-50%);
+    top: calc(140px + 158px + 10px + 77px + 40px);
+    display: block;
+    height: 110px;
+  }
+
+  .emailInput {
+    width: 286px;
+    height: 55px;
+
+    border-radius: 95px;
+
+    padding-left: 30px;
+    padding-right: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .emailInput::placeholder {
+    font-size: 16px;
+
+    line-height: 179.8%;
+  }
+
+  .subscribeButton {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 286px;
+    height: 55px;
+    border-radius: 74px;
+  }
+
+  .subscribeButtonText {
+    width: 114px;
+    height: 26px;
+
+    font-size: 24px;
+
+    line-height: 26px;
   }
 
   .title {
@@ -322,14 +946,12 @@
   }
   .blockRowButton {
     margin-top: 3vh;
-  
+
     width: 80%;
     height: 45px;
-    
+
     font-size: 20px;
-   
+
     line-height: 26px;
-    
-    
   }
 }
