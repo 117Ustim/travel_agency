@@ -44,9 +44,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ overflowX: 'hidden' }}>
       <head>
-        <link rel="preload" href="/bg_main_44.png" as="image" />
+        {/* <link rel="preload" href="/bg_main_44.png" as="image" />
         <link rel="preload" href="/comp_1/carousel/image_carousel_1.png" as="image" />
-        <link rel="preload" href="/comp_1/rhombus.png" as="image" />
+        <link rel="preload" href="/comp_1/rhombus.png" as="image" /> */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} ${forum.variable} ${manrope.variable}`} style={{ overflowX: 'hidden' }}>
         {/* <Menu /> */}

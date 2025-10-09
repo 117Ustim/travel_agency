@@ -165,7 +165,7 @@ text-align: center;
   }
   
   .continents {
-    margin-top: 90px;
+    margin-top: 70px;
     gap: 2.5vw;
     font-size: clamp(8px, 2vw, 14px);
   }
