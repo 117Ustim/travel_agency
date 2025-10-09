@@ -26,13 +26,13 @@ export default function Footer() {
       </div>
       <nav className={styles.footerNav} aria-label="Footer navigation">
         {/* ссылки на другие страницы */}
-        <Link href="/luxury-packages" className={styles.navLink}>Luxury packages</Link>
-        <Link href="/book-with-us" className={styles.navLink}>Book with us</Link>
+        <Link href="#" className={styles.navLink}>Luxury packages</Link>
+        <Link href="#" className={styles.navLink}>Book with us</Link>
         <button type="button" className={styles.callButton} aria-label="Call my back">
           CALL MY BACK
         </button>
-        <Link href="/why-lux-trips" className={styles.navLink}>Why Lux Trips</Link>
-        <Link href="/contact" className={styles.navLink}>Contact</Link>
+        <Link href="#" className={styles.navLink}>Why Lux Trips</Link>
+        <Link href="#" className={styles.navLink}>Contact</Link>
       </nav>
       <div className={styles.copyright} aria-label="Copyright">
         © 2025 All Rights Reserved | Ustim
