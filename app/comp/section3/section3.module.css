@@ -333,7 +333,7 @@
 @media (max-width: 480px) {
   .section3 {
   
-    min-height: 94vh;
+    height: 100vh;
     
   }
   .titleContainer {
