@@ -444,10 +444,10 @@
 }
 
 @media (max-width: 480px) {
-  .section4 {
+  /* .section4 {
    
     height: 140vh;
-  }
+  } */
   .bgMont {
    
    margin-top: 250px;
