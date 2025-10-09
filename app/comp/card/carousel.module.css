@@ -169,7 +169,7 @@
     background: #6B4E3D;
     border: none;
     cursor: pointer;
-    pointer-events: auto; /* ensure button is clickable above overlays */
+    pointer-events: auto; /* кнопка кликабельна поверх наложений */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,14 +186,14 @@
     color: rgba(255, 255, 255, 1);
 }
 
-/* Right-side gradient fade inside card; keep below the nav button and non-interactive */
+/* Правый градиентный затухающий слой внутри карточки; ниже кнопки навигации и без взаимодействия */
 .rightBlur {
     position: absolute;
     top: 0;
     right: 0;
     width: 220px;
     height: 100%;
-    pointer-events: none; /* allow clicks to pass through to button */
+    pointer-events: none; /* позволяет кликам проходить к кнопке */
     z-index: 5;
     background: linear-gradient(270deg, rgba(226, 211, 206, 0.8) 0%, rgba(226, 211, 206, 0) 100%);
 }
@@ -213,7 +213,7 @@
     font-family: Forum, Inter, Arial, sans-serif;
 }
 
-/* Bottom navigation bars 50px below carousel */
+/* Нижние полоски навигации на 50px ниже карусели */
 .navBars {
     position: absolute;
     left: 50%;
@@ -238,4 +238,299 @@
 .navBar:focus-visible {
     background: rgba(245, 244, 244, 0.984);
     height: 3px;
+}
+
+/* Мобильные: показывать ровно одну карточку и сохранить навигацию видимой */
+@media (max-width: 480px) {
+    .carousel {
+        width: 100%;
+        height: 540px; /* гарантирует область контента; внутренности карточки абсолютно позиционируются */
+        margin: 24px 0 0 0;
+        --card-width: calc(100% - 0px); /* полная ширина минус горизонтальные отступы трека */
+    }
+
+    .track {
+        gap: 15px; /* уменьшенный промежуток на маленьких экранах */
+        padding: 0 15px;
+    }
+
+    .card {
+        flex: 0 0 var(--card-width); /* одна карточка на ширину экрана */
+        height: 540px; /* высота равна контейнеру для стабильного лейаута */
+    }
+
+    /* Content scaling */
+    .avatarWrap {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 60px;
+        width: 88px;
+        height: 88px;
+    }
+
+    .quote {
+        left: 20px;
+        top: 210px;
+        width: calc(100% - 40px);
+        height: auto;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .personBlock {
+        left: 60%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 54px;
+    }
+
+    .personName { font-size: 17px; margin-bottom: 6px; }
+    .personSurname { font-size: 14px; }
+
+    .navNext {
+        right: 16px; /* кнопка внутри области экрана */
+        width: 56px;
+        height: 56px;
+        background: #6b4e3db0;
+    }
+
+    .navBars {
+        bottom: -36px;
+        gap: 8px;
+        
+    }
+   
+    .navBar {
+        width: 50px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+    .carousel {
+        width: 100%;
+        height: 540px; /* гарантирует область контента; внутренности карточки абсолютно позиционируются */
+        margin: 24px 0 0 0;
+        --card-width: calc(90% - 80px); /* полная ширина минус горизонтальные отступы трека */
+    }
+
+    .track {
+        gap: 15px; /* уменьшенный промежуток на маленьких экранах */
+        padding: 0 15px;
+    }
+
+    .card {
+        flex: 0 0 var(--card-width); /* одна карточка на ширину экрана */
+        height: 540px; /* высота равна контейнеру для стабильного лейаута */
+    }
+
+    /* Content scaling */
+    .avatarWrap {
+        left: 24px;
+        top: 28px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .quote {
+        left: 24px;
+        top: 180px;
+        width: calc(100% - 48px);
+        height: auto;
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .personBlock {
+        left: 24px;
+        top: auto;
+        bottom: 68px;
+    }
+
+    .personName { font-size: 18.5px; margin-bottom: 6px; }
+    .personSurname { font-size: 15.5px; }
+
+    .navNext {
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .navBars { bottom: -40px; }
+    .navBar { width: 64px; }
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .carousel {
+        width: 100%;
+        height: 600px;
+        margin: 28px 0 0 0;
+        --card-width: calc(100% - 90px);
+    }
+
+    .track {
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .card {
+        flex: 0 0 calc((100% - 0px - 24px) / 2);
+        height: 600px;
+    }
+
+    /* Content scaling */
+    .avatarWrap {
+        left: 24px;
+        top: 28px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .quote {
+        left: 24px;
+        top: 180px;
+        width: calc(100% - 48px);
+        height: auto;
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .personBlock {
+        left: 24px;
+        top: auto;
+        bottom: 68px;
+    }
+
+    .personName { font-size: 18.5px; margin-bottom: 6px; }
+    .personSurname { font-size: 15.5px; }
+
+    .navNext {
+        right: 40px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .navBars { bottom: -40px; }
+    .navBar { width: 64px; }
+}
+
+/* Планшеты: 768–1023px → видно две карточки */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .carousel {
+        width: 100%;
+        height: 600px;
+        margin: 6% 0 0 8%;
+    }
+
+    .track {
+        gap: 24px;
+        padding: 0 24px;
+    }
+
+    /* 2 карточки: ширина = (100% - padding*2 - gap*1) / 2 */
+    .card {
+        flex: 0 0 calc((100% - 8px - 24px) / 2);
+        height: 570px;
+    }
+
+    .navNext { right: 130px; }
+
+    /* Content scaling */
+    .avatarWrap {
+        left: 40px;
+        top: 40px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .quote {
+        left: 40px;
+        top: 180px;
+        width: calc(100% - 80px);
+        height: auto;
+        font-size: 18.5px;
+        line-height: 30px;
+    }
+
+    .personBlock {
+        left: 40px;
+        top: auto;
+        bottom: 36px;
+    }
+
+    .personName { font-size: 19px; }
+    .personSurname { font-size: 16.5px; }
+}
+
+/* Небольшие десктопы: 1024–1439px → видно две карточки, большие отступы */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .carousel {
+        width: 100%;
+        height: 640px;
+        margin: 6% 0 0 10%;
+    }
+
+    .track {
+        gap: 40px;
+        padding: 0 30px;
+    }
+
+    /* 2 карточки: ширина = (100% - padding*2 - gap*1) / 2 */
+    .card {
+        flex: 0 0 calc((100% - 60px - 30px) / 2);
+        height: 640px;
+    }
+
+    .navNext { right: 180px; }
+
+    /* Content scaling */
+    .avatarWrap {
+        left: 60px;
+        top: 56px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .quote {
+        left: 60px;
+        top: 200px;
+        width: calc(100% - 120px);
+        height: auto;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .personBlock {
+        left: 60px;
+        top: auto;
+        bottom: 40px;
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .carousel {
+        width: 100%;
+        margin: 7% 0 0 15%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+    .carousel {
+        width: 100%;
+        margin: 7% 0 0 20%;
+    }
+
+ 
+    .navNext { right: 25%; }
+}
+
+@media (min-width: 1800px) and (max-width: 2300px) {
+    .carousel {
+        width: 100%;
+        margin: 7% 0 0 15%;
+    }
+
+ 
+    .navNext { right: 20%; }
 }

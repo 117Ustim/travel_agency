@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './section7.module.css';
 import Carousel from '../card/Carousel';
+import ContactCard from './ContactCard';
 
 export default function Section7() {
   return (
@@ -25,6 +26,8 @@ export default function Section7() {
         className={styles.bottomImage}
         priority
       />
+      <ContactCard/>
+      {/* <div className={styles.gradient_2}></div> */}
     </section>
   );
 }

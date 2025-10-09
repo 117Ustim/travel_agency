@@ -1,0 +1,226 @@
+/* Карточка контактов: по центру, смещена вниз на 20% от низа секции */
+.contactCard {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5%;
+    width: 920px;
+    height: 525.08px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    backdrop-filter: blur(9px);
+    background: rgba(226, 211, 206, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px; /* расстояние между заголовком и формой */
+    z-index: 7; /* выше градиента и фонового изображения */
+}
+
+/* Заголовок карточки */
+.contactTitle {
+    width: 402px;
+    height: 58px;
+    color: var(--Style, rgba(12, 11, 16, 1));
+    font-family: Forum;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Форма: инпуты колонкой, зазор 32px */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Доступность: скрываем подписи визуально, но оставляем для читателей экрана */
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Инпуты */
+.contactInput {
+    width: 350px;
+    height: 55px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 95px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.14);
+    color: rgba(12, 11, 16, 1);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center; /* текст по центру, согласно требованию */
+}
+
+.contactInput::placeholder {
+    color: rgba(12, 11, 16, 0.7);
+}
+
+/* Кнопка отправки */
+.contactButton {
+    margin-top: 60px; /* расстояние 60px под инпутами */
+    width: 350px;
+    height: 55px;
+    border-radius: 74px;
+    background: var(--Style, rgba(12, 11, 16, 1));
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+
+.contactButton::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px; 
+    width: 90%; /* адаптивная ширина относительно кнопки */
+    max-width: 304px; /* не больше исходного размера */
+    min-width: 180px; /* не меньше, чтобы оставаться заметной на узких экранах */
+    aspect-ratio: 304 / 61; /* сохраняем пропорции изображения */
+    height: auto;
+ 
+    background-image: url('/comp_7/Subtract_card.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; /* заполняем весь псевдоэлемент, сохраняя пропорции через aspect-ratio */
+    z-index: -1; /* располагаем под кнопкой */
+    pointer-events: none; 
+}
+
+/* Декоративная картинка сверху по центру */
+.contactButton::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px; /* вынос над верхним краем кнопки */
+    width: 48.63px;
+    height: 20.02px;
+    background-image: url('/comp_7/Subtract_card_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1; /* под текстом кнопки */
+    pointer-events: none;
+}
+
+/* Маленькая декоративная иконка у нижнего края по центру */
+.contactButtonBottomDecor {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px; /* примыкает к нижнему краю кнопки */
+    width: 35.42px;
+    height: 14.77px;
+    background-image: url('/comp_7/Subtract_card_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 2; /* поверх большой подложки, не мешает клику */
+    pointer-events: none;
+}
+
+.contactButtonText {
+    width: 160px;
+    height: 26px;
+    color: rgba(255, 255, 255, 1);
+    font-family: Forum;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+.contactCard {
+  
+   
+    bottom: -5%;
+    width: 820px;
+   
+    height: 525.08px;
+   
+}
+
+}
+
+@media (max-width: 992px) {
+    .contactCard {
+        width: 80vw;
+        height: auto;
+        padding: 40px 16px;
+        bottom: -5%;
+    }
+
+    .contactTitle {
+        width: auto;
+        font-size: 44px;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 620px) {
+    .contactTitle {
+        font-size: 36px;
+    }
+
+    .contactInput,
+    .contactButton {
+        width: 65vw;
+    }
+    /* немного уменьшаем декоративный элемент вместе с кнопкой */
+    .contactButton::after {
+        width: 88%;
+        min-width: 160px;
+        bottom: 8%;
+        height: 61px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactTitle {
+        font-size: 34px;
+    }
+
+    .contactInput,
+    .contactButton {
+        width: 70vw;
+    }
+    .contactButtonText {
+       
+        font-size: 20px;
+       
+    }
+    /* на очень узких экранах ещё компактнее */
+    .contactButton::after {
+        width: 86%;
+        min-width: 140px;
+        bottom: 8%;
+        height: 61px;
+    }
+}
