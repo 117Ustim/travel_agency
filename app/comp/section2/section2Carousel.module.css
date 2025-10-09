@@ -473,11 +473,11 @@
     }
     
     .navNext {
-        width: 38px;
-        height: 38px;
-        right: 5%;
+        width: 35px;
+        height: 35px;
+        right: 9%;
     }
-    
+  
     .cardContent {
         padding: 20px 10px 40px 10px;
     }
