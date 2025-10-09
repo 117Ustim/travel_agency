@@ -80,7 +80,7 @@ export default function Section4() {
 
     {/* Новая секция с изображением, текстом и кнопкой */}
     <div className={styles.planningSection}>
-      <div className={styles.planningImage}>
+      {/* <div className={styles.planningImage}>
         <Image
           src="/comp_4/comp_img_3.png"
           alt="Planning image"
@@ -89,7 +89,7 @@ export default function Section4() {
           style={{ objectFit: 'cover' }}
           priority
         />
-      </div>
+      </div> */}
       <div className={styles.planningContent}>
         <p className={styles.planningText}>
           We craft and plan unique itineraries tailored to customers' interests and with strong attention to detail.
