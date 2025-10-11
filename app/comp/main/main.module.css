@@ -575,23 +575,23 @@
 
 @media (max-width: 480px) {
   .page {
-    height: 100vh;
+    height: 100svh;
     /* overflow-x: hidden; */
   }
   .backgroundImage_1 {
-    height: 70vh;
+    height: 70svh;
     min-height: 400px;
   }
 
   .backgroundImage_2 {
-    top: 28vh;
-    height: 35vh;
+    top: 28svh;
+    height: 35svh;
     min-height: 400px;
   }
 
   .backgroundImage_3 {
-    top: 37vh;
-    height: 35vh;
+    top: 37svh;
+    height: 35svh;
     min-height: 400px;
   }
 
@@ -626,13 +626,13 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 160'><polygon points='40,0.5 79.5,80 40,159.5 0.5,80' fill='none' stroke='white' stroke-opacity='0.5' stroke-width='1' shape-rendering='crispEdges'/></svg>");
   }
   .find_block {
-    bottom: 9vh;
+    bottom: 9svh;
     --r30w: 48%;
   }
   .rectangle {
     width: 92%;
     min-height: 100px;
-    height: 35vh;
+    height: 35svh;
     border-radius: 12px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -700,7 +700,7 @@
   }
   .findButton {
     margin-top: 10px;
-    /* grid-column: 1 / -1; */
+    grid-column: 1 / -1;
     width: 50%;
     height: 46px;
     justify-self: center;
