@@ -151,7 +151,7 @@ text-align: center;
 @media (max-width: 480px){
   .container {
    
-    height: 85svh;
+    height: 100svh;
    
 }
   .header {
@@ -190,7 +190,7 @@ text-align: center;
 @media (max-width: 360px) {
   .container {
    
-    height: 83svh;
+    height: 100svh;
    
 }
   .header {
