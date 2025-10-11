@@ -632,7 +632,7 @@
   .rectangle {
     width: 92%;
     min-height: 100px;
-    height: 35svh;
+    height: 40svh;
     border-radius: 12px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
