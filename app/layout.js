@@ -32,7 +32,7 @@ export const metadata = {
   title: "Travel Agency - World's Most Extraordinary Places",
   description: "Discover the world's most extraordinary places with our luxury travel packages. Book your next adventure today.",
   keywords: "travel, luxury, adventure, destinations, booking",
-  authors: [{ name: "Travel Agency" }],
+  authors: [{ name: "Ustim" }],
   openGraph: {
     title: "Travel Agency - World's Most Extraordinary Places",
     description: "Discover the world's most extraordinary places with our luxury travel packages.",

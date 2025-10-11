@@ -28,6 +28,7 @@ export default function Main() {
       <div className={styles.title_text_1}>extra ordinary</div>
       <div className={styles.title_text_2}>Places</div>
       <div className={styles.vector}></div>
+      
       <div className={styles.backgroundImage_2}>
         <Image
           src="/bg_main_11.png"
