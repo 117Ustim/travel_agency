@@ -151,7 +151,7 @@ text-align: center;
 @media (max-width: 480px){
   .container {
    
-    height: 100svh;
+    height:90svh;
    
 }
   .header {
@@ -165,8 +165,8 @@ text-align: center;
   }
   
   .carouselWrap {
-    top: 32svh;
-    width: 92vw;
+    top: 32%;
+    width: 92svw;
    
   }
   
@@ -190,7 +190,7 @@ text-align: center;
 @media (max-width: 360px) {
   .container {
    
-    height: 100svh;
+    height: 90svh;
    
 }
   .header {
