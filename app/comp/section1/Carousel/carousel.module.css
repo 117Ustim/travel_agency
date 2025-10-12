@@ -388,10 +388,10 @@ text-align: left;
 } */
 
 @media (max-width: 480px){
-    /* .carousel {
-        height: calc(650px * 0.55);
-        --card-width: calc(400px * 0.55);
-    } */
+    .carousel {
+        height: 550px ;
+        --card-width: 320px ;
+    }
     
      .track {
         gap: 12px;
