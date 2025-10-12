@@ -158,12 +158,12 @@ text-align: left;
 .navNext {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 7%;
     left: auto;
     transform: translate(0, -50%) rotate(45deg);
     z-index: 2;
-    width: 48px;
-    height: 48px;
+    width: 68px;
+    height: 68px;
     background: #6B4E3D;
     border: none;
     cursor: pointer;
@@ -197,8 +197,19 @@ text-align: left;
     font-family: Forum, Inter, Arial, sans-serif;
 }
 
+
+ @media (min-width: 1650px) {
+    .navNext {
+       
+        right: 10%;
+        
+    }
+}
+
+
+
 /* Адаптив: 2 карточки, затем 1 */
-@media (max-width: 1024px){
+/* @media (max-width: 1200px){
     .card { flex-basis: var(--card-width); }
     .navNext { right: 10%; left: auto; }
     
@@ -224,9 +235,9 @@ text-align: left;
     .ratingValue {
         font-size: 16px;
     }
-}
+} */
 
-@media (max-width: 900px){
+/* @media (max-width: 900px){
     .carousel {
         height: calc(590px * 0.85);
         --card-width: calc(360px * 0.85);
@@ -245,13 +256,13 @@ text-align: left;
     .cardBottom {
         padding: 14px 16px 18px 16px;
     }
-}
+} */
 
-@media (max-width: 768px){
-    /* 1 полная карточка — ширина остаётся фиксированной */
+/* @media (max-width: 768px){
+   
     .card { flex-basis: var(--card-width); }
     .navNext { right: 10%; left: auto; }
-    /* Уменьшаем высоту и ширину карточек на 25% для сохранения пропорций */
+   
     .carousel {
         height: calc(590px * 0.75);
         --card-width: calc(360px * 0.75);
@@ -289,9 +300,9 @@ text-align: left;
         height: 40px;
         right: 8%;
     }
-}
+} */
 
-@media (max-width: 650px){
+/* @media (max-width: 650px){
     .carousel {
         height: calc(590px * 0.65);
         --card-width: calc(360px * 0.65);
@@ -329,9 +340,9 @@ text-align: left;
         height: 35px;
         right: 6%;
     }
-}
+} */
 
-@media (max-width: 550px){
+/* @media (max-width: 550px){
     .carousel {
         height: calc(590px * 0.6);
         --card-width: calc(360px * 0.6);
@@ -374,16 +385,16 @@ text-align: left;
         padding: 12px 14px 16px 14px;
         gap: 15px;
     }
-}
+} */
 
 @media (max-width: 480px){
-    .carousel {
+    /* .carousel {
         height: calc(650px * 0.55);
         --card-width: calc(400px * 0.55);
-    }
+    } */
     
-    .track {
-        gap: 10px;
+     .track {
+        gap: 12px;
         padding: 0 4px;
     }
     
@@ -410,14 +421,14 @@ text-align: left;
     }
     
     .navNext {
-        width: 35px;
-        height: 35px;
-        right: 4%;
+        width: 65px;
+        height: 65px;
+        right: 6%;
     }
     
     .cardBottom {
         padding: 10px 12px 14px 12px;
         gap: 12px;
-    }
+    } 
 }
 
