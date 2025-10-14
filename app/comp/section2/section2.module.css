@@ -799,11 +799,11 @@
 /* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 480px) {
   .section2 {
-    height: 100dvh;
+    height: 95dvh;
   }
   .backgroundImage {
-    top: 50dvh;
-   height: 22dvh;
+    top: 60dvh;
+   height: 24dvh;
     min-height: 350px;
   }
 
@@ -813,7 +813,7 @@
     height: 30dvh;
   }
   .luxuryBlock {
-    top: 5%;
+    top: 5dvh;
     width: 90%;
   }
 
@@ -823,10 +823,10 @@
     font-size: 34px;
     line-height: 22px;
   }
-
+/* 
   .backgroundImage {
     height: 500px;
-  }
+  } */
 
   .centerImage {
     height: 150px;
@@ -846,7 +846,7 @@
   }
   .mobileCarousel {
    
-    top: 40dvh;
+    top: 43dvh;
    
   }
 }
