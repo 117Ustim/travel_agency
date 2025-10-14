@@ -414,7 +414,7 @@
 @media (max-width: 480px) {
 
   .section3 {
-    height: 105dvh;
+    height: 120dvh;
   }
   .container {
     width: 100%;
@@ -435,7 +435,7 @@
   .cardsContainer {
    
     gap: 15px;
-    top: 3dvh;
+    top: 10dvh;
    
   }
  
