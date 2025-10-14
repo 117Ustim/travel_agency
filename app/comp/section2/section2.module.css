@@ -802,7 +802,7 @@
     height: calc(var(--vh, 1vh) * 80);
   }
   .backgroundImage {
-    top: 60%;
+    top: 61%;
    height: 22svh;
     min-height: 350px;
   }
