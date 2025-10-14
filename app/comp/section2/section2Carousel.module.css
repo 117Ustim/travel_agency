@@ -218,52 +218,8 @@
     font-family: Forum, Inter, Arial, sans-serif;
 }
 
-/* Адаптив для очень маленьких экранов */
-@media (max-width: 480px) {
-    .carousel {
-        height: 443px;
-        --card-width: 263px;
-        overflow-x: hidden;
-    }
-    
-    .track {
-        padding: 0 10px; /* Уменьшаем отступы */
-        gap: 15px; /* Уменьшаем промежутки между карточками */
-    }
-    
-    .titleLine {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    
-    .diamondOuter {
-        width: 150px;
-        height: 80px;
-    }
-    
-    .diamondInner {
-        width: 135px;
-        height: 71px;
-    }
-    
-    .count {
-        font-size: 28px;
-    }
-    
-    .places {
-        font-size: 12px;
-    }
-    
-   
-    
-    .navNext {
-        width: 52px;
-        height: 52px;
-        right: 15%;
-    }
-   
 
-}
+
 
 /* Адаптивные стили для больших планшетов */
 @media (max-width: 1200px) {
@@ -300,11 +256,11 @@
         font-size: 14px;
     }
     
-    .navNext {
+    /* .navNext {
         width: 48px;
         height: 48px;
         right: 12%;
-    }
+    } */
 }
 
 @media (max-width: 900px) {
@@ -341,11 +297,11 @@
         font-size: 13px;
     }
     
-    .navNext {
-        width: 45px;
-        height: 45px;
+    /* .navNext {
+        width: 65px;
+        height: 65px;
         right: 10%;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -382,11 +338,11 @@
         font-size: 12px;
     }
     
-    .navNext {
-        width: 42px;
-        height: 42px;
+    /* .navNext {
+        width: 65px;
+        height: 65px;
         right: 8%;
-    }
+    } */
     
     .cardContent {
         padding: 30px 15px 50px 15px;
@@ -428,8 +384,8 @@
     }
     
     .navNext {
-        width: 40px;
-        height: 40px;
+        width: 65px;
+        height: 65px;
         right: 6%;
     }
     
@@ -439,10 +395,10 @@
 }
 
 @media (max-width: 550px) {
-    .carousel {
+    /* .carousel {
         height: 400px;
         --card-width: 220px;
-    }
+    } */
     
     .track {
         gap: 12px;
@@ -473,12 +429,58 @@
     }
     
     .navNext {
-        width: 35px;
-        height: 35px;
+        width: 65px;
+        height: 65px;
         right: 9%;
     }
   
     .cardContent {
         padding: 20px 10px 40px 10px;
     }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        height: 443px;
+        --card-width: 263px;
+        overflow-x: hidden;
+    }
+    
+    .track {
+        padding: 0 10px; /* Уменьшаем отступы */
+        gap: 15px; /* Уменьшаем промежутки между карточками */
+    }
+    
+    .titleLine {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .diamondOuter {
+        width: 150px;
+        height: 80px;
+    }
+    
+    .diamondInner {
+        width: 135px;
+        height: 71px;
+    }
+    
+    .count {
+        font-size: 28px;
+    }
+    
+    .places {
+        font-size: 12px;
+    }
+    
+   
+    
+    .navNext {
+        width: 65px;
+        height: 65px;
+        right: 10%;
+    }
+   
+
 }
