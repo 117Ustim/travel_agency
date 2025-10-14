@@ -799,7 +799,7 @@
 /* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 480px) {
   .section2 {
-    height: 95dvh;
+    height: 100dvh;
   }
   .backgroundImage {
     top: 60dvh;
