@@ -802,7 +802,7 @@
     height: 100dvh;
   }
   .backgroundImage {
-    top: 53%;
+    top: 50dvh;
    height: 22dvh;
     min-height: 350px;
   }
@@ -846,7 +846,7 @@
   }
   .mobileCarousel {
    
-    top: 45%;
+    top: 40dvh;
    
   }
 }
