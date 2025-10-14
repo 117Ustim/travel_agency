@@ -799,10 +799,10 @@
 /* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 480px) {
   .section2 {
-    height: 130dvh;
+    height: 100dvh;
   }
   .backgroundImage {
-    top: 75%;
+    top: 53%;
    height: 22dvh;
     min-height: 350px;
   }
@@ -846,7 +846,7 @@
   }
   .mobileCarousel {
    
-    top: 40%;
+    top: 45%;
    
   }
 }
