@@ -414,7 +414,7 @@
 @media (max-width: 480px) {
 
   .section3 {
-    height: 126svh;
+    height: 156svh;
   }
   .titleContainer {
     top: -23svh;
@@ -432,21 +432,7 @@
     top: -3svh;
    
   }
-  /* .section3 {
-    height: 110vh;
-  }
-  .titleContainer {
-    top: -23%;
-    width: 110px;
-    height: 70px;
-  }
-  .cardsContainer {
-    top: 10px;
-    width: 95%;
-    gap: 15px;
-
-    z-index: 5;
-  } */
+ 
 
   .card {
     height: 140px;
