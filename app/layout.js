@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ overflowX: 'hidden' }}>
       <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
         {/* <link rel="preload" href="/bg_main_44.png" as="image" />
         <link rel="preload" href="/comp_1/carousel/image_carousel_1.png" as="image" />
         <link rel="preload" href="/comp_1/rhombus.png" as="image" /> */}
