@@ -802,7 +802,7 @@
     height: 100dvh;
   }
   .backgroundImage {
-    top: 60dvh;
+    top: 65dvh;
    height: 24dvh;
     min-height: 350px;
   }
@@ -828,9 +828,9 @@
     height: 500px;
   } */
 
-  .centerImage {
+  /* .centerImage {
     height: 150px;
-  }
+  } */
 
   .blurredSpot {
     width: 400px;
@@ -846,7 +846,7 @@
   }
   .mobileCarousel {
    
-    top: 43dvh;
+    top: 47dvh;
    
   }
 }

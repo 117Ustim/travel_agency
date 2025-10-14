@@ -441,8 +441,8 @@
 
 @media (max-width: 480px) {
     .carousel {
-        height: 30.76dvh;
-        --card-width: 18.26dvh;
+        height: 443px;
+        --card-width: 263px;
         overflow-x: hidden;
     }
     
