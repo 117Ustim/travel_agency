@@ -799,18 +799,18 @@
 /* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 480px) {
   .section2 {
-    height: calc(var(--vh, 1vh) * 80);
+    height: 130dvh;
   }
   .backgroundImage {
-    top: 61%;
-   height: 22svh;
+    top: 75%;
+   height: 22dvh;
     min-height: 350px;
   }
 
   .centerImage {
     top: 67%;
  background: none;
-    height: 30vh;
+    height: 30dvh;
   }
   .luxuryBlock {
     top: 5%;

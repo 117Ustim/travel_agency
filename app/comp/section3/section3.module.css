@@ -414,10 +414,10 @@
 @media (max-width: 480px) {
 
   .section3 {
-    height: calc(var(--vh, 1vh) * 100);
+    height: 130dvh;
   }
   .titleContainer {
-    top: -23svh;
+    top: -23dvh;
   }
  
  
@@ -429,7 +429,7 @@
   .cardsContainer {
    
     gap: 15px;
-    top: 3svh;
+    top: 3dvh;
    
   }
  
@@ -462,6 +462,6 @@
   } */
 
   .rhombusContainer {
-    top: -1vh;
+    top: -1dvh;
   }
 }

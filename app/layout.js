@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} ${forum.variable} ${manrope.variable}`} style={{ overflowX: 'hidden' }}>
          {/* подключаем клиентский компонент, который устанавливает переменную --vh  */}
-         <ViewportFix/>
+         {/* <ViewportFix/> */}
         {children}
       </body>
     </html>
