@@ -844,4 +844,9 @@
     height: 35px;
     font-size: 12px;
   }
+  .mobileCarousel {
+   
+    top: 40%;
+   
+  }
 }
