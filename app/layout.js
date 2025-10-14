@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Forum, Manrope } from "next/font/google";
 import "./globals.css";
-import Menu from "./comp/menu/Menu";
+import ViewportFix from "./ViewportFix";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,7 +50,8 @@ export default function RootLayout({ children }) {
         <link rel="preload" href="/comp_1/rhombus.png" as="image" /> */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} ${forum.variable} ${manrope.variable}`} style={{ overflowX: 'hidden' }}>
-        {/* <Menu /> */}
+         {/* подключаем клиентский компонент, который устанавливает переменную --vh  */}
+         <ViewportFix/>
         {children}
       </body>
     </html>

@@ -414,7 +414,7 @@
 @media (max-width: 480px) {
 
   .section3 {
-    height: 170svh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .titleContainer {
     top: -23svh;
