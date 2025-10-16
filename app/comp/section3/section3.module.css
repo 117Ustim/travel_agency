@@ -56,7 +56,7 @@
 
 .rhombusContainer {
   position: absolute;
-  top: -3vh;
+  top: -3dvh;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -66,8 +66,10 @@
 }
 
 .rhombus {
-  width: 251px;
-  height: 190px;
+  /* width: 251px;
+  height: 190px; */
+  width: 17.43dvw;
+  height: 18.19dvh;
   max-width: 100%;
 }
 
@@ -88,8 +90,10 @@
 
 /* Стили для карточки */
 .card {
-  width: 540px;
-  height: 191px;
+  /* width: 540px; */
+  width: 37.5dvw;
+  /* height: 191px; */
+  height: 13.26dvh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -426,20 +430,23 @@
  
  
   .rhombus {
-    width: 180px;
-    height: 140px;
+    /* width: 180px;
+    height: 140px; */
+    width: 17.43dvw;
+    height: 12.19dvh;
     max-width: 80%;
   }
   .cardsContainer {
    
-    gap: 15px;
+    gap: 1.8dvh;
     top: 20dvh;
    
   }
  
 
   .card {
-    height: 140px;
+    /* height: 140px; */
+    height: 14dvh;
   }
 
   .cardTitle {
