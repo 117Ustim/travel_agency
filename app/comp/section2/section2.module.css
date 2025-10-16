@@ -764,7 +764,7 @@
 /* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 480px) {
   .section2 {
-    height: 81dvh;
+    height: 90dvh;
   }
   .backgroundImage {
     top: 76%;
