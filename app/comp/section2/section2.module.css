@@ -1,7 +1,7 @@
 .section2 {
   position: relative;
   width: 100%;
-  height: 140svh;
+  height: 145dvh;
   background: linear-gradient(to bottom, #e2d3ce 0%, #d2d7c6 50%);
   z-index: 55;
 }
@@ -267,12 +267,12 @@
 @media (min-width: 2000px) and (max-width: 2300px) {
   .section2 {
    
-    height: 150svh;
+    height: 180svh;
   
   }
   .backgroundImage {
   
-    top: 64%;
+    top: 57%;
  
     min-height: 1500px;
     height: 30svh;
@@ -283,7 +283,7 @@
   
   .centerImage {
    
-    top: 65%;
+    top: 55%;
     
     height: 35vh;
     
@@ -293,12 +293,12 @@
 @media (min-width: 1600px) and (max-width: 2000px) {
   .section2 {
    
-    height: 150svh;
+    height: 170dvh;
   
   }
   .backgroundImage {
   
-    top: 68%;
+    top: 65%;
  
     min-height: 1300px;
     height: 30svh;
@@ -318,7 +318,7 @@
 @media (min-width: 1440px) and (max-width: 1600px){
   .section2 {
    
-    height: 150svh;
+    height: 155dvh;
   
   }
   .backgroundImage {
@@ -343,7 +343,7 @@
 
 @media (max-width: 1350px) {
   .section2 {
-    height: 120svh;
+    height: 120dvh;
   }
   .backgroundImage {
     
@@ -433,6 +433,9 @@
 
 
 @media (max-width: 1200px) {
+  .section2 {
+    height: 130dvh;
+  }
  
   .backgroundImage {
     top: 75%;
@@ -577,48 +580,10 @@
 
 
 
-@media (max-width: 880px) {
-  /* .section2 {
-    height: 102svh;
-  }
-  .backgroundImage {
-    top: 66%;
-    min-height: 450px;
-  }
-
-  .centerImage {
-    top: 67%;
-
-    height: 30vh;
-  } */
-  /* .card {
-    margin-top: 100px;
-  }
-
-  .card5 {
-    display: none;
-  }
-
-  .luxuryBlock {
-    left: 20%;
-   
-    top: 50px;
-   
-  } */
-
-  /* .blurredSpot {
-    filter: blur(53px);
-    top: 130px;
-    width: 400px;
-    height: 100px;
-    left: 20%;
-    transform: translateX(-50%);
-  } */
-}
 
 @media (max-width: 900px) {
   .section2 {
-    height: 95svh;
+    height: 97dvh;
   }
   .card5 {
     display: none;
@@ -655,7 +620,7 @@
 
 @media (max-width: 768px) {
   .section2 {
-    height: 95svh;
+    height: 96dvh;
   }
   .backgroundImage {
     top: 66%;
@@ -799,10 +764,10 @@
 /* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 480px) {
   .section2 {
-    height: 100dvh;
+    height: 83dvh;
   }
   .backgroundImage {
-    top: 69dvh;
+    top: 67dvh;
    height: 24dvh;
     min-height: 350px;
   }
