@@ -11,12 +11,13 @@
   );
   /* margin-top: 10vh; */
 }
-/* .container {
+.container {
   width: 100%;
-  height: 70%;
+  /* height: 70%; */
+  height: calc(var(--vh, 1vh) * 115);
   position: absolute;
   top: 22%;
-} */
+}
 .titleContainer {
   position: absolute;
   top: 2svh;
@@ -418,12 +419,12 @@
     height: calc(var(--vh, 1vh) * 115);
     /* height: 150dvh; */
   }
-  /* .container {
+  .container {
     width: 100%;
-    height: 100%;
+    height: calc(var(--vh, 1vh) * 115);
    
     top: 0;
-  } */
+  }
   .titleContainer {
     top: 0dvh;
   }
