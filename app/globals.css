@@ -44,28 +44,11 @@ html,body{
   background-color: #f5f5f5;
 }
 
-/* Оптимизация скролла для мобильных устройств */
- /* html {
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
-}  */
-
-/* body { 
- -webkit-overflow-scrolling: touch;
-  overscroll-behavior: none;  */
-  /* Убираем возможные проблемы с transform3d */
- /* -webkit-transform: translateZ(0);
-  transform: translateZ(0);  */
-  /* Улучшаем производительность скролла */
-   /* will-change: scroll-position;  */
-  /* Максимальная ширина страницы и светло-серый фон */
-   /* max-width: 2300px;
-
-  margin: 0 auto;
-  background-color: #f5f5f5; 
-} */
-
+/* Ensure sections stack properly without overlap */
+section {
+  display: block;
+  width: 100%;
+}
 
 input,button,textarea{font-family:inherit;}
 
@@ -78,5 +61,3 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-
-

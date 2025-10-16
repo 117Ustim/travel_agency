@@ -1,7 +1,7 @@
 .section4 {
   width: 100%;
-  /* height: 100dvh; */
-  height: calc(var(--vh, 1vh) * 100);
+  /* Use consistent height units across all devices */
+  height: 100dvh;
   background: #e2d3ce;
   display: flex;
   justify-content: center;
@@ -183,9 +183,6 @@
   text-align: left;
   margin: 0;
 }
-
-
-
 
 @media (min-width: 1700px) and (max-width: 2300px) {
 
@@ -391,9 +388,122 @@
   }
 }
 
+@media (max-width: 768px) {
+  .section4 {
+    /* Use dvh for better mobile compatibility */
+    height: 100dvh;
+  }
+  
+  .heroBlock {
+   
+    gap: 0dvh;
+  }
+  
+  .title {
+    
+    font-size: 50px;
+   
+    line-height: 50px;
+   
+  }
+  
+  .description {
+    width: 254px;
+    height: 185px;
+    
+    font-size: 16px;
+   
+    line-height: 160%;
+   
+  }
+  .backgroundImage {
+   
+  
+    width: 100%;
+    height: 80%;
+   
+  }
+  .diamond {
+   
+    top: 35dvh;
+   
+    width: 90px;
+    height: 180px;
+   
+  }
+  
+  .bottomBlock {
+   
+    bottom: 7vh;
+    left: 38%;
+   
+    gap: 2dvh;
+    z-index: 3;
+  }
+  .bottomTitle {
+   
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .leftImage {
+  
+    left: 7dvh;
+    top: 18dvh;
+    width: 127.76px;
+    height: 300px;
+   
+  }
+  
+  .rightImage {
+   
+    right: 4dvh;
+    top: 45dvh;
+    width: 134.65px;
+    height: 303.05px;
+   
+  }
+  .additionalImage {
+   
+    right: 2dvh;
+    top: 15dvh;
+    width: 72.8px;
+    height: 162.59px;
+  }
+  .smallDiamond {
+   
+    top: calc(17.5dvh + 307.67px - 40px); 
+    left: calc(7.1dvh + 137.76px/2 - 24px); /* центрируем относительно картинки */
+    width: 38px; /* 120px * 0.4 = 48px (на 60% меньше) */
+    height: 70px; /* 200px * 0.4 = 80px (на 60% меньше) */
+ 
+  }
+  
+  .rightSmallDiamond {
+   
+    top: calc(43dvh + 323.05px - 40px); /* верхний край ромба на нижнем краю правой картинки */
+    right: calc(4dvh + 144.65px/2 - 24px); /* центрируем относительно правой картинки */
+    width: 38px;
+    height: 70px;
+   
+  }
+  
+  .additionalSmallDiamond {
+   
+    top: calc(15dvh + 162.59px - 20px); /* верхний край ромба на нижнем краю дополнительной картинки */
+    right: calc(2dvh + 72.8px/2 - 12px); /* центрируем относительно дополнительной картинки */
+    width: 22px; /* пропорционально уменьшенный размер */
+    height: 41px; /* пропорционально уменьшенный размер */
+   
+  }
+}
 
-@media (min-width: 480px) and (max-width: 768px) {
 
+@media (max-width: 480px) {
+  .section4 {
+    /* Use dynamic viewport height for best compatibility */
+    height: 100dvh;
+  }
+  
   .heroBlock {
    
     gap: 0dvh;
