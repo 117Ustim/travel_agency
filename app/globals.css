@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 
 
+:root {
+  --vh: 100%;
+}
+
+@supports (height: 100dvh) {
+  /* Современные браузеры */
+  :root {
+    --vh: 1dvh;
+  }
+}
+
 *{
 	padding: 0;
 	margin: 0;

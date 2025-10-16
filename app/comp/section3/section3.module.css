@@ -414,7 +414,8 @@
 @media (max-width: 480px) {
 
   .section3 {
-    height: 150dvh;
+    height: calc(var(--vh, 1vh) * 115);
+    /* height: 150dvh; */
   }
   .container {
     width: 100%;

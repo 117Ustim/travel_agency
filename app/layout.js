@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono, Forum, Manrope } from "next/font/google";
 import "./globals.css";
-import ViewportFix from "./ViewportFix";
+
 
 
 const geistSans = Geist({
