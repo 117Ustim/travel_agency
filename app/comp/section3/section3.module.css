@@ -1,6 +1,6 @@
 .section3 {
   position: relative;
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh) * 100);
   /* height: 125vh; */
   width: 100%;
   background: linear-gradient(
@@ -11,13 +11,12 @@
   );
   /* margin-top: 10vh; */
 }
-.container {
+/* .container {
   width: 100%;
-  /* height: 70%; */
-  height: calc(var(--vh, 1vh) * 115);
-  position: absolute;
-  top: 22%;
-}
+  height: auto;
+  position: relative;
+  top: 0;
+} */
 .titleContainer {
   position: absolute;
   top: 2svh;
@@ -416,17 +415,17 @@
 @media (max-width: 480px) {
 
   .section3 {
-    height: calc(var(--vh, 1vh) * 115);
+    height: calc(var(--vh, 1vh) * 120);
     /* height: 150dvh; */
   }
-  .container {
+  /* .container {
     width: 100%;
-    height: calc(var(--vh, 1vh) * 115);
+    height: auto;
    
-    top: 0;
-  }
+    top: 10%;
+  } */
   .titleContainer {
-    top: 0dvh;
+    top: 0%;
   }
  
  
@@ -438,7 +437,7 @@
   .cardsContainer {
    
     gap: 15px;
-    top: 18dvh;
+    top: 18%;
    
   }
  
@@ -471,6 +470,6 @@
   } */
 
   .rhombusContainer {
-    top: -1dvh;
+    top: -2%;
   }
 }
