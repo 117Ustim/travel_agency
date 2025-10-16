@@ -97,6 +97,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .diamondInner {
@@ -112,6 +113,7 @@
     backdrop-filter: blur(20px);
     background-color: rgba(145, 145, 145, 0.14);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    
 }
 
 .diamondContent {
@@ -368,6 +370,7 @@
     .diamondOuter {
         width: 140px;
         height: 75px;
+        
     }
     
     .diamondInner {
@@ -443,7 +446,7 @@
     .carousel {
         height: 443px;
         --card-width: 263px;
-        overflow-x: hidden;
+       
     }
     
     .track {
@@ -459,11 +462,13 @@
     .diamondOuter {
         width: 150px;
         height: 80px;
+        overflow:visible;
     }
     
     .diamondInner {
         width: 135px;
         height: 71px;
+       
     }
     
     .count {
