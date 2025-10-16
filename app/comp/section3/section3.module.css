@@ -416,7 +416,7 @@
 @media (max-width: 480px) {
   .section3 {
   
-    height: 125dvh;
+    height: 137dvh;
   }
   /* .container {
     width: 100%;
@@ -433,7 +433,7 @@
     /* width: 180px;
     height: 140px; */
     width: 17.43dvw;
-    height: 12.19dvh;
+    height: 14.19dvh;
     max-width: 80%;
   }
   .cardsContainer {
@@ -446,7 +446,7 @@
 
   .card {
     /* height: 140px; */
-    height: 15dvh;
+    height: 17dvh;
   }
 
   .cardTitle {
