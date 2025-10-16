@@ -764,12 +764,12 @@
 /* Дополнительные стили для очень маленьких экранов */
 @media (max-width: 480px) {
   .section2 {
-    height: 83dvh;
+    height: 81dvh;
   }
   .backgroundImage {
-    top: 78%;
-   height: 24dvh;
-    min-height: 350px;
+    top: 76%;
+   height: 22%;
+    min-height: 32rem;
   }
 
   .centerImage {

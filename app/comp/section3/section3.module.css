@@ -421,7 +421,7 @@
     top: 10%;
   } */
   .titleContainer {
-    top: 0%;
+    top: 2dvh;
   }
  
  
@@ -433,7 +433,7 @@
   .cardsContainer {
    
     gap: 15px;
-    top: 15%;
+    top: 20dvh;
    
   }
  
