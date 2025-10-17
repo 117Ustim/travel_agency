@@ -761,7 +761,7 @@
   }
 }
 
-/* Дополнительные стили для очень маленьких экранов */
+
 @media (max-width: 480px) {
   .section2 {
     height: 90dvh;
@@ -788,14 +788,7 @@
     font-size: 34px;
     line-height: 22px;
   }
-/* 
-  .backgroundImage {
-    height: 500px;
-  } */
 
-  /* .centerImage {
-    height: 150px;
-  } */
 
   .blurredSpot {
     width: 400px;

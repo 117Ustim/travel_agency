@@ -166,17 +166,19 @@ text-align: center;
 @media (max-width: 480px){
   .container {
    
-    height:125svh;
+    height:80dvh;
    
 }
   .header {
-    top: 4svh;
+    top: 4dvh;
   }
   
   .rhombus {
-    width: 86px;
-    height: 162px;
-    top: 4svh;
+    /* width: 86px;
+    height: 162px; */
+    width: 22vw;
+    height: 12.25vh;
+    top: 6dvh;
   }
   
   .carouselWrap {
@@ -194,7 +196,7 @@ text-align: center;
   
   .title {
   margin-top: 20%;
-    font-size: 40px;
+    font-size: 38px;
   }
   
   /* .title div:last-child {
