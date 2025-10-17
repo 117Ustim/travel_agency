@@ -215,7 +215,7 @@ text-align: left;
     .carousel {
         /* height: 550px ; */
         height: 58dvh;
-        --card-width: 77dvw ;
+        --card-width: 65dvw ;
         margin-left: 4dvh;
         
     }
@@ -250,7 +250,7 @@ text-align: left;
     .navNext {
         width: 65px;
         height: 65px;
-        right: 6%;
+        right: 14%;
     }
     
     .cardBottom {
