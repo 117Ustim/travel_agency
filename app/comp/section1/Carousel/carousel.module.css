@@ -212,8 +212,9 @@ text-align: left;
 @media (max-width: 480px){
     .carousel {
         /* height: 550px ; */
-        height: 48.19vh;
-        --card-width: 320px ;
+        height: 50dvh;
+        --card-width: 77dvw ;
+        margin-left: 4dvh;
         
     }
     
