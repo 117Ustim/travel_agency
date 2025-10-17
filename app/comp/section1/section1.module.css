@@ -182,14 +182,14 @@ text-align: center;
   }
   
   .carouselWrap {
-    top: 43%;
+    top: 30dvh;
     width: 100dvw;
    
    
   }
   
   .continents {
-    margin-top: 25%;
+    margin-top: 5dvh;
     gap: 2.5vw;
     font-size: 9px;
   }
