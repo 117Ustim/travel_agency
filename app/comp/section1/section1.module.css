@@ -1,13 +1,13 @@
 .container {
     width: 100%;
-    height: 110svh;
+    height: 110dvh;
     background:#E2D3CE;
     position: relative;
 }
 
 .header {
     position: absolute;
-    top: 13svh;
+    top: 13dvh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -32,7 +32,7 @@ text-align: center;
 }
 
 .continents {
-    margin-top: 12svh;
+    margin-top: 12dvh;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -48,7 +48,7 @@ text-align: center;
 
 .rhombus {
     position: absolute;
-    top: -2svh;
+    top: -2dvh;
     left: 50%;
     transform: translateX(-50%);
     width: 112px;
@@ -58,10 +58,10 @@ text-align: center;
 }
 .carouselWrap {
     position: absolute;
-    top: 42svh;
+    top: 42dvh;
    right: 0;
   
-    bottom: 6svh;
+    bottom: 6dvh;
     width: min(1200px, 92vw);
     z-index: 4;
 }
@@ -166,7 +166,7 @@ text-align: center;
 @media (max-width: 480px){
   .container {
    
-    height:80dvh;
+    height:90dvh;
    
 }
   .header {
@@ -176,13 +176,13 @@ text-align: center;
   .rhombus {
     /* width: 86px;
     height: 162px; */
-    width: 22vw;
-    height: 12.25vh;
+    width: 22dvw;
+    height: 12.25dvh;
     top: 6dvh;
   }
   
   .carouselWrap {
-    top: 33%;
+    top: 43%;
     width: 100dvw;
    
    
@@ -199,35 +199,7 @@ text-align: center;
     font-size: 38px;
   }
   
-  /* .title div:last-child {
-    font-size: 28px;
-  } */
+
 }
 
-/* Дополнительные стили для очень маленьких экранов */
-/* @media (max-width: 360px) {
-  .container {
-   
-    height: 90svh;
-   
-}
-  .header {
-    top: 5%;
-  }
-  
-  .rhombus {
-    width: 60px;
-    height: 113px;
-    top: 12%;
-  }
-  
-  .carouselWrap {
-    top: 39%;
-  }
-  
-  .continents {
-    margin-top: 30%;
-    gap: 0.8vw;
-  }
-} */
 
