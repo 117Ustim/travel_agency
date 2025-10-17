@@ -166,7 +166,7 @@ text-align: center;
 @media (max-width: 480px){
   .container {
    
-    height:90dvh;
+    height:93dvh;
    
 }
   .header {
@@ -182,7 +182,7 @@ text-align: center;
   }
   
   .carouselWrap {
-    top: 30dvh;
+    top: 31dvh;
     width: 100dvw;
    
    
