@@ -215,7 +215,7 @@ text-align: left;
     .carousel {
         /* height: 550px ; */
         height: 58dvh;
-        --card-width: 65dvw ;
+        --card-width: 63dvw ;
         margin-left: 4dvh;
         
     }

@@ -15,7 +15,7 @@ export default function Section4() {
         priority
       />
       <div className={styles.heroBlock}>
-        <h1 className={styles.title}>Why Lux Trips</h1>
+        <h1 className={styles.title}>Why  Lux Trips</h1>
         <p className={styles.description}>
           As Travel Designer, we know the ins and outs of travel from who to work with, where to go, when to book, and which restaurant provides the most authentic cuisine.
         </p>
