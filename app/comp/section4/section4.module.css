@@ -1,6 +1,6 @@
+/* ===== ОСНОВНЫЕ СТИЛИ СЕКЦИИ ===== */
 .section4 {
   width: 100%;
-  /* Use consistent height units across all devices */
   height: 100dvh;
   background: #e2d3ce;
   display: flex;
@@ -9,6 +9,7 @@
   position: relative;
 }
 
+/* ===== ФОНОВОЕ ИЗОБРАЖЕНИЕ ===== */
 .backgroundImage {
   position: absolute;
   top: 0;
@@ -21,16 +22,18 @@
   background-position: center top 10dvh;
   background-repeat: no-repeat;
   z-index: 1;
+  /* Маска для плавного перехода */
   mask: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
   -webkit-mask: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
 }
 
+/* ===== ИЗОБРАЖЕНИЯ ===== */
 .leftImage {
   position: absolute;
   left: 15dvh;
   top: 18dvh;
-  width: 137.76px;
-  height: 307.67px;
+  width: 8.6rem;
+  height: 19.2rem;
   z-index: 2;
 }
 
@@ -38,8 +41,8 @@
   position: absolute;
   right: 15dvh;
   top: 45dvh;
-  width: 144.65px;
-  height: 323.05px;
+  width: 9rem;
+  height: 20.2rem;
   z-index: 2;
 }
 
@@ -47,12 +50,12 @@
   position: absolute;
   right: 10dvh;
   top: 18dvh;
-  width: 72.8px;
-  height: 162.59px;
- 
+  width: 4.5rem;
+  height: 10.2rem;
   z-index: 2;
 }
 
+/* ===== ГЛАВНЫЙ БЛОК С КОНТЕНТОМ ===== */
 .heroBlock {
   position: absolute;
   top: 0;
@@ -62,40 +65,41 @@
   gap: 6.5dvh;
 }
 
+/* ===== ТИПОГРАФИКА ===== */
 .title {
-  width: 219px;
-  height: 116px;
-  color: var(--Style, rgba(12, 11, 16, 1));
-  font-family: Forum;
-  font-size: 60px;
+  width: 13.7rem;
+  height: 7.3rem;
+  color: rgba(12, 11, 16, 1);
+  font-family: Forum, serif;
+  font-size: 3.75rem;
   font-weight: 400;
-  line-height: 58px;
-  letter-spacing: 0%;
+  line-height: 3.6rem;
+  letter-spacing: 0;
   text-align: left;
   margin: 0;
 }
 
 .description {
-  width: 254px;
-  height: 185px;
+  width: 15.9rem;
+  height: 11.6rem;
   color: rgba(0, 0, 0, 1);
-  font-family: Manrope;
-  font-size: 16px;
+  font-family: Manrope, sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 179.8%;
-  letter-spacing: 0%;
+  line-height: 1.8;
+  letter-spacing: 0;
   text-align: left;
   margin: 0;
 }
 
+/* ===== РОМБЫ ===== */
 .diamond {
   position: absolute;
   top: 40dvh;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 105px;
-  height: 200px;
-  /* ромб через обрезку */
+  width: 6.6rem;
+  height: 12.5rem;
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   box-sizing: border-box;
   backdrop-filter: blur(4px);
@@ -106,46 +110,44 @@
 
 .smallDiamond {
   position: absolute;
-  top: calc(18dvh + 307.67px - 40px); /* верхний край ромба на нижнем краю картинки */
-  left: calc(15dvh + 137.76px/2 - 24px); /* центрируем относительно картинки */
-  width: 43px; /* 120px * 0.4 = 48px (на 60% меньше) */
-  height: 80px; /* 200px * 0.4 = 80px (на 60% меньше) */
+  top: calc(18dvh + 19.2rem - 2.5rem);
+  left: calc(15dvh + 4.3rem - 1.5rem);
+  width: 2.7rem;
+  height: 5rem;
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   box-sizing: border-box;
   backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.411); /* увеличил прозрачность */
-
-  z-index: 5; /* увеличил z-index чтобы был поверх картинки */
+  background: rgba(255, 255, 255, 0.41);
+  z-index: 5;
 }
 
 .rightSmallDiamond {
   position: absolute;
-  top: calc(45dvh + 323.05px - 40px); /* верхний край ромба на нижнем краю правой картинки */
-  right: calc(15dvh + 144.65px/2 - 24px); /* центрируем относительно правой картинки */
-  width: 43px;
-  height: 80px;
+  top: calc(45dvh + 20.2rem - 2.5rem);
+  right: calc(15dvh + 4.5rem - 1.5rem);
+  width: 2.7rem;
+  height: 5rem;
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   box-sizing: border-box;
   backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.411);
-
+  background: rgba(255, 255, 255, 0.41);
   z-index: 5;
 }
 
 .additionalSmallDiamond {
   position: absolute;
-  top: calc(18dvh + 162.59px - 20px); /* верхний край ромба на нижнем краю дополнительной картинки */
-  right: calc(10dvh + 72.8px/2 - 12px); /* центрируем относительно дополнительной картинки */
-  width: 21px; /* пропорционально уменьшенный размер */
-  height: 40px; /* пропорционально уменьшенный размер */
+  top: calc(18dvh + 10.2rem - 1.25rem);
+  right: calc(10dvh + 2.25rem - 0.75rem);
+  width: 1.3rem;
+  height: 2.5rem;
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   box-sizing: border-box;
   backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.411);
-
+  background: rgba(255, 255, 255, 0.41);
   z-index: 5;
 }
 
+/* ===== НИЖНИЙ БЛОК ===== */
 .bottomBlock {
   position: absolute;
   bottom: 5vh;
@@ -159,348 +161,286 @@
 }
 
 .bottomTitle {
-  width: 256px;
-  height: 302px;
-  color: var(--Style, rgba(12, 11, 16, 1));
-  font-family: Forum;
-  font-size: 40px;
+  width: 16rem;
+  height: 18.9rem;
+  color: rgba(12, 11, 16, 1);
+  font-family: Forum, serif;
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 44px;
-  letter-spacing: 0%;
+  line-height: 2.75rem;
+  letter-spacing: 0;
   text-align: left;
   margin: 0;
 }
 
 .bottomText {
-  width: 255px;
-  height: 191px;
+  width: 15.9rem;
+  height: 11.9rem;
   color: rgba(0, 0, 0, 1);
-  font-family: Manrope;
-  font-size: 16px;
+  font-family: Manrope, sans-serif;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 179.8%;
-  letter-spacing: 0%;
+  line-height: 1.8;
+  letter-spacing: 0;
   text-align: left;
   margin: 0;
 }
 
+/* ===== БОЛЬШИЕ ЭКРАНЫ (1700px - 2300px) ===== */
 @media (min-width: 1700px) and (max-width: 2300px) {
-
   .heroBlock {
-  
     gap: 12vh;
   }
-  .leftImage {
   
-    left: 15dvh;
-    top: 18dvh;
-    width: 157.76px;
-    height: 337.67px;
-   
+  .leftImage {
+    width: 9.9rem;
+    height: 21.1rem;
   }
   
   .rightImage {
-   
-    right: 15dvh;
-    top: 45dvh;
-    width: 164.65px;
-    height: 353.05px;
-   
+    width: 10.3rem;
+    height: 22.1rem;
   }
+  
   .additionalImage {
-   
     right: 10dvh;
     top: 15dvh;
-    width: 92.8px;
-    height: 192.59px;
+    width: 5.8rem;
+    height: 12rem;
   }
+  
   .smallDiamond {
-   
-    top: calc(21dvh + 307.67px - 40px); 
-    left: calc(16.6dvh + 137.76px/2 - 24px); /* центрируем относительно картинки */
-    width: 43px; /* 120px * 0.4 = 48px (на 60% меньше) */
-    height: 80px; /* 200px * 0.4 = 80px (на 60% меньше) */
- 
+    top: calc(21dvh + 21.1rem - 2.5rem);
+    left: calc(16.6dvh + 4.95rem - 1.5rem);
+    width: 2.7rem;
+    height: 5rem;
   }
   
   .rightSmallDiamond {
-   
-    top: calc(48dvh + 323.05px - 40px); /* верхний край ромба на нижнем краю правой картинки */
-    right: calc(16.6vh + 144.65px/2 - 24px); /* центрируем относительно правой картинки */
-    width: 43px;
-    height: 80px;
-   
+    top: calc(48dvh + 22.1rem - 2.5rem);
+    right: calc(16.6vh + 5.15rem - 1.5rem);
+    width: 2.7rem;
+    height: 5rem;
   }
   
   .additionalSmallDiamond {
-   
-    top: calc(18dvh + 162.59px - 20px); /* верхний край ромба на нижнем краю дополнительной картинки */
-    right: calc(10.7dvh + 72.8px/2 - 12px); /* центрируем относительно дополнительной картинки */
-    width: 22px; /* пропорционально уменьшенный размер */
-    height: 41px; /* пропорционально уменьшенный размер */
-   
-  }
-  .bottomBlock {
-   
-    gap: 12dvh;
-    
+    top: calc(18dvh + 12rem - 1.25rem);
+    right: calc(10.7dvh + 2.9rem - 0.75rem);
+    width: 1.4rem;
+    height: 2.6rem;
   }
   
+  .bottomBlock {
+    gap: 12dvh;
+  }
 }
 
 
+/* ===== ПЛАНШЕТЫ (900px - 1200px) ===== */
 @media (min-width: 900px) and (max-width: 1200px) {
   .backgroundImage {
-   
-  
     width: 100%;
     height: 80%;
-   
   }
   
   .diamond {
-   
     top: 35dvh;
-   
-    width: 90px;
-    height: 180px;
-   
+    width: 5.6rem;
+    height: 11.25rem;
   }
   
   .bottomBlock {
-   
     bottom: 7vh;
     left: 35%;
-   
     gap: 2dvh;
     z-index: 3;
   }
+  
   .bottomTitle {
-   
-    font-size: 36px;
-    line-height: 38px;
+    font-size: 2.25rem;
+    line-height: 2.4rem;
   }
 }
 
 
 
+/* ===== ПЛАНШЕТЫ (768px - 900px) ===== */
 @media (min-width: 768px) and (max-width: 900px) {
   .heroBlock {
-   
     gap: 0dvh;
   }
   
   .title {
-    
-    font-size: 50px;
-   
-    line-height: 50px;
-   
+    font-size: 3.1rem;
+    line-height: 3.1rem;
   }
   
   .description {
-    width: 254px;
-    height: 185px;
-    
-    font-size: 16px;
-   
-    line-height: 160%;
-   
+    width: 15.9rem;
+    height: 11.6rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
-  .backgroundImage {
-   
   
+  .backgroundImage {
     width: 100%;
     height: 80%;
-   
   }
+  
   .diamond {
-   
     top: 35dvh;
-   
-    width: 90px;
-    height: 180px;
-   
+    width: 5.6rem;
+    height: 11.25rem;
   }
   
   .bottomBlock {
-   
     bottom: 7vh;
     left: 38%;
-   
     gap: 2dvh;
     z-index: 3;
   }
-  .bottomTitle {
-   
-    font-size: 36px;
-    line-height: 38px;
-  }
-  .leftImage {
   
+  .bottomTitle {
+    font-size: 2.25rem;
+    line-height: 2.4rem;
+  }
+  
+  .leftImage {
     left: 7dvh;
     top: 18dvh;
-    width: 127.76px;
-    height: 300px;
-   
+    width: 8rem;
+    height: 18.75rem;
   }
   
   .rightImage {
-   
     right: 4dvh;
     top: 45dvh;
-    width: 134.65px;
-    height: 303.05px;
-   
+    width: 8.4rem;
+    height: 18.9rem;
   }
+  
   .additionalImage {
-   
     right: 2dvh;
     top: 15dvh;
-    width: 72.8px;
-    height: 162.59px;
+    width: 4.5rem;
+    height: 10.2rem;
   }
+  
   .smallDiamond {
-   
-    top: calc(17.5dvh + 307.67px - 40px); 
-    left: calc(7.1dvh + 137.76px/2 - 24px); /* центрируем относительно картинки */
-    width: 38px; /* 120px * 0.4 = 48px (на 60% меньше) */
-    height: 70px; /* 200px * 0.4 = 80px (на 60% меньше) */
- 
+    top: calc(17.5dvh + 18.75rem - 2.5rem);
+    left: calc(7.1dvh + 4rem - 1.5rem);
+    width: 2.4rem;
+    height: 4.4rem;
   }
   
   .rightSmallDiamond {
-   
-    top: calc(43dvh + 323.05px - 40px); /* верхний край ромба на нижнем краю правой картинки */
-    right: calc(4dvh + 144.65px/2 - 24px); /* центрируем относительно правой картинки */
-    width: 38px;
-    height: 70px;
-   
+    top: calc(43dvh + 18.9rem - 2.5rem);
+    right: calc(4dvh + 4.2rem - 1.5rem);
+    width: 2.4rem;
+    height: 4.4rem;
   }
   
   .additionalSmallDiamond {
-   
-    top: calc(15dvh + 162.59px - 20px); /* верхний край ромба на нижнем краю дополнительной картинки */
-    right: calc(2dvh + 72.8px/2 - 12px); /* центрируем относительно дополнительной картинки */
-    width: 22px; /* пропорционально уменьшенный размер */
-    height: 41px; /* пропорционально уменьшенный размер */
-   
+    top: calc(15dvh + 10.2rem - 1.25rem);
+    right: calc(2dvh + 2.25rem - 0.75rem);
+    width: 1.4rem;
+    height: 2.6rem;
   }
 }
 
+/* ===== МОБИЛЬНЫЕ УСТРОЙСТВА (до 768px) ===== */
 @media (max-width: 768px) {
   .section4 {
-    /* Use dvh for better mobile compatibility */
     height: 100dvh;
   }
   
   .heroBlock {
-   
     gap: 0dvh;
   }
   
   .title {
-    
-    font-size: 50px;
-   
-    line-height: 50px;
-   
+    font-size: 3.1rem;
+    line-height: 3.1rem;
   }
   
   .description {
-    width: 234px;
-    height: 185px;
-    
-    font-size: 16px;
-   
-    line-height: 160%;
-   
+    width: 14.6rem;
+    height: 11.6rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
-  .backgroundImage {
-   
   
+  .backgroundImage {
     width: 100%;
     height: 80%;
-   
   }
+  
   .diamond {
-   
     top: 35dvh;
-   
-    width: 90px;
-    height: 180px;
-   
+    width: 5.6rem;
+    height: 11.25rem;
   }
   
   .bottomBlock {
-   
     bottom: 7vh;
     left: 40%;
-   
     gap: 2dvh;
     z-index: 3;
   }
-  .bottomTitle {
-   width: 20dvh;
-    font-size: 32px;
-    line-height: 38px;
-  }
-  .leftImage {
   
+  .bottomTitle {
+    width: 20dvh;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  
+  .leftImage {
     left: 7dvh;
     top: 18dvh;
-    width: 127.76px;
-    height: 300px;
-   
+    width: 8rem;
+    height: 18.75rem;
   }
   
   .rightImage {
-   
     right: 2dvh;
     top: 45dvh;
-    width: 134.65px;
-    height: 303.05px;
-   
+    width: 8.4rem;
+    height: 18.9rem;
   }
+  
   .additionalImage {
-   
     right: 2dvh;
     top: 15dvh;
-    width: 72.8px;
-    height: 162.59px;
+    width: 4.5rem;
+    height: 10.2rem;
   }
+  
   .smallDiamond {
-   
-    top: calc(17.5dvh + 307.67px - 40px); 
-    left: calc(7.1dvh + 137.76px/2 - 24px); /* центрируем относительно картинки */
-    width: 38px; /* 120px * 0.4 = 48px (на 60% меньше) */
-    height: 70px; /* 200px * 0.4 = 80px (на 60% меньше) */
- 
+    top: calc(17.5dvh + 18.75rem - 2.5rem);
+    left: calc(7.1dvh + 4rem - 1.5rem);
+    width: 2.4rem;
+    height: 4.4rem;
   }
   
   .rightSmallDiamond {
-   
-    top: calc(43dvh + 323.05px - 40px); /* верхний край ромба на нижнем краю правой картинки */
-    right: calc(2dvh + 144.65px/2 - 24px); /* центрируем относительно правой картинки */
-    width: 38px;
-    height: 70px;
-   
+    top: calc(43dvh + 18.9rem - 2.5rem);
+    right: calc(2dvh + 4.2rem - 1.5rem);
+    width: 2.4rem;
+    height: 4.4rem;
   }
   
   .additionalSmallDiamond {
-   
-    top: calc(15dvh + 162.59px - 20px); /* верхний край ромба на нижнем краю дополнительной картинки */
-    right: calc(2dvh + 72.8px/2 - 12px); /* центрируем относительно дополнительной картинки */
-    width: 22px; /* пропорционально уменьшенный размер */
-    height: 41px; /* пропорционально уменьшенный размер */
-   
+    top: calc(15dvh + 10.2rem - 1.25rem);
+    right: calc(2dvh + 2.25rem - 0.75rem);
+    width: 1.4rem;
+    height: 2.6rem;
   }
 }
 
 
+/* ===== МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 650px) ===== */
 @media (max-width: 650px) {
   .section4 {
-   
     height: 100dvh;
   }
   
@@ -517,10 +457,10 @@
   }
   
   .title {
-    font-size: 40px;
-    line-height: 42px;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
     text-align: center;
-    width:55%;
+    width: 55%;
     height: auto;
     margin: 0;
   }
@@ -528,8 +468,8 @@
   .description {
     width: 85%;
     height: auto;
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 0.875rem;
+    line-height: 1.5;
     text-align: center;
     margin: 0;
   }
@@ -541,18 +481,16 @@
   
   .diamond {
     top: 35dvh;
-    width: 70px;
-    height: 150px;
+    width: 4.4rem;
+    height: 9.4rem;
   }
   
   .bottomBlock {
-   bottom: 50dvh;
+    bottom: 50dvh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* gap: 12vh; */
     width: 95%;
     height: auto;
     z-index: 3;
@@ -562,11 +500,10 @@
     position: absolute;
     top: 4dvh;
     left: 2dvh;
-    font-size: 32px;
-    line-height: 34px;
+    font-size: 2rem;
+    line-height: 2.1rem;
     width: 45%;
     margin: 0;
-   
   }
   
   .bottomText {
@@ -580,15 +517,15 @@
   .leftImage {
     left: 5dvh;
     top: 23dvh;
-    width: 100px;
-    height: 250px;
+    width: 6.25rem;
+    height: 15.6rem;
   }
   
   .rightImage {
     right: 5dvh;
     top: 35dvh;
-    width: 100px;
-    height: 250px;
+    width: 6.25rem;
+    height: 15.6rem;
   }
   
   .additionalImage {
@@ -596,17 +533,17 @@
   }
   
   .smallDiamond {
-    top: calc(20dvh + 250px - 30px);
-    left: calc(5dvh + 100px/2 - 15px);
-    width: 30px;
-    height: 60px;
+    top: calc(20dvh + 15.6rem - 1.9rem);
+    left: calc(5dvh + 3.125rem - 0.9rem);
+    width: 1.9rem;
+    height: 3.75rem;
   }
   
   .rightSmallDiamond {
-    top: calc(35dvh + 250px - 30px);
-    right: calc(5dvh + 100px/2 - 15px);
-    width: 30px;
-    height: 60px;
+    top: calc(35dvh + 15.6rem - 1.9rem);
+    right: calc(5dvh + 3.125rem - 0.9rem);
+    width: 1.9rem;
+    height: 3.75rem;
   }
   
   .additionalSmallDiamond {
@@ -614,9 +551,9 @@
   }
 }
 
+/* ===== ОЧЕНЬ МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 480px) ===== */
 @media (max-width: 480px) {
   .section4 {
-   
     height: 100dvh;
   }
   
@@ -633,10 +570,10 @@
   }
   
   .title {
-    font-size: 40px;
-    line-height: 42px;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
     text-align: center;
-    width:55%;
+    width: 55%;
     height: auto;
     margin: 0;
   }
@@ -644,8 +581,8 @@
   .description {
     width: 85%;
     height: auto;
-    font-size: 14px;
-    line-height: 150%;
+    font-size: 0.875rem;
+    line-height: 1.5;
     text-align: center;
     margin: 0;
   }
@@ -658,18 +595,16 @@
   
   .diamond {
     top: 35dvh;
-    width: 60px;
-    height: 110px;
+    width: 3.75rem;
+    height: 6.9rem;
   }
   
   .bottomBlock {
-   bottom: 50dvh;
+    bottom: 50dvh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* gap: 12vh; */
     width: 95%;
     height: auto;
     z-index: 3;
@@ -679,11 +614,10 @@
     position: absolute;
     top: 4dvh;
     left: 2dvh;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 1.875rem;
+    line-height: 2.1rem;
     width: 62%;
     margin: 0;
-   
   }
   
   .bottomText {
@@ -697,9 +631,7 @@
   .leftImage {
     left: 3dvh;
     top: 25dvh;
-    /* width: 100px; */
     width: 10dvh;
-    /* height: 250px; */
     height: 22dvh;
   }
   
@@ -715,21 +647,20 @@
   }
   
   .smallDiamond {
-    top: calc(25dvh + 250px - 30px);
-    left: calc(3dvh + 100px/2 - 15px);
-    width: 30px;
-    height: 60px;
+    top: calc(25dvh + 22dvh - 1.9rem);
+    left: calc(3dvh + 5dvh - 0.9rem);
+    width: 1.9rem;
+    height: 3.75rem;
   }
   
   .rightSmallDiamond {
-    top: calc(35dvh + 250px - 30px);
-    right: calc(3dvh + 100px/2 - 15px);
-    width: 30px;
-    height: 60px;
+    top: calc(35dvh + 22dvh - 1.9rem);
+    right: calc(3dvh + 5dvh - 0.9rem);
+    width: 1.9rem;
+    height: 3.75rem;
   }
   
   .additionalSmallDiamond {
     display: none;
   }
-
 }
