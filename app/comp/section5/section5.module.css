@@ -332,7 +332,7 @@
 /* ===== ОЧЕНЬ МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 480px) ===== */
 @media (max-width: 480px) {
   .section5 {
-    height: 30dvh;
+    height: 35dvh;
     padding: 0 1rem 0;
   }
   
