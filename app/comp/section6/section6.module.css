@@ -774,10 +774,10 @@
 
 @media (max-width: 480px) {
   .section6 {
-    height: 220vh;
+    height: 220dvh;
   }
   .block_row {
-    gap: 0px;
+   top: 25%;
   }
   .subscribeCard {
     bottom: -120px;
@@ -945,7 +945,7 @@
     height: 418px;
   }
   .blockRowButton {
-    margin-top: 3vh;
+    margin-top: 3dvh;
 
     width: 80%;
     height: 45px;

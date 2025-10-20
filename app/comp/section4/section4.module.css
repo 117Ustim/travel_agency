@@ -678,16 +678,16 @@
     position: absolute;
     top: 4dvh;
     left: 2dvh;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 34px;
-    width: 60%;
+    width: 62%;
     margin: 0;
    
   }
   
   .bottomText {
     position: absolute;
-    top: 25dvh;
+    top: 21dvh;
     width: 50%;
     align-self: flex-end;
     text-align: left;
