@@ -837,7 +837,7 @@ top: 27dvh;
 
 @media (max-width: 480px) {
   .section6 {
-    height: 155dvh;
+    height: 170dvh;
   }
   .block_row {
     width: 100%;
@@ -855,7 +855,7 @@ top: 27dvh;
   .bottomImage {
     /* bottom: 20dvh; */
     left: -52dvh;
-  top: 50dvh;
+  top: 60dvh;
     width: 120dvh;
   }
   .subscribeCard {
