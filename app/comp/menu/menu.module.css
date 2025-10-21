@@ -286,7 +286,7 @@
   }
   
   .navItem {
-    font-size: 14px;
+    font-size: 22px;
   }
   .blockButton { width: clamp(100px, 34vw, 130px);}
 }
