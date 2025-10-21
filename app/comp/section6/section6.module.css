@@ -834,7 +834,7 @@ top: 120dvh;
 
 @media (max-width: 480px) {
   .section6 {
-    height: 160dvh;
+    height: 172dvh;
   }
   .block_row {
     width: 100%;
@@ -857,7 +857,7 @@ top: 120dvh;
   }
   .subscribeCard {
     /* bottom: -5.5rem; */
-    top: 87dvh;
+    top: 91dvh;
     left: 55%;
     transform: translateX(-50%);
     width: 100%;
