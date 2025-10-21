@@ -371,7 +371,7 @@
   .ctaButton {
     position: absolute;
     transform: translateX(-50%);
-    top: 40dvh;
+    top: 41dvh;
     width: 60vw;
     height: 2.125rem;
     font-size: 0.75rem;
