@@ -850,14 +850,14 @@ top: 120dvh;
   z-index: 5;
   }
   .bottomImage {
-    bottom: 17dvh;
+    bottom: 20dvh;
     left: -52dvh;
   
     width: 120dvh;
   }
   .subscribeCard {
     /* bottom: -5.5rem; */
-    top: 91dvh;
+    top: 95dvh;
     left: 55%;
     transform: translateX(-50%);
     width: 100%;
