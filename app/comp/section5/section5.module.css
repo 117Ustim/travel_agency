@@ -363,7 +363,7 @@
   
   .text {
     width: 18dvh;
-    margin-top: 14dvh;
+    margin-top: 11dvh;
     font-size: clamp(1rem, 6vw, 1.375rem);
     line-height: 1.25;
   }
