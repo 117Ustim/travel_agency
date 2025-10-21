@@ -196,8 +196,8 @@
 /* Subscription card */
 .subscribeCard {
   position: absolute;
-  bottom: -19dvh;
-
+  /* bottom: -19dvh; */
+top: 120dvh;
   transform: translateX(-50%);
   left: 54%;
 
@@ -353,9 +353,9 @@
 
   /* Subscription card */
   .subscribeCard {
-    bottom: -5dvh;
+    /* bottom: -5dvh; */
     left: 54%;
-
+    top: 135dvh;
     width: 81.875rem;
     height: 47.8125rem;
     border-radius: 2.5rem;
@@ -408,9 +408,9 @@
     width: 220dvh;
   }
   .subscribeCard {
-    bottom: -5dvh;
+    /* bottom: -5dvh; */
     left: 54%;
-
+    top: 133dvh;
     width: 75.625rem;
     height: 46.875rem;
     border-radius: 2.5rem;
@@ -463,9 +463,9 @@
     width: 190dvh;
   }
   .subscribeCard {
-    bottom: -6dvh;
+    /* bottom: -6dvh; */
     left: 54%;
-
+    top: 123dvh;
     width: 65rem;
     height: 43.75rem;
     border-radius: 3.75rem;
@@ -542,9 +542,9 @@
     width: 190dvh;
   }
   .subscribeCard {
-    bottom: -5dvh;
+    /* bottom: -5dvh; */
     left: 54%;
-
+    top: 130dvh;
     width: 52.5rem;
     height: 37.5rem;
     border-radius: 3.125rem;
@@ -627,9 +627,9 @@
     width: 150dvh;
   }
   .subscribeCard {
-    bottom: -8dvh;
+    /* bottom: -8dvh; */
     left: 54%;
-
+    top: 118dvh;
     width: 40rem;
     height: 37.5rem;
     border-radius: 4.375rem;
@@ -753,7 +753,8 @@
     height: 3.125rem;
   }
   .subscribeCard {
-    bottom: -11dvh;
+    /* bottom: -11dvh; */
+    top: 100dvh;
     left: 54%;
     transform: translateX(-50%);
     width: 90%;
@@ -855,7 +856,8 @@
     width: 120dvh;
   }
   .subscribeCard {
-    bottom: -5.5rem;
+    /* bottom: -5.5rem; */
+    top: 87dvh;
     left: 55%;
     transform: translateX(-50%);
     width: 100%;
