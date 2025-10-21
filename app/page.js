@@ -13,15 +13,15 @@ import Footer from "./comp/footer/Footer";
 export default function Home() {
   return (
     <div className={styles.page}>
-     {/* <Main />
+     <Main />
      <Section1/>
-     <Section2/> */}
+     <Section2/>
        <Section3/>  
     <Section4/>
       <Section5/> 
       <Section6/>
     <Section7/>
-      {/*<Footer/> */}
+      <Footer/>
     </div>
   );
 }
