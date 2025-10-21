@@ -3,7 +3,7 @@
   height: 200dvh;
   background-color: #e0d2ca;
   position: relative;
-  /* margin-top: -0.0625rem; overlap previous section by 1px to hide seam */
+
 }
 
 .bottomImage {
@@ -43,13 +43,12 @@
   max-width: 43.75rem;
   margin: 0 auto;
   position: absolute;
-  /* top: 35%;
+  top: 20dvh;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translateX(-50%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  align-items: start;
   z-index: 5;
 }
 
@@ -333,7 +332,17 @@
     height: 200dvh;
   }
   .block_row {
-    top: 33%;
+    width: 100%;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 20dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    z-index: 5;
   }
   .bottomImage {
     bottom: -5dvh;
@@ -380,7 +389,17 @@
     height: 200dvh;
   }
   .block_row {
-    top: 33%;
+    width: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 20dvh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  z-index: 5;
   }
   .bottomImage {
     bottom: 5dvh;
@@ -425,7 +444,17 @@
     height: 180dvh;
   }
   .block_row {
-    top: 40%;
+    width: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 20dvh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  z-index: 5;
   }
   .bottomImage {
     bottom: 0dvh;
@@ -469,7 +498,17 @@
     height: 180dvh;
   }
   .block_row {
-    top: 40%;
+    width: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 20dvh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  z-index: 5;
   }
   .title {
     font-size: 3.125rem;
@@ -544,7 +583,17 @@
     height: 170dvh;
   }
   .block_row {
-    top: 40%;
+    width: 100%;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 20dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    z-index: 5;
   }
   .decorTopRight {
     position: absolute;
@@ -645,7 +694,17 @@
     height: 168dvh;
   }
   .block_row {
-    top: 35%;
+    width: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 20dvh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  z-index: 5;
   }
   .title {
     font-size: 3.125rem;
@@ -777,7 +836,17 @@
     height: 150dvh;
   }
   .block_row {
-   top: 58dvh;
+    width: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 15dvh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  z-index: 5;
   }
   .bottomImage {
     bottom: 17dvh;
