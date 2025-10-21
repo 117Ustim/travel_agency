@@ -834,7 +834,7 @@ top: 120dvh;
 
 @media (max-width: 480px) {
   .section6 {
-    height: 150dvh;
+    height: 155dvh;
   }
   .block_row {
     width: 100%;
@@ -1023,7 +1023,7 @@ top: 120dvh;
     height: 26.125rem;
   }
   .blockRowButton {
-    margin-top: 3dvh;
+    margin-top: -4dvh;
 
     width: 80%;
     height: 2.8125rem;
