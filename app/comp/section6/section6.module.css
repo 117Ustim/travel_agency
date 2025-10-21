@@ -1,6 +1,6 @@
 .section6 {
   width: 100%;
-  height: 200dvh;
+  height: 220dvh;
   background-color: #e0d2ca;
   position: relative;
 
@@ -8,7 +8,8 @@
 
 .bottomImage {
   position: absolute;
-  bottom: -20dvh;
+  /* bottom: -20dvh; */
+  top: 0dvh;
   left: -112dvh;
   right: auto;
   transform: none;
@@ -197,7 +198,7 @@
 .subscribeCard {
   position: absolute;
   /* bottom: -19dvh; */
-top: 120dvh;
+top: 140dvh;
   transform: translateX(-50%);
   left: 54%;
 
@@ -329,7 +330,7 @@ top: 120dvh;
 
 @media (min-width: 1440px) and (max-width: 1800px) {
   .section6 {
-    height: 200dvh;
+    height: 180dvh;
   }
   .block_row {
     width: 100%;
@@ -345,7 +346,8 @@ top: 120dvh;
     z-index: 5;
   }
   .bottomImage {
-    bottom: -5dvh;
+    /* bottom: -5dvh; */
+    top: 10dvh;
     left: -87dvh;
 
     width: 270dvh;
@@ -355,7 +357,7 @@ top: 120dvh;
   .subscribeCard {
     /* bottom: -5dvh; */
     left: 54%;
-    top: 135dvh;
+    top: 120dvh;
     width: 81.875rem;
     height: 47.8125rem;
     border-radius: 2.5rem;
@@ -386,7 +388,7 @@ top: 120dvh;
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .section6 {
-    height: 200dvh;
+    height: 170dvh;
   }
   .block_row {
     width: 100%;
@@ -402,7 +404,8 @@ top: 120dvh;
   z-index: 5;
   }
   .bottomImage {
-    bottom: 5dvh;
+    /* bottom: 5dvh; */
+    top: 30dvh;
     left: -70dvh;
 
     width: 220dvh;
@@ -410,7 +413,7 @@ top: 120dvh;
   .subscribeCard {
     /* bottom: -5dvh; */
     left: 54%;
-    top: 133dvh;
+    top: 113dvh;
     width: 75.625rem;
     height: 46.875rem;
     border-radius: 2.5rem;
@@ -441,7 +444,7 @@ top: 120dvh;
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .section6 {
-    height: 180dvh;
+    height: 160dvh;
   }
   .block_row {
     width: 100%;
@@ -457,15 +460,15 @@ top: 120dvh;
   z-index: 5;
   }
   .bottomImage {
-    bottom: 0dvh;
+    /* bottom: 0dvh; */
     left: -65dvh;
-
+top: 30dvh;
     width: 190dvh;
   }
   .subscribeCard {
     /* bottom: -6dvh; */
     left: 54%;
-    top: 123dvh;
+    top: 100dvh;
     width: 65rem;
     height: 43.75rem;
     border-radius: 3.75rem;
@@ -495,7 +498,7 @@ top: 120dvh;
 }
 @media (max-width: 992px) {
   .section6 {
-    height: 180dvh;
+    height: 150dvh;
   }
   .block_row {
     width: 100%;
@@ -536,15 +539,15 @@ top: 120dvh;
   }
 
   .bottomImage {
-    bottom: -10dvh;
+    /* bottom: -10dvh; */
     left: -65dvh;
-
+top: 27dvh;
     width: 190dvh;
   }
   .subscribeCard {
     /* bottom: -5dvh; */
     left: 54%;
-    top: 130dvh;
+    top: 100dvh;
     width: 52.5rem;
     height: 37.5rem;
     border-radius: 3.125rem;
@@ -580,7 +583,7 @@ top: 120dvh;
 
 @media (min-width: 620px) and (max-width: 768px) {
   .section6 {
-    height: 170dvh;
+    height: 147dvh;
   }
   .block_row {
     width: 100%;
@@ -621,15 +624,15 @@ top: 120dvh;
     height: 26.125rem;
   }
   .bottomImage {
-    bottom: 5dvh;
-    left: -65dvh;
+    /* bottom: 5dvh; */
+    top: 45dvh;
 
     width: 150dvh;
   }
   .subscribeCard {
     /* bottom: -8dvh; */
     left: 54%;
-    top: 118dvh;
+    top: 100dvh;
     width: 40rem;
     height: 37.5rem;
     border-radius: 4.375rem;
@@ -691,7 +694,7 @@ top: 120dvh;
 
 @media (max-width: 620px) {
   .section6 {
-    height: 168dvh;
+    height: 150dvh;
   }
   .block_row {
     width: 100%;
@@ -742,9 +745,9 @@ top: 120dvh;
     height: 19.875rem;
   }
   .bottomImage {
-    bottom: 26dvh;
+    /* bottom: 26dvh; */
     left: -52dvh;
-  
+  top: 58dvh;
     width: 120dvh;
   }
   .blockRowButton {
@@ -754,7 +757,7 @@ top: 120dvh;
   }
   .subscribeCard {
     /* bottom: -11dvh; */
-    top: 100dvh;
+    top: 90dvh;
     left: 54%;
     transform: translateX(-50%);
     width: 90%;
@@ -834,7 +837,7 @@ top: 120dvh;
 
 @media (max-width: 480px) {
   .section6 {
-    height: 172dvh;
+    height: 138dvh;
   }
   .block_row {
     width: 100%;
@@ -850,14 +853,14 @@ top: 120dvh;
   z-index: 5;
   }
   .bottomImage {
-    bottom: 20dvh;
+    /* bottom: 20dvh; */
     left: -52dvh;
-  
+  top: 50dvh;
     width: 120dvh;
   }
   .subscribeCard {
     /* bottom: -5.5rem; */
-    top: 95dvh;
+    top: 80dvh;
     left: 55%;
     transform: translateX(-50%);
     width: 100%;
