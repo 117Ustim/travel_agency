@@ -62,11 +62,11 @@ export default function Menu() {
       )}
       
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
-        <a href="#" className={styles.navItem}>Главная</a>
-        <a href="#" className={styles.navItem}>Туры</a>
-        <a href="#" className={styles.navItem}>Отели</a>
-        <a href="#" className={styles.navItem}>Контакты</a>
-        <a href="#" className={styles.navItem}>О нас</a>
+        <a href="#" className={styles.navItem}>Home</a>
+        <a href="#" className={styles.navItem}>Luxury packages</a>
+        <a href="#" className={styles.navItem}>Book with us</a>
+        <a href="#" className={styles.navItem}>Why Lux Trips</a>
+        <a href="#" className={styles.navItem}>Contact</a>
       </div>
       <div className={styles.blockButton}>
         
