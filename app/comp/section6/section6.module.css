@@ -43,9 +43,9 @@
   max-width: 43.75rem;
   margin: 0 auto;
   position: absolute;
-  top: 35%;
+  /* top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
