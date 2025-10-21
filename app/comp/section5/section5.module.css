@@ -363,7 +363,7 @@
   
   .text {
     width: 18dvh;
-    margin-top: 11dvh;
+    margin-top: 10dvh;
     font-size: clamp(1rem, 6vw, 1.375rem);
     line-height: 1.25;
   }
@@ -371,7 +371,7 @@
   .ctaButton {
     position: absolute;
     transform: translateX(-50%);
-    top: 37dvh;
+    top: 39dvh;
     width: 60vw;
     height: 2.125rem;
     font-size: 0.75rem;
