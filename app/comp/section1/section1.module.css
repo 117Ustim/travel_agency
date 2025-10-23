@@ -24,11 +24,23 @@ font-weight: 400;
 line-height: 1.1;
 letter-spacing: 0%;
 text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow: hidden;
+position: relative;
+z-index: 3;
 }
 
 .title div:last-child {
     font-size: clamp(36px, 10vw, 60px);
     line-height: 1;
+}
+
+/* Стили для анимированных элементов */
+.title motion.div {
+    display: block;
+    width: 100%;
 }
 
 .continents {
@@ -43,18 +55,28 @@ text-align: center;
     line-height: 1.4;
     text-align: center;
     white-space: nowrap;
+    position: relative;
+    z-index: 3;
 }
 
 
-.rhombus {
+/* Контейнер для анимации ромба */
+.rhombusContainer {
     position: absolute;
     top: -2dvh;
     left: 50%;
-    transform: translateX(-50%);
+    margin-left: -56px; /* Половина ширины ромба (112px / 2) */
+    z-index: 1;
+}
+
+.rhombus {
     width: 112px;
     height: 211.77px;
     object-fit: contain;
-    z-index: 3;
+    /* Добавляем эффект глубины */
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+    will-change: transform, opacity;
+    
 }
 .carouselWrap {
     position: absolute;
@@ -91,8 +113,12 @@ text-align: center;
     top: 15svh;
   }
   
-  .rhombus {
+  .rhombusContainer {
     top: -2svh;
+    margin-left: -50px; /* Половина ширины ромба (100px / 2) */
+  }
+  
+  .rhombus {
     width: 100px;
     height: 190px;
   }
@@ -118,8 +144,12 @@ text-align: center;
     top: 15svh;
   }
   
-  .rhombus {
+  .rhombusContainer {
     top: -1svh;
+    margin-left: -45px; /* Половина ширины ромба (90px / 2) */
+  }
+  
+  .rhombus {
     width: 90px;
     height: 170px;
   }
@@ -145,8 +175,12 @@ text-align: center;
     top: 18svh;
   }
   
-  .rhombus {
+  .rhombusContainer {
     top: -1svh;
+    margin-left: -42px; /* Половина ширины ромба (84px / 2) */
+  }
+  
+  .rhombus {
     width: 84px;
     height: 158.76px;
   }
@@ -173,12 +207,17 @@ text-align: center;
     top: 4dvh;
   }
   
+  .rhombusContainer {
+    top: 6dvh;
+    left: 50%;
+    margin-left: -11dvw; /* Половина ширины ромба (22dvw / 2) */
+  }
+  
   .rhombus {
     /* width: 86px;
     height: 162px; */
     width: 22dvw;
     height: 12.25dvh;
-    top: 6dvh;
   }
   
   .carouselWrap {

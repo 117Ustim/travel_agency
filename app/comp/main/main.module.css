@@ -149,7 +149,7 @@
   top: 57dvh !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  width: 120px !important;
+  width: 110px !important;
   height: 200px !important;
   z-index: 4 !important;
 }
@@ -347,6 +347,15 @@
     top: 72vh;
     left: 50%;
   }
+  .vector.motion {
+   
+    top: 77dvh !important;
+    left: 50% !important;
+   
+    width: 130px !important;
+    height: 230px !important;
+    
+  }
   .find_block {
     position: relative;
     bottom: -45vh;
@@ -415,6 +424,16 @@
     top: 63vh;
     left: 50%;
   }
+  .vector.motion {
+   
+    top: 63dvh !important;
+    left: 50% !important;
+   
+    width: 120px !important;
+    height: 200px !important;
+    
+  }
+ 
   .find_block {
     position: relative;
     bottom: -15vh;
@@ -455,6 +474,15 @@
     height: auto;
     top: -56px;
   }
+  .vector.motion {
+   
+    top: 54dvh !important;
+    left: 50% !important;
+   
+    width: 100px !important;
+    height: 190px !important;
+    
+  }
 }
 @media (max-width: 1000px) {
   .title_text_1 {
@@ -470,6 +498,15 @@
   .title_text_2 {
     top: 58%;
     font-size: 127.95px;
+  }
+  .vector.motion {
+   
+    top: 54dvh !important;
+    left: 50% !important;
+   
+    width: 90px !important;
+    height: 170px !important;
+    
   }
   .find_block {
     --r30w: 26%;
@@ -505,6 +542,15 @@
     grid-column: 3 / 4;
     justify-self: end;
     height: 52px;
+  }
+  .vector.motion {
+   
+    top: 54dvh !important;
+    left: 50% !important;
+   
+    width: 90px !important;
+    height: 170px !important;
+    
   }
 }
 @media (max-width: 768px) {
@@ -683,19 +729,19 @@
   }
   .title_text_2.motion {
   
-    top: 49% !important;
+    top: 46% !important;
     left: 50% !important;
   
   }
   .vector {
     /* Vector */
-    top: 42svh;
+    top: 40svh;
     width: 60px;
     height: 120px;
   }
   .vector.motion {
    
-    top: 45dvh !important;
+    top: 42dvh !important;
     left: 50% !important;
    
     width: 70px !important;

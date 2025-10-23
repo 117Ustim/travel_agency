@@ -12,6 +12,15 @@
   background-color: transparent;
   transition: all 0.3s ease;
   box-shadow: none;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* Анимация появления меню */
+.menu.animated {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideDownMenu 0.8s ease-out forwards;
 }
 
 .scrolled {
@@ -27,6 +36,13 @@
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.3s ease;
+  opacity: 0;
+}
+
+/* Анимация появления навигационных ссылок */
+.navLinks.animatedNavLinks {
+  opacity: 1;
+  animation: fadeInNavLinks 0.6s ease-out 0.2s forwards;
 }
 
 .navItem {
@@ -60,12 +76,34 @@
   width: 100%;
 }
 
+/* Анимация появления элементов навигации */
+.navItem.animatedNavItem {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpNavItem 0.5s ease-out forwards;
+}
+
+.navItem.animatedNavItem:nth-child(1) { animation-delay: 0.3s; }
+.navItem.animatedNavItem:nth-child(2) { animation-delay: 0.4s; }
+.navItem.animatedNavItem:nth-child(3) { animation-delay: 0.5s; }
+.navItem.animatedNavItem:nth-child(4) { animation-delay: 0.6s; }
+.navItem.animatedNavItem:nth-child(5) { animation-delay: 0.7s; }
+
 .blockButton {
   position: absolute;
   top: 20px;
   right: 50px;
   width: clamp(120px, 18vw, 156px);
   aspect-ratio: 156 / 40;
+  opacity: 0;
+  transform: translateX(50px) scale(0.8);
+}
+
+/* Анимация появления блока кнопки */
+.blockButton.animatedBlockButton {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  animation: slideInButton 0.6s ease-out 0.8s forwards;
 }
 
 /* Классы для изображений в блоке кнопки */
@@ -151,6 +189,13 @@
 
 .hamburger.active span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Анимация появления гамбургер-меню */
+.hamburger.animatedHamburger {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: bounceInHamburger 0.5s ease-out 0.9s forwards;
 }
 
 /* Большие экраны */
@@ -289,6 +334,63 @@
     font-size: 22px;
   }
   .blockButton { width: clamp(100px, 34vw, 130px);}
+}
+
+/* Ключевые кадры анимации */
+@keyframes slideDownMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInNavLinks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpNavItem {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInButton {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes bounceInHamburger {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 
