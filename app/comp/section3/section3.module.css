@@ -90,10 +90,10 @@
 
 /* Стили для карточки */
 .card {
-  /* width: 540px; */
-  width: 37.5dvw;
-  /* height: 191px; */
-  height: 13.26dvh;
+  width: 540px;
+  /* width: 37.5dvw; */
+  height: 191px;
+  /* height: 13.26dvh; */
   position: relative;
   display: flex;
   flex-direction: column;

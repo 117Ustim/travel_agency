@@ -8,8 +8,8 @@ import Carousel from "./Carousel/Carousel";
 
 export default function Section1() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, threshold: 0.6 });
-
+  // const isInView = useInView(ref, { once: false, threshold: 0.4 });
+  const isInView = useInView(ref, { margin: "-100px" });
   return (
     <div ref={ref} className={styles.container}>
       <div className={styles.header}>
@@ -53,7 +53,7 @@ export default function Section1() {
           transition={{ 
             duration: 1.0, 
             ease: "easeOut",
-            delay: 1.0 // Появляется после ромба (ромб появляется с задержкой 0.6)
+            delay: 1.0 // Появляется после ромба 
           }}
         >
           <span>World</span>

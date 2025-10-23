@@ -66,6 +66,22 @@ export default function Section2() {
     }
   };
 
+  // Варианты анимации для контейнера карточек (desktop и mobile)
+  const cardsContainerVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: 300 // Начальная позиция справа за пределами экрана
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0, // Конечная позиция - на своём месте
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   const cardsData = [
     {
       id: 1,
@@ -180,8 +196,15 @@ export default function Section2() {
         </motion.div>
       </div>
       
-      {/* Cards Container */}
-      <div className={styles.cardsContainer} role="region" aria-label="Travel destination cards">
+      {/* Cards Container with animation */}
+      <motion.div 
+        className={styles.cardsContainer} 
+        role="region" 
+        aria-label="Travel destination cards"
+        variants={cardsContainerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
         {/* Desktop Cards */}
         <div className={styles.desktopCards}>
           {cardsData.map((card) => (
@@ -250,7 +273,7 @@ export default function Section2() {
         <div className={styles.mobileCarousel}>
           <Section2Carousel />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

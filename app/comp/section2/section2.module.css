@@ -575,6 +575,8 @@
   .blurredSpot {
     width: 448px;
     height: 64px;
+    top: 200px;
+    left: -10%;
   }
 }
 

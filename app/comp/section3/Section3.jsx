@@ -1,8 +1,15 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { motion, useInView } from 'framer-motion';
 import styles from './section3.module.css';
 
 export default function Section3 () {
+  // Создаем ref для отслеживания видимости компонента
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.3 });
+  
   // Данные для карточек
   const cardsData = [
     {
@@ -37,64 +44,108 @@ export default function Section3 () {
     }
   ];
 
+  // Варианты анимации для карточек
+  const cardVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50,
+      scale: 0.8
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
-    <section className={styles.section3}>
+    <section className={styles.section3} ref={ref}>
      
       <div className={styles.container}>
 
         <div className={styles.titleContainer}>
-        <h1 className={styles.mainTitle}>Book</h1>
-        <h2 className={styles.subTitle}>With Us</h2>
-         <div className={styles.rhombusContainer}>
-        <Image 
-          src="/comp_1/rhombus.png" 
-          alt="Rhombus" 
-          width={112} 
-          height={212} 
-          className={styles.rhombus}
-          quality={85}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-        />
-      </div> 
-      </div>
+          <motion.h1 
+            className={styles.mainTitle}
+            initial={{ y: -100, opacity: 0 }}
+            animate={isInView ? { y: 0, opacity: 1 } : { y: -70, opacity: 0 }}
+            transition={{ type: 'spring', stiffness: 50, damping: 15 }}
+          >
+            Book
+          </motion.h1>
+          <motion.h2 
+            className={styles.subTitle}
+            initial={{ opacity: 0, scale: 1 }}
+            animate={isInView ? { opacity: 1, scale: [1, 1.3, 1] } : { opacity: 0, scale: 1 }}
+            transition={{ 
+              opacity: { duration: 0.5 },
+              scale: { duration: 1, times: [0, 0.5, 1] }
+            }}
+          >
+            With Us
+          </motion.h2>
+          <motion.div 
+            className={styles.rhombusContainer}
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          >
+            <Image 
+              src="/comp_1/rhombus.png" 
+              alt="Rhombus" 
+              width={112} 
+              height={212} 
+              className={styles.rhombus}
+              quality={85}
+              
+            />
+          </motion.div>
+        </div>
 
-      <div className={styles.cardsContainer}>
-        {cardsData.map((card) => (
-          <div key={card.id} className={styles.card}>
-            <div className={styles.cardImageContainer}>
-              <Image 
-                src={card.image} 
-                alt={card.title} 
-                width={200} 
-                height={150} 
-                className={styles.cardImage}
-                quality={80}
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-              />
-            </div>
-            <h3 className={styles.cardTitle}>{card.title}</h3>
-            <div className={styles.vectorContainer}>
-              <Image 
-                src="/comp_2/Vector2.png" 
-                alt="Vector" 
-                width={100} 
-                height={50} 
-                className={styles.vectorImage}
-                quality={80}
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-              />
-              <div className={styles.smallRhombus}></div>
-            </div>
-          </div>
-        ))}
-      </div>
-      
+        <div className={styles.cardsContainer}>
+          {cardsData.map((card, index) => (
+            <motion.div
+              key={card.id}
+              className={styles.card}
+              variants={cardVariants}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+              transition={{
+                delay: index * 0.1 // Staggered delay for each card
+              }}
+            >
+              <div className={styles.cardImageContainer}>
+                <Image 
+                  src={card.image} 
+                  alt={card.title} 
+                  width={200} 
+                  height={150} 
+                  className={styles.cardImage}
+                  quality={80}
+                  
+                />
+              </div>
+              <h3 className={styles.cardTitle}>{card.title}</h3>
+              <div className={styles.vectorContainer}>
+                <Image 
+                  src="/comp_2/Vector2.png" 
+                  alt="Vector" 
+                  width={100} 
+                  height={50} 
+                  className={styles.vectorImage}
+                  quality={80}
+                  
+                />
+                <div className={styles.smallRhombus}></div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        
       </div>
     </section>
   );
 };
-
-

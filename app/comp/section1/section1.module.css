@@ -65,7 +65,7 @@ z-index: 3;
 /* Контейнер для анимации ромба */
 .rhombusContainer {
     position: absolute;
-    top: -2dvh;
+    top: 0dvh;
     left: 50%;
     margin-left: -56px; /* Половина ширины ромба (112px / 2) */
     z-index: 1;
@@ -116,7 +116,7 @@ z-index: 3;
   }
   
   .rhombusContainer {
-    top: -2svh;
+    top: 0dvh;
     margin-left: -50px; /* Половина ширины ромба (100px / 2) */
   }
   
@@ -147,7 +147,7 @@ z-index: 3;
   }
   
   .rhombusContainer {
-    top: -1svh;
+    top: 0dvh;
     margin-left: -45px; /* Половина ширины ромба (90px / 2) */
   }
   
@@ -178,7 +178,7 @@ z-index: 3;
   }
   
   .rhombusContainer {
-    top: -1svh;
+    top: 0dvh;
     margin-left: -42px; /* Половина ширины ромба (84px / 2) */
   }
   
