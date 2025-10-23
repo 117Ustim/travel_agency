@@ -1,10 +1,20 @@
+"use client";
 import Image from "next/image";
 import styles from "./main.module.css"
 import Menu from "../menu/Menu";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Main() {
+  // Создаем ref для отслеживания видимости компонента
+  const ref = useRef(null);
+  const isInView = useInView(ref, { 
+    once: false, // Анимация будет срабатывать каждый раз при появлении
+    margin: "-100px 0px" // Анимация начнется когда элемент будет на 100px от края viewport
+  });
+
   return (
-    <div className={styles.page}>
+    <div className={styles.page} ref={ref}>
 
 <div className={styles.menu}>
        <Menu /> 
@@ -19,15 +29,78 @@ export default function Main() {
           style={{ objectFit: 'cover' }}
           priority
           quality={75}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+          
         />
       </div>
       
       <div className={styles.title_1}>the world's most</div>
-      <div className={styles.title_text_1}>extra ordinary</div>
-      <div className={styles.title_text_2}>Places</div>
-      <div className={styles.vector}></div>
+      <motion.div 
+        className={`${styles.title_text_1} ${styles.motion}`}
+        initial={{ 
+          y: -200, // Начальная позиция выше финальной
+          opacity: 0 
+        }}
+        animate={isInView ? { 
+          y: 0, // Финальная позиция
+          opacity: 1 
+        } : {
+          y: -200,
+          opacity: 0
+        }}
+        transition={{ 
+          duration: 1.2, // Длительность анимации
+          ease: "easeOut", // Плавное замедление
+          delay: 0.2 // Первая анимация - минимальная задержка
+        }}
+      >
+        extra ordinary
+      </motion.div>
+      <motion.div 
+        className={`${styles.title_text_2} ${styles.motion}`}
+        initial={{ 
+          scale: 0.3, // Начальный масштаб (эффект глубины)
+          opacity: 0,
+          z: -100 // Эффект глубины через z-координату
+        }}
+        animate={isInView ? { 
+          scale: 1, // Финальный масштаб
+          opacity: 1,
+          z: 0 // Финальная позиция по z
+        } : {
+          scale: 0.3,
+          opacity: 0,
+          z: -100
+        }}
+        transition={{ 
+          duration: 1.5, // Длительность анимации
+          ease: "easeOut", // Плавное замедление
+          delay: 1.0 // Вторая анимация - после завершения первой
+        }}
+      >
+        Places
+      </motion.div>
+      <motion.div 
+        className={`${styles.vector} ${styles.motion}`}
+        initial={{ 
+          scale: 0, // Начальный размер - невидимый
+          opacity: 0,
+          rotate: 45 // Начальный поворот
+        }}
+        animate={isInView ? { 
+          scale: 1, // Финальный размер
+          opacity: 1,
+          rotate: 0 // Финальный поворот
+        } : {
+          scale: 0,
+          opacity: 0,
+          rotate: 45
+        }}
+        transition={{ 
+          duration: 1.0, // Длительность анимации
+          ease: "easeOut", // Плавное замедление
+          delay: 1.5 // Третья анимация - после завершения второй
+        }}
+      ></motion.div>
       
       <div className={styles.backgroundImage_2}>
         <Image
@@ -38,8 +111,8 @@ export default function Main() {
           style={{ objectFit: 'cover' }}
           loading="lazy"
           quality={75}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+          
+          
         />
       </div>
      
@@ -52,8 +125,8 @@ export default function Main() {
           style={{ objectFit: 'cover' }}
           loading="lazy"
           quality={75}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+         
+         
         />
         <div className={styles.gradient}></div>
       </div>

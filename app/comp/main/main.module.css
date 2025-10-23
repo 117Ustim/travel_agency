@@ -85,6 +85,17 @@
   z-index: 3;
 }
 
+/* Специальные стили для motion элементов */
+.title_text_1.motion {
+  position: absolute !important;
+  top: 42% !important;
+  left: 51% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 936px !important;
+  height: 258px !important;
+  z-index: 3 !important;
+}
+
 .title_text_2 {
   position: absolute;
   top: 65%;
@@ -104,6 +115,17 @@
   text-transform: uppercase;
   z-index: 5;
 }
+
+/* Специальные стили для motion элементов */
+.title_text_2.motion {
+  position: absolute !important;
+  top: 65% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 469px !important;
+  height: 142px !important;
+  z-index: 5 !important;
+}
 .vector {
   /* Vector */
   position: absolute;
@@ -121,8 +143,19 @@
   z-index: 4;
 }
 
+/* Специальные стили для motion элемента vector */
+.vector.motion {
+  position: absolute !important;
+  top: 57dvh !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 120px !important;
+  height: 200px !important;
+  z-index: 4 !important;
+}
+
 /* Рисуем видимую границу ромба поверх, т.к. обычный border обрезается clip-path */
-.vector::after {
+/* .vector::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -130,7 +163,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   pointer-events: none;
-}
+} */
 
 .find_block {
   position: relative;
@@ -428,6 +461,12 @@
     top: 44%;
     font-size: 147.95px;
   }
+  .title_text_1.motion {
+  
+    top: 46% !important;
+    left: 51% !important;
+   
+  }
   .title_text_2 {
     top: 58%;
     font-size: 127.95px;
@@ -505,18 +544,39 @@
     top: 42%;
     font-size: clamp(42px, 19vw, 108px);
   }
+  .title_text_1.motion {
+   
+    top: 48% !important;
+   
+   
+  }
   .title_text_2 {
     width: 100%;
     max-width: 100%;
     height: auto;
     top: 62%;
-    font-size: clamp(42px, 13vw, 108px);
+    font-size: clamp(44px, 12vw, 100px);
+  }
+  .title_text_2.motion {
+   
+    top: 60% !important;
+    left: 50% !important;
+  
   }
   .vector {
     /* Vector */
     top: 49svh;
     width: 80px;
     height: 160px;
+  }
+  .vector.motion {
+   
+    top: 50dvh !important;
+    left: 50% !important;
+   
+    width: 90px !important;
+    height: 170px !important;
+    
   }
 
   /* Добавляем стиль для границы ромба на мобильных устройствах */
@@ -612,14 +672,35 @@
   .title_text_1 {
     top: 33%;
   }
+  .title_text_1.motion {
+  
+    top: 43% !important;
+    left: 51% !important;
+   
+  }
   .title_text_2 {
     top: 45%;
+  }
+  .title_text_2.motion {
+  
+    top: 49% !important;
+    left: 50% !important;
+  
   }
   .vector {
     /* Vector */
     top: 42svh;
     width: 60px;
     height: 120px;
+  }
+  .vector.motion {
+   
+    top: 45dvh !important;
+    left: 50% !important;
+   
+    width: 70px !important;
+    height: 140px !important;
+    
   }
 
   .vector::after {
