@@ -8,7 +8,7 @@ import Carousel from "./Carousel/Carousel";
 
 export default function Section1() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, threshold: 0.3 });
+  const isInView = useInView(ref, { once: false, threshold: 0.4 });
 
   return (
     <div ref={ref} className={styles.container}>

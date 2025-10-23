@@ -208,7 +208,7 @@ z-index: 3;
   }
   
   .rhombusContainer {
-    top: 6dvh;
+    top: 8dvh;
     left: 50%;
     margin-left: -11dvw; /* Половина ширины ромба (22dvw / 2) */
   }
