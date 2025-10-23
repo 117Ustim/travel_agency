@@ -1,8 +1,71 @@
+"use client";
 import styles from './section2.module.css';
 import Image from 'next/image';
 import Section2Carousel from './Section2Carousel';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 export default function Section2() {
+  // Реф для отслеживания видимости компонента при скролле
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "-100px" });
+
+  // Варианты анимации для заголовка Luxury
+  const luxuryTitleVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50,
+      scale: 0.8
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  // Варианты анимации для подзаголовка Packages
+  const luxurySubtitleVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 30,
+      scale: 0.9
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        delay: 0.3,
+        ease: "easeOut"
+      }
+    }
+  };
+
+  // Варианты анимации для кнопки
+  const buttonVariants = {
+    hidden: { 
+      opacity: 0, 
+      x: 100,
+      scale: 0.8
+    },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      scale: 1,
+      transition: {
+        duration: 0.7,
+        delay: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   const cardsData = [
     {
       id: 1,
@@ -82,7 +145,7 @@ export default function Section2() {
   ];
 
   return (
-    <section className={styles.section2} aria-label="Luxury Travel Packages">
+    <section ref={ref} className={styles.section2} aria-label="Luxury Travel Packages">
       {/* Background Elements */}
       <div className={styles.backgroundImage} aria-hidden="true"></div>
       <div className={styles.blurredSpot} aria-hidden="true"></div>
@@ -90,13 +153,31 @@ export default function Section2() {
       
       {/* Luxury Packages Block */}
       <div className={styles.luxuryBlock}>
-        <h2 className={styles.luxuryTitle}>Luxury</h2>
-        <div className={styles.luxurySubtitle}>
+        <motion.h2 
+          className={styles.luxuryTitle}
+          variants={luxuryTitleVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
+          Luxury
+        </motion.h2>
+        <motion.div 
+          className={styles.luxurySubtitle}
+          variants={luxurySubtitleVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
           <h2>Packages</h2>
-          <button className={styles.viewAllButton} aria-label="View all luxury packages">
+          <motion.button 
+            className={styles.viewAllButton} 
+            aria-label="View all luxury packages"
+            variants={buttonVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+          >
             view all
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
       
       {/* Cards Container */}
@@ -129,8 +210,7 @@ export default function Section2() {
                   className={styles.diamondOuter}
                   priority={card.id <= 2}
                   quality={80}
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                  
                 />
                 <div className={styles.diamondInner}>
                   <div className={styles.diamondContent}>

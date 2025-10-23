@@ -37,7 +37,25 @@ export default function Section1() {
             Experiences
           </motion.div>
         </div>
-        <div className={styles.continents}>
+        <motion.div 
+          className={styles.continents}
+          initial={{ 
+            x: 300, 
+            opacity: 0 
+          }}
+          animate={isInView ? { 
+            x: 0, 
+            opacity: 1 
+          } : { 
+            x: 300, 
+            opacity: 0 
+          }}
+          transition={{ 
+            duration: 1.0, 
+            ease: "easeOut",
+            delay: 1.0 // Появляется после ромба (ромб появляется с задержкой 0.6)
+          }}
+        >
           <span>World</span>
           <span>Africa</span>
           <span>Asia</span>
@@ -46,7 +64,7 @@ export default function Section1() {
           <span>South America</span>
           <span>Antarctica</span>
           <span>Australia</span>
-        </div>
+        </motion.div>
 
         <motion.div
           className={styles.rhombusContainer}
