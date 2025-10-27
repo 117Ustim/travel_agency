@@ -1,7 +1,7 @@
 .section2 {
   position: relative;
   width: 100%;
-  height: 145dvh;
+  min-height: 145dvh;
   background: linear-gradient(to bottom, #e2d3ce 0%, #d2d7c6 50%);
   z-index: 55;
 }
@@ -267,7 +267,7 @@
 @media (min-width: 2000px) and (max-width: 2300px) {
   .section2 {
    
-    height: 180svh;
+    min-height: 180svh;
   
   }
   .backgroundImage {
@@ -293,7 +293,7 @@
 @media (min-width: 1600px) and (max-width: 2000px) {
   .section2 {
    
-    height: 170dvh;
+    min-height: 170dvh;
   
   }
   .backgroundImage {
@@ -318,7 +318,7 @@
 @media (min-width: 1440px) and (max-width: 1600px){
   .section2 {
    
-    height: 155dvh;
+    min-height: 155dvh;
   
   }
   .backgroundImage {
@@ -343,7 +343,7 @@
 
 @media (max-width: 1350px) {
   .section2 {
-    height: 120dvh;
+    min-height: 120dvh;
   }
   .backgroundImage {
     
@@ -434,7 +434,7 @@
 
 @media (max-width: 1200px) {
   .section2 {
-    height: 130dvh;
+    min-height: 130dvh;
   }
  
   .backgroundImage {
@@ -483,7 +483,7 @@
 
 @media (max-width: 1100px) {
   .section2 {
-    height: 102svh;
+    min-height: 102svh;
   }
   .backgroundImage {
     top: 66%;
@@ -585,7 +585,7 @@
 
 @media (max-width: 900px) {
   .section2 {
-    height: 97dvh;
+    min-height: 97dvh;
   }
   .card5 {
     display: none;
@@ -622,7 +622,7 @@
 
 @media (max-width: 768px) {
   .section2 {
-    height: 96dvh;
+    min-height: 96dvh;
   }
   .backgroundImage {
     top: 66%;
@@ -667,7 +667,7 @@
 
 @media (max-width: 650px) {
   .section2 {
-    height: 75svh
+    min-height: 75svh
   }
   .backgroundImage {
     top: 66%;
@@ -766,7 +766,7 @@
 
 @media (max-width: 480px) {
   .section2 {
-    height: 90dvh;
+    min-height: 90dvh;
   }
   .backgroundImage {
     top: 76%;
