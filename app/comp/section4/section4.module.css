@@ -210,22 +210,22 @@
   }
   
   .smallDiamond {
-    top: calc(21dvh + 21.1rem - 2.5rem);
-    left: calc(16.6dvh + 4.95rem - 1.5rem);
+    top: calc(18dvh + 21.1rem - 2.5rem);
+    left: calc(15.3dvh + 4.95rem - 1.5rem);
     width: 2.7rem;
     height: 5rem;
   }
   
   .rightSmallDiamond {
-    top: calc(48dvh + 22.1rem - 2.5rem);
-    right: calc(16.6vh + 5.15rem - 1.5rem);
+    top: calc(45dvh + 22.1rem - 2.5rem);
+    right: calc(14.8vh + 5.15rem - 1.5rem);
     width: 2.7rem;
     height: 5rem;
   }
   
   .additionalSmallDiamond {
-    top: calc(18dvh + 12rem - 1.25rem);
-    right: calc(10.7dvh + 2.9rem - 0.75rem);
+    top: calc(15dvh + 12rem - 1.25rem);
+    right: calc(10dvh + 2.9rem - 0.75rem);
     width: 1.4rem;
     height: 2.6rem;
   }
@@ -327,14 +327,14 @@
   }
   
   .smallDiamond {
-    top: calc(17.5dvh + 18.75rem - 2.5rem);
+    top: calc(18.5dvh + 18.75rem - 2.5rem);
     left: calc(7.1dvh + 4rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
   }
   
   .rightSmallDiamond {
-    top: calc(43dvh + 18.9rem - 2.5rem);
+    top: calc(45.3dvh + 18.9rem - 2.5rem);
     right: calc(4dvh + 4.2rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
@@ -416,14 +416,14 @@
   }
   
   .smallDiamond {
-    top: calc(17.5dvh + 18.75rem - 2.5rem);
+    top: calc(18.5dvh + 18.75rem - 2.5rem);
     left: calc(7.1dvh + 4rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
   }
   
   .rightSmallDiamond {
-    top: calc(43dvh + 18.9rem - 2.5rem);
+    top: calc(45.3dvh + 18.9rem - 2.5rem);
     right: calc(2dvh + 4.2rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
@@ -533,7 +533,7 @@
   }
   
   .smallDiamond {
-    top: calc(20dvh + 15.6rem - 1.9rem);
+    top: calc(23dvh + 15.6rem - 1.9rem);
     left: calc(5dvh + 3.125rem - 0.9rem);
     width: 1.9rem;
     height: 3.75rem;

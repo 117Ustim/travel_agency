@@ -1,10 +1,16 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { motion, useInView } from 'framer-motion';
 import styles from './section4.module.css';
 
 export default function Section4() {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.3 });
+  
   return (
-    <section className={styles.section4}>
+    <section className={styles.section4} ref={ref}>
       <div className={styles.backgroundImage}></div>
       <Image 
         src="/comp_4/comp_img_1.png" 
@@ -15,10 +21,25 @@ export default function Section4() {
         priority
       />
       <div className={styles.heroBlock}>
-        <h1 className={styles.title}>Why  Lux Trips</h1>
-        <p className={styles.description}>
+        <motion.h1 
+          className={styles.title}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isInView ? 1 : 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Why  Lux Trips
+        </motion.h1>
+        <motion.p 
+          className={styles.description}
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ 
+            y: isInView ? 0 : 100, 
+            opacity: isInView ? 1 : 0 
+          }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
           As Travel Designer, we know the ins and outs of travel from who to work with, where to go, when to book, and which restaurant provides the most authentic cuisine.
-        </p>
+        </motion.p>
       </div>
       <Image 
         src="/comp_4/comp_img_3.png" 
@@ -50,5 +71,3 @@ export default function Section4() {
     </section>
   );
 }
-
-
