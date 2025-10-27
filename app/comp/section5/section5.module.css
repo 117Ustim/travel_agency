@@ -1,7 +1,7 @@
 /* ===== ОСНОВНЫЕ СТИЛИ СЕКЦИИ ===== */
 .section5 {
   width: 100%;
-  height: 70dvh;
+  min-height: 70dvh;
   background-color: #E0D2CA;
   position: relative;
 }
@@ -170,7 +170,7 @@
 /* ===== ПЛАНШЕТЫ (до 1200px) ===== */
 @media (max-width: 1200px) {
   .section5 {
-    height: 57svh;
+    min-height: 57svh;
   }
   
   .cloudRight {
@@ -250,14 +250,14 @@
 /* ===== ПРОМЕЖУТОЧНЫЕ ЭКРАНЫ (620px - 768px) ===== */
 @media (min-width: 620px) and (max-width: 768px) {
   .section5 {
-    height: 47dvh;
+    min-height: 47dvh;
   }
 }
 
 /* ===== МОБИЛЬНЫЕ УСТРОЙСТВА (до 650px) ===== */
 @media (max-width: 650px) {
   .section5 {
-    height: 38dvh;
+    min-height: 38dvh;
     padding: 5rem 1rem 7.5rem;
   }
   
@@ -332,13 +332,13 @@
 /* ===== ОЧЕНЬ МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 480px) ===== */
 @media (max-width: 480px) {
   .section5 {
-    height: 35dvh;
+    min-height: 35dvh;
     padding: 0 1rem 0;
   }
   
   .contentRow {
     position: relative;
-    height: 37dvh;
+    min-height: 37dvh;
   }
   
   .imageBox {
