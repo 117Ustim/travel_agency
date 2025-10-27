@@ -122,7 +122,7 @@
 /* ===== РОМБЫ ===== */
 .diamond {
   position: absolute;
-  top: 40dvh;
+  top: 25dvh;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 6.6rem;
@@ -269,6 +269,12 @@
   .bottomBlock {
     gap: 12dvh;
   }
+  .diamond {
+ 
+  top: 30dvh;
+  left: 50%;
+  
+}
 }
 
 
@@ -280,7 +286,7 @@
   }
   
   .diamond {
-    top: 35dvh;
+    top: 25dvh;
     width: 5.6rem;
     height: 11.25rem;
   }
@@ -324,7 +330,7 @@
   }
   
   .diamond {
-    top: 35dvh;
+    top: 25dvh;
     width: 5.6rem;
     height: 11.25rem;
   }
@@ -412,7 +418,7 @@
   }
   
   .diamond {
-    top: 35dvh;
+    top: 22dvh;
     width: 5.6rem;
     height: 11.25rem;
   }
@@ -516,7 +522,7 @@
   }
   
   .diamond {
-    top: 35dvh;
+    top: 25dvh;
     width: 4.4rem;
     height: 9.4rem;
   }
@@ -630,7 +636,7 @@
   }
   
   .diamond {
-    top: 35dvh;
+    top: 25dvh;
     width: 3.75rem;
     height: 6.9rem;
   }

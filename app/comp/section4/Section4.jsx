@@ -9,21 +9,29 @@ export default function Section4() {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.3 });
   
-  // Create a motion-enabled Image component
-  const MotionImage = motion(Image);
-  
-  // Animation properties for the diamonds (appear 1 second earlier)
+  // Animation for the main diamond element
   const diamondAnimationProps = {
-    initial: { opacity: 0 },
-    animate: { opacity: isInView ? 1 : 0 },
-    transition: { duration: 0.1, ease: "easeOut" , delay: 1}
+    initial: { scale: 1 },
+    animate: { scale: isInView ? [1, 1.3, 1] : 1 },
+    transition: { 
+      duration: 1.5, 
+      times: [0, 0.5, 1], // Define keyframes timing
+      ease: "easeInOut"
+    }
   };
   
-  // Animation properties for the images (delayed by 1 second)
+  const MotionImage = motion(Image);
+  
+  const smallDiamondAnimationProps = {
+    initial: { opacity: 0 },
+    animate: { opacity: isInView ? 1 : 0 },
+    transition: { duration: 0.4, ease: "easeOut" }
+  };
+  
   const imageAnimationProps = {
     initial: { opacity: 0 },
     animate: { opacity: isInView ? 1 : 0 },
-    transition: { duration: 0.3, ease: "easeOut", delay: 1 }
+    transition: { duration: 2, ease: "easeOut"}
   };
   
   return (
@@ -77,23 +85,24 @@ export default function Section4() {
         priority
         {...imageAnimationProps}
       />
-      <div className={styles.diamond}>
-        
-      </div>
-      <motion.div {...diamondAnimationProps}>
+      {/* Animated Diamond */}
+      <motion.div 
+        className={styles.diamond}
+        {...diamondAnimationProps}
+      />
+      <motion.div {...smallDiamondAnimationProps}>
         <div className={styles.smallDiamond}></div>
       </motion.div>
-      <motion.div {...diamondAnimationProps}>
+      <motion.div {...smallDiamondAnimationProps}>
         <div className={styles.rightSmallDiamond}></div>
       </motion.div>
-      <motion.div {...diamondAnimationProps}>
+      <motion.div {...smallDiamondAnimationProps}>
         <div className={styles.additionalSmallDiamond}></div>
       </motion.div>
       <div className={styles.bottomBlock}>
         <h2 className={styles.bottomTitle}>Exclusive knowledge to provide the best of the best to clients</h2>
         <p className={styles.bottomText}>Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings, private yacht and jet charters, to exclusive tours and personalized journey planning.</p>
       </div>
-     
     </section>
   );
 }
