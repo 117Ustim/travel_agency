@@ -37,6 +37,15 @@
   z-index: 2;
 }
 
+.leftImageContainer {
+  position: absolute;
+  left: 15dvh;
+  top: 18dvh;
+  width: 8.6rem;
+  height: 19.2rem;
+  z-index: 2;
+}
+
 .rightImage {
   position: absolute;
   right: 15dvh;
@@ -47,6 +56,24 @@
 }
 
 .additionalImage {
+  position: absolute;
+  right: 10dvh;
+  top: 18dvh;
+  width: 4.5rem;
+  height: 10.2rem;
+  z-index: 2;
+}
+
+.rightImageContainer {
+  position: absolute;
+  right: 15dvh;
+  top: 45dvh;
+  width: 9rem;
+  height: 20.2rem;
+  z-index: 2;
+}
+
+.additionalImageContainer {
   position: absolute;
   right: 10dvh;
   top: 18dvh;
@@ -118,6 +145,15 @@
   box-sizing: border-box;
   backdrop-filter: blur(4px);
   background: rgba(255, 255, 255, 0.41);
+  z-index: 5;
+}
+
+.smallDiamondContainer {
+  position: absolute;
+  top: calc(18dvh + 19.2rem - 2.5rem);
+  left: calc(15dvh + 4.3rem - 1.5rem);
+  width: 2.7rem;
+  height: 5rem;
   z-index: 5;
 }
 

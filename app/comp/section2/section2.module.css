@@ -766,7 +766,7 @@
 
 @media (max-width: 480px) {
   .section2 {
-    min-height: 90dvh;
+    min-height: 80dvh;
   }
   .backgroundImage {
     top: 76%;
