@@ -74,6 +74,23 @@
   justify-content: center;
   cursor: pointer;
   justify-self: center;
+  z-index: 10; /* Ensure button stays on top */
+  position: relative; /* Needed for z-index to work */
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.5rem;
+  background-color: #fff;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .leftBlock {

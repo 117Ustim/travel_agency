@@ -95,7 +95,8 @@ export default function Section5() {
       opacity: 1,
       transition: {
         duration: 0.4, 
-        ease: "easeOut"
+        ease: "easeOut",
+        delay: 0.7 
       }
     }
   };
