@@ -729,8 +729,8 @@
   }
   
   .smallDiamond {
-    top: calc(24dvh + 15.6rem - 1.9rem);
-    left: calc(1dvh + 4.4rem - 0.9rem);
+    top: calc(27dvh + 20.2dvh - 1.9rem);
+    left: calc(2dvh + 5.7dvh - 0.9rem);
     width: 1.9rem;
     height: 3.75rem;
   }
