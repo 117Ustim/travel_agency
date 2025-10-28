@@ -37,15 +37,20 @@ export default function Section4() {
   return (
     <section className={styles.section4} ref={ref}>
       <div className={styles.backgroundImage}></div>
-      <MotionImage 
-        src="/comp_4/comp_img_1.png" 
-        alt="Travel image" 
-        width={138} 
-        height={308}
-        className={styles.leftImage}
-        priority
-        {...imageAnimationProps}
-      />
+      <div className={styles.leftImageContainer}>
+        <MotionImage 
+          src="/comp_4/comp_img_1.png" 
+          alt="Travel image" 
+          width={138} 
+          height={308}
+          className={styles.leftImage}
+          priority
+          {...imageAnimationProps}
+        />
+        <motion.div {...smallDiamondAnimationProps}>
+          <div className={styles.smallDiamond}></div>
+        </motion.div>
+      </div>
       <div className={styles.heroBlock}>
         <motion.h1 
           className={styles.title}
@@ -90,9 +95,6 @@ export default function Section4() {
         className={styles.diamond}
         {...diamondAnimationProps}
       />
-      <motion.div {...smallDiamondAnimationProps}>
-        <div className={styles.smallDiamond}></div>
-      </motion.div>
       <motion.div {...smallDiamondAnimationProps}>
         <div className={styles.rightSmallDiamond}></div>
       </motion.div>

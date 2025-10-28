@@ -8,11 +8,11 @@
 
 .backgroundImage {
   position: absolute;
-  top: 100%;
+  top: 70%;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 68.13vh;
+  min-height: 1100px;
   background-image: url("/comp_2/bg_comp_222.png");
   background-size: cover;
   background-position: bottom;
@@ -264,18 +264,18 @@
 
 
 
-@media (min-width: 2000px) and (max-width: 2300px) {
+@media (min-width: 2000px)  {
   .section2 {
    
-    min-height: 180svh;
+    min-height: 1400px;
   
   }
   .backgroundImage {
   
-    top: 57%;
+    top: 700px;
  
-    min-height: 1500px;
-    height: 30svh;
+    min-height: 1800px;
+    /* height: 60dvh; */
    
   }
   
@@ -285,9 +285,43 @@
    
     top: 55%;
     
-    height: 35vh;
+    min-height: 35vh;
     
   }
+  .luxuryTitle {
+ 
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 4dvh;
+}
+
+.luxurySubtitle {
+  color: var(--Style, rgba(12, 11, 16, 1));
+  font-family: Forum;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+
+.viewAllButton {
+  margin-top: 9dvh;
+  width: 250px;
+  height: 45px;
+  background: transparent;
+  color: rgba(12, 11, 16, 1);
+  border: 1px solid rgba(12, 11, 16, 1);
+  border-radius: 19px;
+  font-family: inherit;
+  font-size: 14px;
+ 
+}
 } 
 
 @media (min-width: 1600px) and (max-width: 2000px) {
@@ -323,10 +357,11 @@
   }
   .backgroundImage {
   
-    top: 100%;
+    top: 68%;
    
    
-    height: 68.13svh;
+    min-height: 1100px;
+    /* height: 30svh; */
    
   }
   
@@ -438,7 +473,7 @@
   }
  
   .backgroundImage {
-    top: 75%;
+    top: 60%;
     height: 40%;
   }
 

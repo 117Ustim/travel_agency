@@ -165,7 +165,7 @@ export default function Section2() {
       {/* Background Elements */}
       <div className={styles.backgroundImage} aria-hidden="true"></div>
       <div className={styles.blurredSpot} aria-hidden="true"></div>
-      <div className={styles.centerImage} aria-hidden="true"></div>
+      {/* <div className={styles.centerImage} aria-hidden="true"></div> */}
       
       {/* Luxury Packages Block */}
       <div className={styles.luxuryBlock}>

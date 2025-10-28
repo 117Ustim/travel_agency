@@ -7,7 +7,7 @@
     to bottom,
     transparent 0%,
     transparent 1%,
-    #e0d2ca 1%
+    #e2d3ce 1%
   );
 }
 /* .container {
@@ -176,21 +176,21 @@
   z-index: 1;
 }
 
-@media (min-width: 1700px) and (max-width: 2300px) {
+@media (min-width: 1700px) {
   .section3 {
-    height: 145dvh;
+    height: 1450px;
   }
   .titleContainer {
     top: 10dvh;
   }
   .cardsContainer {
-    top: 45dvh;
+    top: 450px;
 
-    gap: 110px;
+    gap: 140px;
   }
   .card {
-    width: 620px;
-    height: 271px;
+    width: 650px;
+    height: 291px;
 
     border-radius: 20px;
   }

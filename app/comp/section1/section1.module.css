@@ -93,7 +93,7 @@ z-index: 3;
 
 
 
-@media (min-width: 1650px) and (max-width:2300px){
+@media (min-width: 1650px){
   .carouselWrap {
    
    left: 7%;

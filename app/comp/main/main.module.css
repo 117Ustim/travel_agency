@@ -293,11 +293,11 @@
 
 
 
-@media (min-width: 1700px) and (max-width: 2300px) {
+@media (min-width: 1700px) {
   .page {
    
   
-    height: 140vh;
+    height: 120vh;
    
   }
   .backgroundImage_1 {
@@ -312,15 +312,15 @@
 
   .backgroundImage_2 {
     position: absolute;
-    top: 38vh;
+    top: 30dvh;
     left: 0;
     width: 100%;
-    height: 92.39vh;
+    height: 82.39vh;
     z-index: 2;
   }
   .backgroundImage_3 {
     position: absolute;
-    top: 62vh;
+    top: 54dvh;
     left: 0;
     width: 100%;
     height: 96.5vh;
@@ -343,13 +343,22 @@
   .title_text_2 {
     top: 58%;
   }
+  .title_text_2.motion {
+  position: absolute !important;
+  top: 58% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 469px !important;
+  height: 142px !important;
+  z-index: 5 !important;
+}
   .vector {
     top: 72vh;
     left: 50%;
   }
   .vector.motion {
    
-    top: 77dvh !important;
+    top: 63dvh !important;
     left: 50% !important;
    
     width: 130px !important;
@@ -358,7 +367,7 @@
   }
   .find_block {
     position: relative;
-    bottom: -45vh;
+    bottom: -25vh;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;

@@ -1,6 +1,6 @@
 .section6 {
   width: 100%;
-  height: 220dvh;
+  min-height: 220dvh;
   background-color: #e0d2ca;
   position: relative;
 
@@ -345,9 +345,130 @@ top: 140dvh;
 }
 
 
+
+
+
+
+
+
+@media (min-width: 1800px) {
+ .section6 {
+    min-height: 1900px;
+  }
+  .title {
+  width: 30.6875rem;
+  height: 7.25rem;
+
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 3.625rem;
+  
+}
+  .block_row {
+    width: 100%;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 25dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7.5rem;
+    z-index: 5;
+  }
+  .bottomImage {
+    /* bottom: -5dvh; */
+    top: -500px;
+    left: -131dvh;
+/* height: 150dvh; */
+    width: 4000px
+  }
+  .rightBlock {
+    position: relative;
+    top: -5dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 6.625rem;
+}
+.infoTitle {
+  width: 20.8125rem;
+  height: 4.6875rem;
+  color: var(--Style, rgba(12, 11, 16, 1));
+  font-family: Forum, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 98.5%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0 0 0.5rem 0;
+}
+
+.infoTitleShort {
+  height: 1rem;
+}
+
+.infoText {
+  width: 20.0625rem;
+  height: 6.4375rem;
+ margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 179.8%;
+  letter-spacing: 0%;
+  text-align: left;
+ 
+}
+
+.blockRowButton {
+
+  width: 90%;
+  height: 4.4375rem;
+ 
+  font-size: 1.5rem;
+ 
+  line-height: 1.625rem;
+  letter-spacing: 4%;
+ 
+}
+  /* Subscription card */
+  .subscribeCard {
+    /* bottom: -5dvh; */
+    left: 54%;
+    top: 1300px;
+    width: 81.875rem;
+    height: 47.8125rem;
+    border-radius: 2.5rem;
+  }
+  .subscribeTitle {
+    top: 10.625rem;
+    left: 11.5625rem;
+    width: 32.5rem;
+    height: 13.25rem;
+
+    font-size: 4rem;
+  }
+
+  .subscribeSubtitle {
+    top: calc(13.125rem + 13.25rem - 3.625rem);
+    left: 11.5625rem;
+    width: 15.4375rem;
+    height: 1.8125rem;
+
+    font-size: 1.125rem;
+  }
+
+  .subscribeFormRow {
+    left: 11.5625rem;
+    top: calc(10.625rem + 13.25rem + 3.75rem);
+  }
+
+}
+
+
 @media (min-width: 1440px) and (max-width: 1800px) {
   .section6 {
-    height: 180dvh;
+    min-height: 180dvh;
   }
   .block_row {
     width: 100%;
@@ -405,7 +526,7 @@ top: 140dvh;
 
 @media (min-width: 1200px) and (max-width: 1440px) {
   .section6 {
-    height: 170dvh;
+    min-height: 170dvh;
   }
   .block_row {
     width: 100%;
@@ -461,7 +582,7 @@ top: 140dvh;
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .section6 {
-    height: 160dvh;
+    min-height: 160dvh;
   }
   .block_row {
     width: 100%;
@@ -515,7 +636,7 @@ top: 30dvh;
 }
 @media (max-width: 992px) {
   .section6 {
-    height: 150dvh;
+    min-height: 150dvh;
   }
   .block_row {
     width: 100%;
@@ -600,7 +721,7 @@ top: 27dvh;
 
 @media (min-width: 620px) and (max-width: 768px) {
   .section6 {
-    height: 147dvh;
+    min-height: 147dvh;
   }
   .block_row {
     width: 100%;
@@ -711,7 +832,7 @@ top: 27dvh;
 
 @media (max-width: 620px) {
   .section6 {
-    height: 150dvh;
+    min-height: 150dvh;
   }
   .block_row {
     width: 100%;
@@ -854,7 +975,7 @@ top: 27dvh;
 
 @media (max-width: 480px) {
   .section6 {
-    height: 170dvh;
+    min-height: 170dvh;
   }
   .block_row {
     width: 100%;
