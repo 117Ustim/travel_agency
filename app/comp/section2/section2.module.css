@@ -257,122 +257,85 @@
   top: calc(240px + 120px + 370px);
 }
 
-
-
-
-
-
-
-
-@media (min-width: 2000px)  {
+@media (min-width: 2000px) {
   .section2 {
-   
     min-height: 1400px;
-  
   }
   .backgroundImage {
-  
     top: 700px;
- 
-    min-height: 1800px;
-    /* height: 60dvh; */
-   
-  }
-  
 
-  
+    min-height: 1800px;
+  }
+
   .centerImage {
-   
     top: 55%;
-    
+
     min-height: 35vh;
-    
   }
   .luxuryTitle {
- 
-  font-size: 100px;
-  font-weight: 400;
-  line-height: 58px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin-bottom: 4dvh;
-}
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 4dvh;
+  }
 
-.luxurySubtitle {
-  color: var(--Style, rgba(12, 11, 16, 1));
-  font-family: Forum;
-  font-size: 100px;
-  font-weight: 400;
-  line-height: 58px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin-bottom: 60px;
-}
+  .luxurySubtitle {
+    color: var(--Style, rgba(12, 11, 16, 1));
+    font-family: Forum;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 60px;
+  }
 
-
-.viewAllButton {
-  margin-top: 9dvh;
-  width: 250px;
-  height: 45px;
-  background: transparent;
-  color: rgba(12, 11, 16, 1);
-  border: 1px solid rgba(12, 11, 16, 1);
-  border-radius: 19px;
-  font-family: inherit;
-  font-size: 14px;
- 
+  .viewAllButton {
+    margin-top: 9dvh;
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    color: rgba(12, 11, 16, 1);
+    border: 1px solid rgba(12, 11, 16, 1);
+    border-radius: 19px;
+    font-family: inherit;
+    font-size: 14px;
+  }
 }
-} 
 
 @media (min-width: 1600px) and (max-width: 2000px) {
   .section2 {
-   
     height: 170dvh;
-  
   }
   .backgroundImage {
-  
     top: 65%;
- 
+
     min-height: 1300px;
     height: 30svh;
-   
   }
-  
 
-  
   .centerImage {
-   
     top: 68%;
-    
+
     height: 35vh;
-    
   }
-} 
-@media (min-width: 1440px) and (max-width: 1600px){
+}
+@media (min-width: 1440px) and (max-width: 1600px) {
   .section2 {
-   
     min-height: 155dvh;
-  
   }
   .backgroundImage {
-  
     top: 68%;
-   
-   
-    min-height: 1100px;
-    /* height: 30svh; */
-   
-  }
-  
 
-  
+    min-height: 1100px;
+  }
+
   .centerImage {
-   
     top: 88%;
-    
+
     height: 30vh;
-    
   }
 }
 
@@ -381,7 +344,6 @@
     min-height: 120dvh;
   }
   .backgroundImage {
-    
     height: 50%;
   }
 
@@ -466,12 +428,11 @@
   }
 }
 
-
 @media (max-width: 1200px) {
   .section2 {
     min-height: 130dvh;
   }
- 
+
   .backgroundImage {
     top: 60%;
     height: 40%;
@@ -512,9 +473,6 @@
     margin-top: 20px;
   }
 }
-
-
-
 
 @media (max-width: 1100px) {
   .section2 {
@@ -615,9 +573,6 @@
   }
 }
 
-
-
-
 @media (max-width: 900px) {
   .section2 {
     min-height: 97dvh;
@@ -661,7 +616,7 @@
   }
   .backgroundImage {
     top: 66%;
-   
+
     min-height: 450px;
   }
 
@@ -691,8 +646,6 @@
     text-align: center;
   }
 
-  
-
   .blurredSpot {
     width: 400px;
     height: 50px;
@@ -702,20 +655,20 @@
 
 @media (max-width: 650px) {
   .section2 {
-    min-height: 75svh
+    min-height: 75svh;
   }
   .backgroundImage {
     top: 66%;
-   height: 20svh;
+    height: 20svh;
     min-height: 450px;
   }
 
   .centerImage {
     top: 67%;
- background: none;
+    background: none;
     height: 30vh;
   }
- 
+
   .cardsContainer {
     position: relative;
     top: 0;
@@ -753,22 +706,15 @@
     align-items: flex-start;
   }
 
-  .luxuryTitle {
-    /* margin-bottom: 10px; */
-  }
-
   .luxurySubtitle {
-    /* margin-bottom: 0; */
     display: flex;
     align-items: flex-end;
-    /* gap: 20px; */
+
     width: 100%;
   }
 
   .viewAllButton {
     margin-left: 100px;
-    /* align-self: flex-start;
-    margin-bottom: 0; */
   }
 
   .blurredSpot {
@@ -780,13 +726,6 @@
     transform: translateX(-50%);
   }
 
-  /* .centerImage {
-    height: 200px;
-  }
-
-  .backgroundImage {
-    height: 600px;
-  } */
   .arrow {
     width: 15px;
     height: auto;
@@ -798,20 +737,19 @@
   }
 }
 
-
 @media (max-width: 480px) {
   .section2 {
     min-height: 80dvh;
   }
   .backgroundImage {
     top: 76%;
-   height: 22%;
+    height: 22%;
     min-height: 32rem;
   }
 
   .centerImage {
     top: 67%;
- background: none;
+    background: none;
     height: 30dvh;
   }
   .luxuryBlock {
@@ -826,7 +764,6 @@
     line-height: 22px;
   }
 
-
   .blurredSpot {
     width: 400px;
     height: 70px;
@@ -840,8 +777,6 @@
     font-size: 12px;
   }
   .mobileCarousel {
-   
     top: 51dvh;
-   
   }
 }

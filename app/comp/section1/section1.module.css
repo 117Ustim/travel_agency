@@ -1,135 +1,121 @@
 .container {
-    width: 100%;
-    height: 110dvh;
-    background:#E2D3CE;
-    position: relative;
+  width: 100%;
+  height: 110dvh;
+  background: #e2d3ce;
+  position: relative;
 }
 
 .header {
-    position: absolute;
-    top: 13dvh;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 4;
-    overflow: hidden; /* Скрываем элементы во время анимации */
+  position: absolute;
+  top: 13dvh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+  overflow: hidden; /* Скрываем элементы во время анимации */
 }
 
 .title {
-    color:  rgba(12, 11, 16, 1);
-font-family: Forum;
-font-size: clamp(36px, 10vw, 60px);
-font-weight: 400;
-line-height: 1.1;
-letter-spacing: 0%;
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-overflow: hidden;
-position: relative;
-z-index: 3;
+  color: rgba(12, 11, 16, 1);
+  font-family: Forum;
+  font-size: clamp(36px, 10vw, 60px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
 }
 
 .title div:last-child {
-    font-size: clamp(36px, 10vw, 60px);
-    line-height: 1;
+  font-size: clamp(36px, 10vw, 60px);
+  line-height: 1;
 }
 
 /* Стили для анимированных элементов */
 .title motion.div {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .continents {
-    margin-top: 12dvh;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 3svw;
-    color: rgba(12, 11, 16, 0.7);
-    font-family: Inter, Arial, sans-serif;
-    font-size: clamp(8px, 2vw, 18px);
-    line-height: 1.4;
-    text-align: center;
-    white-space: nowrap;
-    position: relative;
-    z-index: 3;
-    will-change: transform, opacity; /* Оптимизация для анимации */
+  margin-top: 12dvh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 3svw;
+  color: rgba(12, 11, 16, 0.7);
+  font-family: Inter, Arial, sans-serif;
+  font-size: clamp(8px, 2vw, 18px);
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  z-index: 3;
+  will-change: transform, opacity; /* Оптимизация для анимации */
 }
-
 
 /* Контейнер для анимации ромба */
 .rhombusContainer {
-    position: absolute;
-    top: 0dvh;
-    left: 50%;
-    margin-left: -56px; /* Половина ширины ромба (112px / 2) */
-    z-index: 1;
+  position: absolute;
+  top: 0dvh;
+  left: 50%;
+  margin-left: -56px;
+  z-index: 1;
 }
 
 .rhombus {
-    width: 112px;
-    height: 211.77px;
-    object-fit: contain;
-    /* Добавляем эффект глубины */
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
-    will-change: transform, opacity;
-    
+  width: 112px;
+  height: 211.77px;
+  object-fit: contain;
+  /* Добавляем эффект глубины */
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  will-change: transform, opacity;
 }
 .carouselWrap {
-    position: absolute;
-    top: 42dvh;
-   right: 0;
-  
-    bottom: 6dvh;
-    width: min(1200px, 92vw);
-    z-index: 4;
+  position: absolute;
+  top: 42dvh;
+  right: 0;
+
+  bottom: 6dvh;
+  width: min(1200px, 92vw);
+  z-index: 4;
 }
 
-
-
-
-@media (min-width: 1650px){
+@media (min-width: 1650px) {
   .carouselWrap {
-   
-   left: 7%;
-  
-   
-    width: 100%;
-   
-}
-} 
+    left: 7%;
 
-/* Адаптивные стили для больших планшетов */
+    width: 100%;
+  }
+}
+
 @media (max-width: 1200px) {
-  /* .container {
-   
-    height: 100svh;
-    
-} */
   .header {
     top: 15svh;
   }
-  
+
   .rhombusContainer {
     top: 0dvh;
-    margin-left: -50px; /* Половина ширины ромба (100px / 2) */
+    margin-left: -50px;
   }
-  
+
   .rhombus {
     width: 100px;
     height: 190px;
   }
-  
+
   .carouselWrap {
     top: 43svh;
     width: 85svw;
   }
-  
+
   .continents {
     margin-top: 12svh;
     gap: 2.5svw;
@@ -137,61 +123,51 @@ z-index: 3;
 }
 
 @media (max-width: 900px) {
-  /* .container {
-   
-    height: 96svh;
-    
-} */
   .header {
     top: 15svh;
   }
-  
+
   .rhombusContainer {
     top: 0dvh;
-    margin-left: -45px; /* Половина ширины ромба (90px / 2) */
+    margin-left: -45px;
   }
-  
+
   .rhombus {
     width: 90px;
     height: 170px;
   }
-  
+
   .carouselWrap {
     top: 42svh;
     width: 90svw;
   }
-  
+
   .continents {
     margin-top: 10svh;
     gap: 2svw;
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px){
-  /* .container {
-   
-    min-height: 100svh;
-    
-} */
+@media (min-width: 480px) and (max-width: 768px) {
   .header {
     top: 18svh;
   }
-  
+
   .rhombusContainer {
     top: 0dvh;
-    margin-left: -42px; /* Половина ширины ромба (84px / 2) */
+    margin-left: -42px;
   }
-  
+
   .rhombus {
     width: 84px;
     height: 158.76px;
   }
-  
+
   .carouselWrap {
     top: 42svh;
     width: 95vw;
   }
-  
+
   .continents {
     margin-top: 8svh;
     gap: 1.5svw;
@@ -199,48 +175,38 @@ z-index: 3;
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .container {
-   
-    height:93dvh;
-   
-}
+    height: 93dvh;
+  }
   .header {
     top: 4dvh;
   }
-  
+
   .rhombusContainer {
     top: 7dvh;
     left: 50%;
-    margin-left: -11dvw; /* Половина ширины ромба (22dvw / 2) */
+    margin-left: -11dvw;
   }
-  
+
   .rhombus {
-    /* width: 86px;
-    height: 162px; */
     width: 22dvw;
     height: 12.25dvh;
   }
-  
+
   .carouselWrap {
     top: 31dvh;
     width: 100dvw;
-   
-   
   }
-  
+
   .continents {
     margin-top: 5dvh;
     gap: 2.5vw;
     font-size: 9px;
   }
-  
+
   .title {
-  margin-top: 7dvh;
+    margin-top: 7dvh;
     font-size: 38px;
   }
-  
-
 }
-
-

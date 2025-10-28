@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion, useInView } from 'framer-motion';
-import styles from './footer.module.css';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion, useInView } from "framer-motion";
+import styles from "./footer.module.css";
 
 export default function Footer() {
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: false , margin: "100px" });
+  const isInView = useInView(ref, { once: false, margin: "100px" });
 
   // Pulse animation for the call button
   const pulseAnimation = {
@@ -17,24 +17,24 @@ export default function Footer() {
       duration: 1,
       repeat: Infinity,
       repeatType: "reverse",
-      ease: "easeInOut"
-    }
+      ease: "easeInOut",
+    },
   };
 
   // Animation variants for nav links
   const linkVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 20 
+    hidden: {
+      opacity: 0,
+      y: 20,
     },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 2.5,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -58,14 +58,15 @@ export default function Footer() {
         />
       </div>
       <nav className={styles.footerNav} aria-label="Footer navigation">
-        {/* ссылки на другие страницы */}
         <motion.div
           variants={linkVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           transition={{ delay: 0.1 }}
         >
-          <Link href="#" className={styles.navLink}>Luxury packages</Link>
+          <Link href="#" className={styles.navLink}>
+            Luxury packages
+          </Link>
         </motion.div>
         <motion.div
           variants={linkVariants}
@@ -73,11 +74,13 @@ export default function Footer() {
           animate={isInView ? "visible" : "hidden"}
           transition={{ delay: 0.2 }}
         >
-          <Link href="#" className={styles.navLink}>Book with us</Link>
+          <Link href="#" className={styles.navLink}>
+            Book with us
+          </Link>
         </motion.div>
-        <motion.button 
-          type="button" 
-          className={styles.callButton} 
+        <motion.button
+          type="button"
+          className={styles.callButton}
           aria-label="Call my back"
           initial={{ scale: 1 }}
           animate={isInView ? pulseAnimation : { scale: 1 }}
@@ -90,7 +93,9 @@ export default function Footer() {
           animate={isInView ? "visible" : "hidden"}
           transition={{ delay: 0.3 }}
         >
-          <Link href="#" className={styles.navLink}>Why Lux Trips</Link>
+          <Link href="#" className={styles.navLink}>
+            Why Lux Trips
+          </Link>
         </motion.div>
         <motion.div
           variants={linkVariants}
@@ -98,7 +103,9 @@ export default function Footer() {
           animate={isInView ? "visible" : "hidden"}
           transition={{ delay: 0.4 }}
         >
-          <Link href="#" className={styles.navLink}>Contact</Link>
+          <Link href="#" className={styles.navLink}>
+            Contact
+          </Link>
         </motion.div>
       </nav>
       <div className={styles.copyright} aria-label="Copyright">

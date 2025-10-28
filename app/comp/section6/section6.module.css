@@ -3,12 +3,11 @@
   min-height: 220dvh;
   background-color: #e0d2ca;
   position: relative;
-
 }
 
 .bottomImage {
   position: absolute;
-  /* bottom: -20dvh; */
+
   top: 0dvh;
   left: -112dvh;
   right: auto;
@@ -74,8 +73,8 @@
   justify-content: center;
   cursor: pointer;
   justify-self: center;
-  z-index: 10; /* Ensure button stays on top */
-  position: relative; /* Needed for z-index to work */
+  z-index: 10;
+  position: relative;
 }
 
 .cursor {
@@ -88,9 +87,15 @@
 }
 
 @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .leftBlock {
@@ -214,8 +219,8 @@
 /* Subscription card */
 .subscribeCard {
   position: absolute;
-  /* bottom: -19dvh; */
-top: 140dvh;
+
+  top: 140dvh;
   transform: translateX(-50%);
   left: 54%;
 
@@ -226,7 +231,6 @@ top: 140dvh;
   z-index: 5;
 }
 
-/* Full-width white divider 20px below the subscribe card */
 .subscribeCardDivider {
   position: absolute;
   left: 50dvw;
@@ -238,8 +242,6 @@ top: 140dvh;
   pointer-events: none;
   z-index: 5;
 }
-
-
 
 .subscribeTitle {
   position: absolute;
@@ -344,26 +346,18 @@ top: 140dvh;
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
 @media (min-width: 1800px) {
- .section6 {
+  .section6 {
     min-height: 1900px;
   }
   .title {
-  width: 30.6875rem;
-  height: 7.25rem;
+    width: 30.6875rem;
+    height: 7.25rem;
 
-  font-size: 4.5rem;
-  font-weight: 400;
-  line-height: 3.625rem;
-  
-}
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 3.625rem;
+  }
   .block_row {
     width: 100%;
     max-width: 43.75rem;
@@ -378,62 +372,57 @@ top: 140dvh;
     z-index: 5;
   }
   .bottomImage {
-    /* bottom: -5dvh; */
     top: -500px;
     left: -131dvh;
-/* height: 150dvh; */
-    width: 4000px
+
+    width: 4000px;
   }
   .rightBlock {
     position: relative;
     top: -5dvh;
-  display: flex;
-  flex-direction: column;
-  gap: 6.625rem;
-}
-.infoTitle {
-  width: 20.8125rem;
-  height: 4.6875rem;
-  color: var(--Style, rgba(12, 11, 16, 1));
-  font-family: Forum, serif;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 98.5%;
-  letter-spacing: 0%;
-  text-align: left;
-  margin: 0 0 0.5rem 0;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 6.625rem;
+  }
+  .infoTitle {
+    width: 20.8125rem;
+    height: 4.6875rem;
+    color: var(--Style, rgba(12, 11, 16, 1));
+    font-family: Forum, serif;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 98.5%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0 0 0.5rem 0;
+  }
 
-.infoTitleShort {
-  height: 1rem;
-}
+  .infoTitleShort {
+    height: 1rem;
+  }
 
-.infoText {
-  width: 20.0625rem;
-  height: 6.4375rem;
- margin-top: 30px;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 179.8%;
-  letter-spacing: 0%;
-  text-align: left;
- 
-}
+  .infoText {
+    width: 20.0625rem;
+    height: 6.4375rem;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 179.8%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
 
-.blockRowButton {
+  .blockRowButton {
+    width: 90%;
+    height: 4.4375rem;
 
-  width: 90%;
-  height: 4.4375rem;
- 
-  font-size: 1.5rem;
- 
-  line-height: 1.625rem;
-  letter-spacing: 4%;
- 
-}
+    font-size: 1.5rem;
+
+    line-height: 1.625rem;
+    letter-spacing: 4%;
+  }
   /* Subscription card */
   .subscribeCard {
-    /* bottom: -5dvh; */
     left: 54%;
     top: 1300px;
     width: 81.875rem;
@@ -462,9 +451,7 @@ top: 140dvh;
     left: 11.5625rem;
     top: calc(10.625rem + 13.25rem + 3.75rem);
   }
-
 }
-
 
 @media (min-width: 1440px) and (max-width: 1800px) {
   .section6 {
@@ -484,7 +471,6 @@ top: 140dvh;
     z-index: 5;
   }
   .bottomImage {
-    /* bottom: -5dvh; */
     top: 10dvh;
     left: -87dvh;
 
@@ -493,7 +479,6 @@ top: 140dvh;
 
   /* Subscription card */
   .subscribeCard {
-    /* bottom: -5dvh; */
     left: 54%;
     top: 120dvh;
     width: 81.875rem;
@@ -530,26 +515,24 @@ top: 140dvh;
   }
   .block_row {
     width: 100%;
-  max-width: 43.75rem;
-  margin: 0 auto;
-  position: absolute;
-  top: 20dvh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  z-index: 5;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 20dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    z-index: 5;
   }
   .bottomImage {
-    /* bottom: 5dvh; */
     top: 30dvh;
     left: -70dvh;
 
     width: 220dvh;
   }
   .subscribeCard {
-    /* bottom: -5dvh; */
     left: 54%;
     top: 113dvh;
     width: 75.625rem;
@@ -586,25 +569,23 @@ top: 140dvh;
   }
   .block_row {
     width: 100%;
-  max-width: 43.75rem;
-  margin: 0 auto;
-  position: absolute;
-  top: 20dvh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  z-index: 5;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 20dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    z-index: 5;
   }
   .bottomImage {
-    /* bottom: 0dvh; */
     left: -65dvh;
-top: 30dvh;
+    top: 30dvh;
     width: 190dvh;
   }
   .subscribeCard {
-    /* bottom: -6dvh; */
     left: 54%;
     top: 100dvh;
     width: 65rem;
@@ -640,16 +621,16 @@ top: 30dvh;
   }
   .block_row {
     width: 100%;
-  max-width: 43.75rem;
-  margin: 0 auto;
-  position: absolute;
-  top: 20dvh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  z-index: 5;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 20dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    z-index: 5;
   }
   .title {
     font-size: 3.125rem;
@@ -677,13 +658,11 @@ top: 30dvh;
   }
 
   .bottomImage {
-    /* bottom: -10dvh; */
     left: -65dvh;
-top: 27dvh;
+    top: 27dvh;
     width: 190dvh;
   }
   .subscribeCard {
-    /* bottom: -5dvh; */
     left: 54%;
     top: 100dvh;
     width: 52.5rem;
@@ -762,13 +741,11 @@ top: 27dvh;
     height: 26.125rem;
   }
   .bottomImage {
-    /* bottom: 5dvh; */
     top: 45dvh;
 
     width: 150dvh;
   }
   .subscribeCard {
-    /* bottom: -8dvh; */
     left: 54%;
     top: 100dvh;
     width: 40rem;
@@ -836,16 +813,16 @@ top: 27dvh;
   }
   .block_row {
     width: 100%;
-  max-width: 43.75rem;
-  margin: 0 auto;
-  position: absolute;
-  top: 20dvh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  z-index: 5;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 20dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    z-index: 5;
   }
   .title {
     font-size: 3.125rem;
@@ -883,9 +860,8 @@ top: 27dvh;
     height: 19.875rem;
   }
   .bottomImage {
-    /* bottom: 26dvh; */
     left: -52dvh;
-  top: 58dvh;
+    top: 58dvh;
     width: 120dvh;
   }
   .blockRowButton {
@@ -894,7 +870,6 @@ top: 27dvh;
     height: 3.125rem;
   }
   .subscribeCard {
-    /* bottom: -11dvh; */
     top: 90dvh;
     left: 54%;
     transform: translateX(-50%);
@@ -902,9 +877,7 @@ top: 27dvh;
     height: 46.875rem;
     border-radius: 4.375rem;
     overflow: visible;
-   
   }
- 
 
   .subscribeTitle {
     top: 10.625rem;
@@ -971,42 +944,36 @@ top: 27dvh;
   }
 }
 
-
-
 @media (max-width: 480px) {
   .section6 {
     min-height: 170dvh;
   }
   .block_row {
     width: 100%;
-  max-width: 43.75rem;
-  margin: 0 auto;
-  position: absolute;
-  top: 15dvh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  z-index: 5;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 15dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    z-index: 5;
   }
   .bottomImage {
-    /* bottom: 20dvh; */
     left: -52dvh;
-  top: 60dvh;
+    top: 60dvh;
     width: 120dvh;
   }
   .subscribeCard {
-    /* bottom: -5.5rem; */
     top: 95dvh;
     left: 55%;
     transform: translateX(-50%);
     width: 100%;
     height: 46.875rem;
-  
+
     border-radius: 3.125rem;
-   
-   
   }
 
   .subscribeCard::before,
@@ -1035,7 +1002,7 @@ top: 27dvh;
     transform: translateX(-50%);
     width: 3rem;
     height: 1.25125rem;
-    background-image: url('/comp_6/Layer 4.png');
+    background-image: url("/comp_6/Layer 4.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

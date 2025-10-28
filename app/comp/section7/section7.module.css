@@ -1,317 +1,298 @@
 .section7 {
-    width: 100%;
-    height: 200vh;
-    background-color: #e0d2ca;
-    position: relative;
+  width: 100%;
+  height: 200vh;
+  background-color: #e0d2ca;
+  position: relative;
 }
 
 .title {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 263px;
-    height: 116px;
-    color: var(--Style, rgba(12, 11, 16, 1));
-    font-family: Forum;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 58px;
-    letter-spacing: 0%;
-    text-align: center;
-    margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 263px;
+  height: 116px;
+  color: var(--Style, rgba(12, 11, 16, 1));
+  font-family: Forum;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
 }
 
 .rhombus {
-    width: 112px;
-    height: 211.77px;
-    display: block;
-   
-    margin: 0 auto;
+  width: 112px;
+  height: 211.77px;
+  display: block;
+
+  margin: 0 auto;
 }
 
 .bottomImage {
-    position: absolute;
-    bottom: 13%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1584px;
-    height: 1034px;
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1584px;
+  height: 1034px;
 }
 .gradient {
-    position: absolute;
-    bottom: 45%;
-    width: 1589px;
-height: 432px;
-transform: rotate(180.00deg);
-    background: linear-gradient(180.00deg, rgba(226, 211, 206, 0),rgba(226, 211, 206, 0.71) 43%,rgba(226, 211, 206, 1) 100%);
-    z-index: 6;
+  position: absolute;
+  bottom: 45%;
+  width: 1589px;
+  height: 432px;
+  transform: rotate(180deg);
+  background: linear-gradient(
+    180deg,
+    rgba(226, 211, 206, 0),
+    rgba(226, 211, 206, 0.71) 43%,
+    rgba(226, 211, 206, 1) 100%
+  );
+  z-index: 6;
 }
-
-/* .gradient_2 {
-    position: absolute;
-    bottom: 0;
-    width: 1460px;
-height: 304px;
-background: linear-gradient(180.00deg, rgba(226, 211, 206, 0),rgba(226, 211, 206, 0.71) 43%,rgba(226, 211, 206, 1) 100%);
-} */
-
-
 
 @media (min-width: 2000px) {
-    .section7 {
+  .section7 {
     width: 100%;
     height: 1900px;
-    
-}
-    .title {
-        top: 40px;
-        width: 220px;
-        height: auto;
-        font-size: 48px;
-        line-height: 1.1;
-    }
+  }
+  .title {
+    top: 40px;
+    width: 220px;
+    height: auto;
+    font-size: 48px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 90px;
-        height: 170px;
-    }
+  .rhombus {
+    width: 90px;
+    height: 170px;
+  }
 
-    .bottomImage {
-        width: 100%;
-        max-width: 2300px;
-        height: auto;
-        bottom: -70px;
-    }
+  .bottomImage {
+    width: 100%;
+    max-width: 2300px;
+    height: auto;
+    bottom: -70px;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 2300px;
-        height: 500px;
-        bottom: 830px;
-    }
+  .gradient {
+    width: 100%;
+    max-width: 2300px;
+    height: 500px;
+    bottom: 830px;
+  }
 }
 
 @media (min-width: 1700px) and (max-width: 2000px) {
-    .title {
-        top: 40px;
-        width: 220px;
-        height: auto;
-        font-size: 48px;
-        line-height: 1.1;
-    }
+  .title {
+    top: 40px;
+    width: 220px;
+    height: auto;
+    font-size: 48px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 90px;
-        height: 170px;
-    }
+  .rhombus {
+    width: 90px;
+    height: 170px;
+  }
 
-    .bottomImage {
-        width: 100%;
-        max-width: 2300px;
-        height: auto;
-        bottom: 7%;
-    }
+  .bottomImage {
+    width: 100%;
+    max-width: 2300px;
+    height: auto;
+    bottom: 7%;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 2300px;
-        height: 450px;
-        bottom: 46%;
-    }
+  .gradient {
+    width: 100%;
+    max-width: 2300px;
+    height: 450px;
+    bottom: 46%;
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 1700px) {
-    .title {
-        top: 40px;
-        width: 220px;
-        height: auto;
-        font-size: 48px;
-        line-height: 1.1;
-    }
+  .title {
+    top: 40px;
+    width: 220px;
+    height: auto;
+    font-size: 48px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 90px;
-        height: 170px;
-    }
+  .rhombus {
+    width: 90px;
+    height: 170px;
+  }
 
-    .bottomImage {
-        width: 100%;
-        max-width: 1900px;
-        height: auto;
-        bottom: 12%;
-    }
+  .bottomImage {
+    width: 100%;
+    max-width: 1900px;
+    height: auto;
+    bottom: 12%;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 1900px;
-        height: 350px;
-        bottom: 48%;
-    }
+  .gradient {
+    width: 100%;
+    max-width: 1900px;
+    height: 350px;
+    bottom: 48%;
+  }
 }
 
-
 @media (max-width: 1200px) {
-    .section7 {
-       
-        height: 170vh;
-        
-    }
-    .title {
-        top: 40px;
-        width: 220px;
-        height: auto;
-        font-size: 48px;
-        line-height: 1.1;
-    }
+  .section7 {
+    height: 170vh;
+  }
+  .title {
+    top: 40px;
+    width: 220px;
+    height: auto;
+    font-size: 48px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 90px;
-        height: 170px;
-    }
+  .rhombus {
+    width: 90px;
+    height: 170px;
+  }
 
-    .bottomImage {
-        width: 100%;
-        max-width: 1300px;
-        height: auto;
-        bottom: 15%;
-    }
+  .bottomImage {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    bottom: 15%;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 1200px;
-        height: 350px;
-        bottom: 38%;
-    }
+  .gradient {
+    width: 100%;
+    max-width: 1200px;
+    height: 350px;
+    bottom: 38%;
+  }
 }
 
 @media (max-width: 992px) {
-    .section7 {
-       
-        height: 155vh;
-        
-    }
-    .title {
-        top: 32px;
-        width: 200px;
-        font-size: 40px;
-        line-height: 1.1;
-    }
+  .section7 {
+    height: 155vh;
+  }
+  .title {
+    top: 32px;
+    width: 200px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 78px;
-        height: 148px;
-    }
+  .rhombus {
+    width: 78px;
+    height: 148px;
+  }
 
-    .bottomImage {
-        width: 100%;
-        max-width: 992px;
-        height: auto;
-        bottom: 17%;
-    }
+  .bottomImage {
+    width: 100%;
+    max-width: 992px;
+    height: auto;
+    bottom: 17%;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 992px;
-        height: 300px;
-        bottom: 38%;
-    }
+  .gradient {
+    width: 100%;
+    max-width: 992px;
+    height: 300px;
+    bottom: 38%;
+  }
 }
 
-@media (min-width:620px) and (max-width: 768px) {
-    .title {
-        top: 28px;
-        width: 180px;
-        font-size: 34px;
-        line-height: 1.1;
-    }
+@media (min-width: 620px) and (max-width: 768px) {
+  .title {
+    top: 28px;
+    width: 180px;
+    font-size: 34px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 68px;
-        height: 128px;
-    }
+  .rhombus {
+    width: 68px;
+    height: 128px;
+  }
 
-    .bottomImage {
-       
-        max-width: none;
-        width: 1584px;
-        height: 1034px;
-        bottom: 7%;
-    }
+  .bottomImage {
+    max-width: none;
+    width: 1584px;
+    height: 1034px;
+    bottom: 7%;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 768px;
-        height: 260px;
-        bottom: 57%;
-    }
-
+  .gradient {
+    width: 100%;
+    max-width: 768px;
+    height: 260px;
+    bottom: 57%;
+  }
 }
 
-@media (max-width:620px) {
-    .section7 {
-       
-        height: 145vh;
-        
-    }
-    .title {
-        top: 28px;
-        width: 180px;
-        font-size: 34px;
-        line-height: 1.1;
-    }
+@media (max-width: 620px) {
+  .section7 {
+    height: 145vh;
+  }
+  .title {
+    top: 28px;
+    width: 180px;
+    font-size: 34px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 68px;
-        height: 128px;
-    }
+  .rhombus {
+    width: 68px;
+    height: 128px;
+  }
 
-    .bottomImage {
-       
-        max-width: none;
-        width: 1584px;
-        height: 1034px;
-        bottom: 0%;
-    }
+  .bottomImage {
+    max-width: none;
+    width: 1584px;
+    height: 1034px;
+    bottom: 0%;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 768px;
-        height: 260px;
-        bottom: 57%;
-    }
+  .gradient {
+    width: 100%;
+    max-width: 768px;
+    height: 260px;
+    bottom: 57%;
+  }
 }
 
 @media (max-width: 480px) {
-    .section7 {
-       
-        height: 160vh;
-        
-    }
-    .title {
-        top: 24px;
-        width: 160px;
-        font-size: 40px;
-        line-height: 1.1;
-    }
+  .section7 {
+    height: 160vh;
+  }
+  .title {
+    top: 24px;
+    width: 160px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
 
-    .rhombus {
-        width: 66px;
-        height: 114px;
-    }
+  .rhombus {
+    width: 66px;
+    height: 114px;
+  }
 
-    .bottomImage {
-       
-        max-width: none;
-        width: 1384px;
-        height: 834px;
-        bottom: 7%;
-    }
+  .bottomImage {
+    max-width: none;
+    width: 1384px;
+    height: 834px;
+    bottom: 7%;
+  }
 
-    .gradient {
-        width: 100%;
-        max-width: 768px;
-        height: 260px;
-        bottom: 57%;
-    }
+  .gradient {
+    width: 100%;
+    max-width: 768px;
+    height: 260px;
+    bottom: 57%;
+  }
 }

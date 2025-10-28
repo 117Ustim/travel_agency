@@ -1,491 +1,453 @@
 .carousel {
-    position: relative;
-    width: 100%;
-    height: 443px;
-    --card-width: 294px;
-    overflow-x: hidden; /* Предотвращаем горизонтальный скролл */
+  position: relative;
+  width: 100%;
+  height: 443px;
+  --card-width: 294px;
+  overflow-x: hidden; /* Предотвращаем горизонтальный скролл */
 }
 
 .track {
-    display: flex;
-    gap: 20px;
-    height: 100%;
-    padding: 0 15px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-x pan-y;
-    max-width: 100%; /* Ограничиваем максимальную ширину */
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  padding: 0 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+  max-width: 100%;
 }
-/* .track::-webkit-scrollbar { display: none; } */
 
 .card {
-    position: relative;
-    flex: 0 0 var(--card-width);
-    height: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    background: transparent;
+  position: relative;
+  flex: 0 0 var(--card-width);
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: transparent;
 }
 
 .imageWrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 /* Лёгкое затемнение для всех карточек по умолчанию */
 .imageWrap::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    opacity: 1;
-    transition: opacity 200ms ease;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  transition: opacity 200ms ease;
+  pointer-events: none;
 }
 
 /* Первая видимая карточка — прозрачная (без затемнения) */
 .active .imageWrap::after {
-    opacity: 0;
+  opacity: 0;
 }
 
 .cardContent {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px 20px 60px 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px 60px 20px;
 }
 
 .titleBlock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
 }
 
 .titleLine {
-    color: rgba(255, 255, 255, 1);
-    font-family: Forum;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: Forum;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .diamondWrap {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .diamondOuter {
-    position: relative;
-    width: 180px;
-    height: 95px;
-    transform: rotate(90deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  position: relative;
+  width: 180px;
+  height: 95px;
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .diamondInner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 162px;
-    height: 85px;
-    backdrop-filter: blur(20px);
-    background-color: rgba(145, 145, 145, 0.14);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+  height: 85px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(145, 145, 145, 0.14);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .diamondContent {
-    transform: rotate(-90deg);
-    text-align: center;
-    color: rgba(255, 255, 255, 1);
-    font-family: Forum;
-    font-weight: 400;
+  transform: rotate(-90deg);
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-family: Forum;
+  font-weight: 400;
 }
 
 .count {
-    font-size: 32px;
-    line-height: 1;
+  font-size: 32px;
+  line-height: 1;
 }
 
 .places {
-    margin-top: 4px;
-    font-size: 13px;
-    letter-spacing: 1px;
+  margin-top: 4px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
 .arrow_block {
-    margin-top: 8px;
-} 
+  margin-top: 8px;
+}
 
- .arrow_1 {
-    position: relative;
-    width: 12px;
-    height: auto;
+.arrow_1 {
+  position: relative;
+  width: 12px;
+  height: auto;
 }
 
 .arrowLine_1 {
-    position: absolute;
-    top: 7px;
-    left: 2vh;
-    width: 9px;
-    height: 0;
-    border-top: 1px solid rgba(255, 255, 255, 1);
-    margin-right: -8px;
-    display: inline-block;
-} 
+  position: absolute;
+  top: 7px;
+  left: 2vh;
+  width: 9px;
+  height: 0;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  margin-right: -8px;
+  display: inline-block;
+}
 
- .arrowSvg {
-    color: rgba(255, 255, 255, 1);
+.arrowSvg {
+  color: rgba(255, 255, 255, 1);
 }
 .arrow_2 {
-    position: relative;
-  
-    width: 12px;
-    height: auto;
+  position: relative;
+
+  width: 12px;
+  height: auto;
 }
 
 .arrowLine_2 {
-    
-    position: absolute;
-    top: 5px;
-    left: -2px;
-    width: 9px;
-    height: 0;
-    border-top: 1px solid rgba(255, 255, 255, 1);
-    /* margin-right: -8px;
-    display: inline-block; */
-} 
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: 9px;
+  height: 0;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+}
 
 .navNext {
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    left: auto;
-    transform: translate(0, -50%) rotate(45deg);
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-    background: #6B4E3D;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  left: auto;
+  transform: translate(0, -50%) rotate(45deg);
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background: #6b4e3d;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navNextInner {
-    transform: rotate(-45deg);
-    display: inline-flex;
-    align-items: center;
+  transform: rotate(-45deg);
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Горизонтальная линия слева от стрелки */
 .navNext .arrowLine_1 {
-    width: 14px;
-    left: 8px;
-    height: 0;
-    border-top: 1px solid rgba(255, 255, 255, 1);
-    margin-right: -9px;
-    display: inline-block;
+  width: 14px;
+  left: 8px;
+  height: 0;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  margin-right: -9px;
+  display: inline-block;
 }
 
 .navNext .arrowSvg {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Шрифт Forum для всего содержимого карточки */
-.titleLine, .count, .places {
-    font-family: Forum, Inter, Arial, sans-serif;
+.titleLine,
+.count,
+.places {
+  font-family: Forum, Inter, Arial, sans-serif;
 }
 
-
-
-
-/* Адаптивные стили для больших планшетов */
 @media (max-width: 1200px) {
-    .carousel {
-        height: 400px;
-        --card-width: 280px;
-    }
-    
-    .track {
-        gap: 18px;
-        padding: 0 12px;
-    }
-    
-    .titleLine {
-        font-size: 22px;
-        line-height: 26px;
-    }
-    
-    .diamondOuter {
-        width: 170px;
-        height: 90px;
-    }
-    
-    .diamondInner {
-        width: 153px;
-        height: 81px;
-    }
-    
-    .count {
-        font-size: 32px;
-    }
-    
-    .places {
-        font-size: 14px;
-    }
-    
-    /* .navNext {
-        width: 48px;
-        height: 48px;
-        right: 12%;
-    } */
+  .carousel {
+    height: 400px;
+    --card-width: 280px;
+  }
+
+  .track {
+    gap: 18px;
+    padding: 0 12px;
+  }
+
+  .titleLine {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .diamondOuter {
+    width: 170px;
+    height: 90px;
+  }
+
+  .diamondInner {
+    width: 153px;
+    height: 81px;
+  }
+
+  .count {
+    font-size: 32px;
+  }
+
+  .places {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 900px) {
-    .carousel {
-        height: 380px;
-        --card-width: 270px;
-    }
-    
-    .track {
-        gap: 16px;
-        padding: 0 10px;
-    }
-    
-    .titleLine {
-        font-size: 21px;
-        line-height: 25px;
-    }
-    
-    .diamondOuter {
-        width: 160px;
-        height: 85px;
-    }
-    
-    .diamondInner {
-        width: 144px;
-        height: 76px;
-    }
-    
-    .count {
-        font-size: 30px;
-    }
-    
-    .places {
-        font-size: 13px;
-    }
-    
-    /* .navNext {
-        width: 65px;
-        height: 65px;
-        right: 10%;
-    } */
+  .carousel {
+    height: 380px;
+    --card-width: 270px;
+  }
+
+  .track {
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  .titleLine {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .diamondOuter {
+    width: 160px;
+    height: 85px;
+  }
+
+  .diamondInner {
+    width: 144px;
+    height: 76px;
+  }
+
+  .count {
+    font-size: 30px;
+  }
+
+  .places {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 768px) {
-    .carousel {
-        height: 360px;
-        --card-width: 260px;
-    }
-    
-    .track {
-        gap: 15px;
-        padding: 0 8px;
-    }
-    
-    .titleLine {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    
-    .diamondOuter {
-        width: 150px;
-        height: 80px;
-    }
-    
-    .diamondInner {
-        width: 135px;
-        height: 71px;
-    }
-    
-    .count {
-        font-size: 28px;
-    }
-    
-    .places {
-        font-size: 12px;
-    }
-    
-    /* .navNext {
-        width: 65px;
-        height: 65px;
-        right: 8%;
-    } */
-    
-    .cardContent {
-        padding: 30px 15px 50px 15px;
-    }
+  .carousel {
+    height: 360px;
+    --card-width: 260px;
+  }
+
+  .track {
+    gap: 15px;
+    padding: 0 8px;
+  }
+
+  .titleLine {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .diamondOuter {
+    width: 150px;
+    height: 80px;
+  }
+
+  .diamondInner {
+    width: 135px;
+    height: 71px;
+  }
+
+  .count {
+    font-size: 28px;
+  }
+
+  .places {
+    font-size: 12px;
+  }
+
+  .cardContent {
+    padding: 30px 15px 50px 15px;
+  }
 }
 
 @media (max-width: 650px) {
-    .carousel {
-        height: 340px;
-        --card-width: 250px;
-    }
-    
-    .track {
-        gap: 14px;
-        padding: 0 6px;
-    }
-    
-    .titleLine {
-        font-size: 19px;
-        line-height: 23px;
-    }
-    
-    .diamondOuter {
-        width: 140px;
-        height: 75px;
-        
-    }
-    
-    .diamondInner {
-        width: 126px;
-        height: 66px;
-    }
-    
-    .count {
-        font-size: 26px;
-    }
-    
-    .places {
-        font-size: 11px;
-    }
-    
-    .navNext {
-        width: 65px;
-        height: 65px;
-        right: 6%;
-    }
-    
-    .cardContent {
-        padding: 25px 12px 45px 12px;
-    }
+  .carousel {
+    height: 340px;
+    --card-width: 250px;
+  }
+
+  .track {
+    gap: 14px;
+    padding: 0 6px;
+  }
+
+  .titleLine {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .diamondOuter {
+    width: 140px;
+    height: 75px;
+  }
+
+  .diamondInner {
+    width: 126px;
+    height: 66px;
+  }
+
+  .count {
+    font-size: 26px;
+  }
+
+  .places {
+    font-size: 11px;
+  }
+
+  .navNext {
+    width: 65px;
+    height: 65px;
+    right: 6%;
+  }
+
+  .cardContent {
+    padding: 25px 12px 45px 12px;
+  }
 }
 
 @media (max-width: 550px) {
-    /* .carousel {
-        height: 400px;
-        --card-width: 220px;
-    } */
-    
-    .track {
-        gap: 12px;
-        padding: 0 5px;
-    }
-    
-    .titleLine {
-        font-size: 18px;
-        line-height: 22px;
-    }
-    
-    .diamondOuter {
-        width: 130px;
-        height: 70px;
-    }
-    
-    .diamondInner {
-        width: 117px;
-        height: 61px;
-    }
-    
-    .count {
-        font-size: 24px;
-    }
-    
-    .places {
-        font-size: 10px;
-    }
-    
-    .navNext {
-        width: 65px;
-        height: 65px;
-        right: 9%;
-    }
-  
-    .cardContent {
-        padding: 20px 10px 40px 10px;
-    }
+  .track {
+    gap: 12px;
+    padding: 0 5px;
+  }
+
+  .titleLine {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .diamondOuter {
+    width: 130px;
+    height: 70px;
+  }
+
+  .diamondInner {
+    width: 117px;
+    height: 61px;
+  }
+
+  .count {
+    font-size: 24px;
+  }
+
+  .places {
+    font-size: 10px;
+  }
+
+  .navNext {
+    width: 65px;
+    height: 65px;
+    right: 9%;
+  }
+
+  .cardContent {
+    padding: 20px 10px 40px 10px;
+  }
 }
 
 @media (max-width: 480px) {
-    .carousel {
-        height: 443px;
-        --card-width: 263px;
-       
-    }
-    
-    .track {
-        padding: 0 10px; /* Уменьшаем отступы */
-        gap: 15px; /* Уменьшаем промежутки между карточками */
-    }
-    
-    .titleLine {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    
-    .diamondOuter {
-        width: 150px;
-        height: 80px;
-        overflow:visible;
-    }
-    
-    .diamondInner {
-        width: 135px;
-        height: 71px;
-       
-    }
-    
-    .count {
-        font-size: 28px;
-    }
-    
-    .places {
-        font-size: 12px;
-    }
-    
-   
-    
-    .navNext {
-        width: 65px;
-        height: 65px;
-        right: 10%;
-    }
-   
+  .carousel {
+    height: 443px;
+    --card-width: 263px;
+  }
 
+  .track {
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .titleLine {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .diamondOuter {
+    width: 150px;
+    height: 80px;
+    overflow: visible;
+  }
+
+  .diamondInner {
+    width: 135px;
+    height: 71px;
+  }
+
+  .count {
+    font-size: 28px;
+  }
+
+  .places {
+    font-size: 12px;
+  }
+
+  .navNext {
+    width: 65px;
+    height: 65px;
+    right: 10%;
+  }
 }

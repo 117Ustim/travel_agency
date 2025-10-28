@@ -154,17 +154,6 @@
   z-index: 4 !important;
 }
 
-/* Рисуем видимую границу ромба поверх, т.к. обычный border обрезается clip-path */
-/* .vector::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 200'><polygon points='60,0.5 119.5,100 60,199.5 0.5,100' fill='none' stroke='white' stroke-opacity='0.5' stroke-width='1' shape-rendering='crispEdges'/></svg>");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  pointer-events: none;
-} */
-
 .find_block {
   position: relative;
   bottom: 0;
@@ -220,7 +209,6 @@
   z-index: 6;
 }
 .rectangle {
-  /* position: relative; */
   width: 75%;
   min-height: 115px;
   height: auto;
@@ -288,17 +276,9 @@
   height: 20px;
 }
 
-
-
-
-
-
 @media (min-width: 1700px) {
   .page {
-   
-  
     height: 120vh;
-   
   }
   .backgroundImage_1 {
     position: relative;
@@ -344,26 +324,24 @@
     top: 58%;
   }
   .title_text_2.motion {
-  position: absolute !important;
-  top: 58% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  width: 469px !important;
-  height: 142px !important;
-  z-index: 5 !important;
-}
+    position: absolute !important;
+    top: 58% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 469px !important;
+    height: 142px !important;
+    z-index: 5 !important;
+  }
   .vector {
     top: 72vh;
     left: 50%;
   }
   .vector.motion {
-   
     top: 63dvh !important;
     left: 50% !important;
-   
+
     width: 130px !important;
     height: 230px !important;
-    
   }
   .find_block {
     position: relative;
@@ -378,13 +356,9 @@
   }
 }
 
-
 @media (min-width: 1440px) and (max-width: 1700px) {
   .page {
-   
-  
     height: 110vh;
-   
   }
   .backgroundImage_1 {
     position: relative;
@@ -434,15 +408,13 @@
     left: 50%;
   }
   .vector.motion {
-   
     top: 63dvh !important;
     left: 50% !important;
-   
+
     width: 120px !important;
     height: 200px !important;
-    
   }
- 
+
   .find_block {
     position: relative;
     bottom: -15vh;
@@ -484,13 +456,11 @@
     top: -56px;
   }
   .vector.motion {
-   
     top: 54dvh !important;
     left: 50% !important;
-   
+
     width: 100px !important;
     height: 190px !important;
-    
   }
 }
 @media (max-width: 1000px) {
@@ -499,23 +469,19 @@
     font-size: 147.95px;
   }
   .title_text_1.motion {
-  
     top: 46% !important;
     left: 51% !important;
-   
   }
   .title_text_2 {
     top: 58%;
     font-size: 127.95px;
   }
   .vector.motion {
-   
     top: 54dvh !important;
     left: 50% !important;
-   
+
     width: 90px !important;
     height: 170px !important;
-    
   }
   .find_block {
     --r30w: 26%;
@@ -553,13 +519,11 @@
     height: 52px;
   }
   .vector.motion {
-   
     top: 54dvh !important;
     left: 50% !important;
-   
+
     width: 90px !important;
     height: 170px !important;
-    
   }
 }
 @media (max-width: 768px) {
@@ -600,10 +564,7 @@
     font-size: clamp(42px, 19vw, 108px);
   }
   .title_text_1.motion {
-   
     top: 48% !important;
-   
-   
   }
   .title_text_2 {
     width: 100%;
@@ -613,10 +574,8 @@
     font-size: clamp(44px, 12vw, 100px);
   }
   .title_text_2.motion {
-   
     top: 60% !important;
     left: 50% !important;
-  
   }
   .vector {
     /* Vector */
@@ -625,13 +584,11 @@
     height: 160px;
   }
   .vector.motion {
-   
     top: 50dvh !important;
     left: 50% !important;
-   
+
     width: 90px !important;
     height: 170px !important;
-    
   }
 
   /* Добавляем стиль для границы ромба на мобильных устройствах */
@@ -691,7 +648,6 @@
 @media (max-width: 480px) {
   .page {
     height: 100svh;
-    /* overflow-x: hidden; */
   }
   .backgroundImage_1 {
     height: 70svh;
@@ -728,19 +684,15 @@
     top: 33%;
   }
   .title_text_1.motion {
-  
     top: 43% !important;
     left: 51% !important;
-   
   }
   .title_text_2 {
     top: 45%;
   }
   .title_text_2.motion {
-  
     top: 46% !important;
     left: 50% !important;
-  
   }
   .vector {
     /* Vector */
@@ -749,13 +701,11 @@
     height: 120px;
   }
   .vector.motion {
-   
     top: 42dvh !important;
     left: 50% !important;
-   
+
     width: 70px !important;
     height: 140px !important;
-    
   }
 
   .vector::after {

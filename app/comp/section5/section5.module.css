@@ -1,12 +1,10 @@
-/* ===== ОСНОВНЫЕ СТИЛИ СЕКЦИИ ===== */
 .section5 {
   width: 100%;
   min-height: 70dvh;
-  background-color: #E0D2CA;
+  background-color: #e0d2ca;
   position: relative;
 }
 
-/* ===== КОНТЕЙНЕР КОНТЕНТА ===== */
 .contentRow {
   position: relative;
   height: 100%;
@@ -143,74 +141,55 @@
   opacity: 0.85;
 }
 
-
-
-
 @media (min-width: 1440px) {
-.section5 {
-  width: 100%;
-  /* min-height: 55dvh; */
- min-height: 40rem;
+  .section5 {
+    width: 100%;
+
+    min-height: 40rem;
+  }
+
+  .contentRow {
+    position: relative;
+    height: 100%;
+  }
+
+  /* ===== ОСНОВНОЕ ИЗОБРАЖЕНИЕ ===== */
+  .imageBox {
+    position: absolute;
+    top: -8vh;
+    left: 20.31vw;
+    width: 15.3rem;
+    height: 34.1rem;
+    z-index: 5;
+  }
+
+  /* ===== ТЕКСТОВЫЙ БЛОК ===== */
+  .textBlock {
+    top: 0;
+    left: calc(35.31vw + 15.3rem + 6.25rem);
+    width: 22rem;
+  }
+
+  .text {
+    font-size: 2.7rem;
+
+    line-height: 0.96;
+  }
+
+  /* ===== КНОПКА ПРИЗЫВА К ДЕЙСТВИЮ ===== */
+  .ctaButton {
+    margin-top: 2.5rem;
+    width: 15.4rem;
+    height: 3rem;
+
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+  }
+
+  .ctaButton:hover {
+    opacity: 0.85;
+  }
 }
-
-/* ===== КОНТЕЙНЕР КОНТЕНТА ===== */
-.contentRow {
-  position: relative;
-  height: 100%;
-}
-
-
-
-
-
-/* ===== ОСНОВНОЕ ИЗОБРАЖЕНИЕ ===== */
-.imageBox {
-  position: absolute;
-  top: -8vh;
-  left: 20.31vw;
-  width: 15.3rem;
-  height: 34.1rem;
-  z-index: 5;
-}
-
-
-
-
-/* ===== ТЕКСТОВЫЙ БЛОК ===== */
-.textBlock {
- 
-  top: 0;
-  left: calc(35.31vw + 15.3rem + 6.25rem);
-  width: 22rem;
-
-}
-
-.text {
- 
- 
-  font-size: 2.7rem;
- 
-  line-height: 0.96;
- 
-}
-
-/* ===== КНОПКА ПРИЗЫВА К ДЕЙСТВИЮ ===== */
-.ctaButton {
-  margin-top: 2.5rem;
-  width: 15.4rem;
-  height: 3rem;
-
-  
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
- 
-}
-
-.ctaButton:hover {
-  opacity: 0.85;
-}
-}
-
 
 @media (max-width: 1440px) {
   .cloudRight {
@@ -218,95 +197,92 @@
     transform: scale(0.9);
     transform-origin: top right;
   }
-  
+
   .cloudLeft {
     transform: rotate(6.26deg) scale(0.95);
     transform-origin: top left;
   }
-  
+
   .imageBox {
     left: 18vw;
   }
-  
+
   .textBlock {
     left: calc(18vw + 15.3rem + 5rem);
   }
 }
 
-
-/* ===== ПЛАНШЕТЫ (до 1200px) ===== */
 @media (max-width: 1200px) {
   .section5 {
     min-height: 57svh;
   }
-  
+
   .cloudRight {
     right: -16.25rem;
     transform: scale(0.85);
   }
-  
+
   .cloudLeft {
     transform: rotate(6.26deg) scale(0.9);
   }
-  
+
   .imageBox {
     top: -12vh;
     left: 14vw;
   }
-  
+
   .textBlock {
     left: calc(14vw + 15.3rem + 3.75rem);
   }
-  
+
   .text {
     font-size: 2.125rem;
     width: 20rem;
   }
 }
 
-/* ===== ПЛАНШЕТЫ ПОРТРЕТ (до 992px) ===== */
 @media (max-width: 992px) {
   .section5 {
     height: 50svh;
   }
-  
+
   .cloudRight {
     right: -11.25rem;
     transform: scale(0.75);
   }
-  
+
   .cloudLeft {
     transform: rotate(6.26deg) scale(0.8);
   }
-  
+
   .imageBox {
     top: -15vh;
     left: 10vw;
     height: 30rem;
   }
-  
+
   .diamondRight {
     width: 3rem;
     height: 5.75rem;
     right: -1.5rem;
   }
-  
+
   .diamondBottom {
     width: 5rem;
     height: 9.75rem;
     bottom: -5rem;
   }
-  
+
   .textBlock {
     left: calc(10vw + 15.3rem + 2.5rem);
     width: 18.75rem;
   }
-  
+
   .text {
     font-size: 1.875rem;
     width: 18.75rem;
   }
-  
+
   .ctaButton {
     margin-top: 0;
     width: 12.5rem;
@@ -314,24 +290,23 @@
     font-size: 0.8125rem;
   }
 }
-/* ===== ПРОМЕЖУТОЧНЫЕ ЭКРАНЫ (620px - 768px) ===== */
+
 @media (min-width: 620px) and (max-width: 768px) {
   .section5 {
     min-height: 47dvh;
   }
 }
 
-/* ===== МОБИЛЬНЫЕ УСТРОЙСТВА (до 650px) ===== */
 @media (max-width: 650px) {
   .section5 {
     min-height: 38dvh;
     padding: 5rem 1rem 7.5rem;
   }
-  
+
   .contentRow {
     position: relative;
   }
-  
+
   .cloudLeft {
     position: absolute;
     left: 0;
@@ -339,14 +314,14 @@
     width: 15.6rem;
     height: 10.6rem;
   }
-  
+
   .cloudRight {
     top: 8.1rem;
     right: -12.5rem;
     width: 31.25rem;
     height: 12.5rem;
   }
-  
+
   .imageBox {
     position: absolute;
     top: -30vh;
@@ -354,7 +329,7 @@
     width: 10rem;
     height: 21.9rem;
   }
-  
+
   .diamondRight {
     right: -1.1rem;
     width: 2.5rem;
@@ -363,13 +338,13 @@
     bottom: 8.75rem;
     transform: none;
   }
-  
+
   .diamondBottom {
     bottom: -3.75rem;
     width: 3.75rem;
     height: 7.5rem;
   }
-  
+
   .textBlock {
     position: absolute;
     top: -15dvh;
@@ -378,7 +353,7 @@
     text-align: left;
     left: 45vw;
   }
-  
+
   .text {
     width: auto;
     height: auto;
@@ -386,7 +361,7 @@
     font-size: 1.75rem;
     line-height: 1.2;
   }
-  
+
   .ctaButton {
     position: absolute;
     transform: translateX(-50%);
@@ -395,46 +370,44 @@
   }
 }
 
-
-/* ===== ОЧЕНЬ МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 480px) ===== */
 @media (max-width: 480px) {
   .section5 {
     min-height: 35dvh;
     padding: 0 1rem 0;
   }
-  
+
   .contentRow {
     position: relative;
     min-height: 37dvh;
   }
-  
+
   .imageBox {
     margin-top: 2dvh;
     margin-left: -2dvh;
     width: 10rem;
     height: 21.9rem;
   }
-  
+
   .textBlock {
     right: 5dvh;
     width: calc(100% - (0.625rem + 10rem + 1.25rem) - 0.75rem);
   }
-  
+
   .diamondRight {
     right: -2dvh;
   }
-  
+
   .diamondBottom {
     bottom: -3.75rem;
   }
-  
+
   .text {
     width: 18dvh;
     margin-top: 9dvh;
     font-size: clamp(1rem, 6vw, 1.375rem);
     line-height: 1.25;
   }
-  
+
   .ctaButton {
     position: absolute;
     transform: translateX(-50%);
@@ -443,14 +416,14 @@
     height: 2.125rem;
     font-size: 0.75rem;
   }
-  
+
   .cloudLeft {
     left: 0;
     top: 5dvh;
     width: 15.6rem;
     height: 10.6rem;
   }
-  
+
   .cloudRight {
     top: 25vh;
     right: -12.5rem;
@@ -458,4 +431,3 @@
     height: 9.4rem;
   }
 }
-

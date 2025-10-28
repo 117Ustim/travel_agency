@@ -1,4 +1,3 @@
-/* ===== ОСНОВНЫЕ СТИЛИ СЕКЦИИ ===== */
 .section4 {
   width: 100%;
   height: 100dvh;
@@ -17,14 +16,18 @@
   transform: translateX(-50%);
   width: 100%;
   height: 100%;
-  background-image: url('/comp_4/bg_mont.png');
+  background-image: url("/comp_4/bg_mont.png");
   background-size: cover;
   background-position: center top 10dvh;
   background-repeat: no-repeat;
   z-index: 1;
   /* Маска для плавного перехода */
-  mask: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
-  -webkit-mask: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /* ===== ИЗОБРАЖЕНИЯ ===== */
@@ -36,8 +39,6 @@
   height: 19.2rem;
   z-index: 2;
 }
-
-
 
 .rightImage {
   position: absolute;
@@ -57,8 +58,6 @@
   z-index: 2;
 }
 
-
-
 /* ===== ГЛАВНЫЙ БЛОК С КОНТЕНТОМ ===== */
 .heroBlock {
   position: absolute;
@@ -69,7 +68,6 @@
   gap: 6.5dvh;
 }
 
-/* ===== ТИПОГРАФИКА ===== */
 .title {
   width: 13.7rem;
   height: 7.3rem;
@@ -124,8 +122,6 @@
   background: rgba(255, 255, 255, 0.41);
   z-index: 5;
 }
-
-
 
 .rightSmallDiamond {
   position: absolute;
@@ -192,235 +188,202 @@
   margin: 0;
 }
 
-
-@media (min-width: 1700px)  {
+@media (min-width: 1700px) {
   .title {
-  width: 20.7rem;
-  height: 7.3rem;
- 
-  font-size: 5.75rem;
- 
-  line-height: 5.6rem;
-  
-}
+    width: 20.7rem;
+    height: 7.3rem;
 
-.description {
-  width: 20rem;
-  height: 11.6rem;
+    font-size: 5.75rem;
 
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: 0;
-  text-align: left;
-  margin: 0;
-}
+    line-height: 5.6rem;
+  }
+
+  .description {
+    width: 20rem;
+    height: 11.6rem;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0;
+  }
   .heroBlock {
     gap: 12vh;
   }
-  
+
   .leftImage {
- 
-  left: 15dvh;
-  top: 18dvh;
-  width: 17dvh;
-  height: 38dvh;
- 
-}
+    left: 15dvh;
+    top: 18dvh;
+    width: 17dvh;
+    height: 38dvh;
+  }
 
+  .rightImage {
+    right: 15dvh;
+    top: 45dvh;
+    width: 17dvh;
+    height: 38dvh;
+  }
 
-
-.rightImage {
- 
-  right: 15dvh;
-  top: 45dvh;
-   width: 17dvh;
-  height: 38dvh;
-  /* width: 9rem;
-  height: 20.2rem; */
-  
-}
-
-.additionalImage {
-
-  right: 10dvh;
-  top: 18dvh;
-  width: 8dvh;
-  height: 18dvh;
-  
-}
+  .additionalImage {
+    right: 10dvh;
+    top: 18dvh;
+    width: 8dvh;
+    height: 18dvh;
+  }
   .smallDiamond {
-  
     top: calc(52.5dvh + 0.3dvh);
-  left: calc(18.1dvh + 4.3rem - 1.5rem);
-  width: 3rem;
-  height: 5.3rem;
- 
-}
+    left: calc(18.1dvh + 4.3rem - 1.5rem);
+    width: 3rem;
+    height: 5.3rem;
+  }
 
+  .rightSmallDiamond {
+    top: calc(57.5dvh + 22.3dvh);
+    right: calc(17dvh + 4.5dvh);
+    width: 3rem;
+    height: 5.3rem;
+  }
 
+  .additionalSmallDiamond {
+    top: calc(24.9dvh + 9.5dvh);
+    right: calc(10dvh + 2.6dvh);
+    width: 1.5rem;
+    height: 2.7rem;
+  }
 
-.rightSmallDiamond {
-
-  top: calc(57.5dvh + 22.3dvh );
-  right: calc(17dvh + 4.5dvh);
-  width: 3rem;
-  height: 5.3rem;
-  
-}
-
-.additionalSmallDiamond {
- 
-  top: calc(24.9dvh + 9.5dvh );
-  right: calc(10dvh + 2.6dvh);
-  width: 1.5rem;
-  height: 2.7rem;
-}
-  
-  /* .bottomBlock {
-    gap: 12dvh;
-  } */
   .diamond {
- 
-  top: 27dvh;
-  left: 50%;
-   width: 9rem;
-  height: 16.5rem;
-}
-.bottomBlock {
- 
-  bottom: 9dvh;
-  left: 50%;
- 
-  gap: 15.5dvh;
- 
+    top: 27dvh;
+    left: 50%;
+    width: 9rem;
+    height: 16.5rem;
+  }
+  .bottomBlock {
+    bottom: 9dvh;
+    left: 50%;
+
+    gap: 15.5dvh;
+  }
+
+  .bottomTitle {
+    width: 22rem;
+    height: 18.9rem;
+    line-height: 1;
+    font-size: 3.5rem;
+  }
+
+  .bottomText {
+    width: 19.9rem;
+    height: 11.9rem;
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+  }
 }
 
-.bottomTitle {
-  width: 22rem;
-  height: 18.9rem;
- line-height: 1.0;
-  font-size: 3.5rem;
- 
-  
-}
-
-.bottomText {
-  width: 19.9rem;
-  height: 11.9rem;
- 
-  font-size: 1.2rem;
- 
-  line-height: 1.8;
- 
-}
-}
-
-
-/* ===== ПЛАНШЕТЫ (900px - 1200px) ===== */
 @media (min-width: 900px) and (max-width: 1200px) {
   .backgroundImage {
     width: 100%;
     height: 80%;
   }
-  
+
   .diamond {
     top: 25dvh;
     width: 5.6rem;
     height: 11.25rem;
   }
-  
+
   .bottomBlock {
     bottom: 7vh;
     left: 35%;
     gap: 2dvh;
     z-index: 3;
   }
-  
+
   .bottomTitle {
     font-size: 2.25rem;
     line-height: 2.4rem;
   }
 }
 
-
-
-/* ===== ПЛАНШЕТЫ (768px - 900px) ===== */
 @media (min-width: 768px) and (max-width: 900px) {
   .heroBlock {
     gap: 0dvh;
   }
-  
+
   .title {
     font-size: 3.1rem;
     line-height: 3.1rem;
   }
-  
+
   .description {
     width: 15.9rem;
     height: 11.6rem;
     font-size: 1rem;
     line-height: 1.6;
   }
-  
+
   .backgroundImage {
     width: 100%;
     height: 80%;
   }
-  
+
   .diamond {
     top: 25dvh;
     width: 5.6rem;
     height: 11.25rem;
   }
-  
+
   .bottomBlock {
     bottom: 7vh;
     left: 38%;
     gap: 2dvh;
     z-index: 3;
   }
-  
+
   .bottomTitle {
     font-size: 2.25rem;
     line-height: 2.4rem;
   }
-  
+
   .leftImage {
     left: 7dvh;
     top: 18dvh;
     width: 8rem;
     height: 18.75rem;
   }
-  
+
   .rightImage {
     right: 4dvh;
     top: 45dvh;
     width: 8.4rem;
     height: 18.9rem;
   }
-  
+
   .additionalImage {
     right: 2dvh;
     top: 15dvh;
     width: 4.5rem;
     height: 10.2rem;
   }
-  
+
   .smallDiamond {
     top: calc(18.5dvh + 18.75rem - 2.5rem);
     left: calc(7.1dvh + 4rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
   }
-  
+
   .rightSmallDiamond {
     top: calc(45.3dvh + 18.9rem - 2.5rem);
     right: calc(4dvh + 4.2rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
   }
-  
+
   .additionalSmallDiamond {
     top: calc(15dvh + 10.2rem - 1.25rem);
     right: calc(2dvh + 2.25rem - 0.75rem);
@@ -429,87 +392,86 @@
   }
 }
 
-/* ===== МОБИЛЬНЫЕ УСТРОЙСТВА (до 768px) ===== */
 @media (max-width: 768px) {
   .section4 {
     height: 100dvh;
   }
-  
+
   .heroBlock {
     gap: 0dvh;
   }
-  
+
   .title {
     font-size: 3.1rem;
     line-height: 3.1rem;
   }
-  
+
   .description {
     width: 14.6rem;
     height: 11.6rem;
     font-size: 1rem;
     line-height: 1.6;
   }
-  
+
   .backgroundImage {
     width: 100%;
     height: 80%;
   }
-  
+
   .diamond {
     top: 22dvh;
     width: 5.6rem;
     height: 11.25rem;
   }
-  
+
   .bottomBlock {
     bottom: 7vh;
     left: 40%;
     gap: 2dvh;
     z-index: 3;
   }
-  
+
   .bottomTitle {
     width: 20dvh;
     font-size: 2rem;
     line-height: 2.4rem;
   }
-  
+
   .leftImage {
     left: 7dvh;
     top: 18dvh;
     width: 8rem;
     height: 18.75rem;
   }
-  
+
   .rightImage {
     right: 2dvh;
     top: 45dvh;
     width: 8.4rem;
     height: 18.9rem;
   }
-  
+
   .additionalImage {
     right: 2dvh;
     top: 15dvh;
     width: 4.5rem;
     height: 10.2rem;
   }
-  
+
   .smallDiamond {
     top: calc(18.5dvh + 18.75rem - 2.5rem);
     left: calc(7.1dvh + 4rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
   }
-  
+
   .rightSmallDiamond {
     top: calc(45.3dvh + 18.9rem - 2.5rem);
     right: calc(2dvh + 4.2rem - 1.5rem);
     width: 2.4rem;
     height: 4.4rem;
   }
-  
+
   .additionalSmallDiamond {
     top: calc(15dvh + 10.2rem - 1.25rem);
     right: calc(2dvh + 2.25rem - 0.75rem);
@@ -518,13 +480,11 @@
   }
 }
 
-
-/* ===== МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 650px) ===== */
 @media (max-width: 650px) {
   .section4 {
     height: 100dvh;
   }
-  
+
   .heroBlock {
     position: absolute;
     top: 3dvh;
@@ -536,7 +496,7 @@
     gap: 2vh;
     width: 95%;
   }
-  
+
   .title {
     font-size: 2.5rem;
     line-height: 2.6rem;
@@ -545,7 +505,7 @@
     height: auto;
     margin: 0;
   }
-  
+
   .description {
     width: 85%;
     height: auto;
@@ -554,18 +514,18 @@
     text-align: center;
     margin: 0;
   }
-  
+
   .backgroundImage {
     width: 100%;
     height: 80%;
   }
-  
+
   .diamond {
     top: 25dvh;
     width: 4.4rem;
     height: 9.4rem;
   }
-  
+
   .bottomBlock {
     bottom: 50dvh;
     left: 50%;
@@ -576,7 +536,7 @@
     height: auto;
     z-index: 3;
   }
-  
+
   .bottomTitle {
     position: absolute;
     top: 4dvh;
@@ -586,7 +546,7 @@
     width: 45%;
     margin: 0;
   }
-  
+
   .bottomText {
     position: absolute;
     top: 20dvh;
@@ -594,50 +554,49 @@
     align-self: flex-end;
     text-align: left;
   }
-  
+
   .leftImage {
     left: 3dvh;
     top: 25dvh;
     width: 6.25rem;
     height: 15.6rem;
   }
-  
+
   .rightImage {
     right: 5dvh;
     top: 35dvh;
     width: 6.25rem;
     height: 15.6rem;
   }
-  
+
   .additionalImage {
     display: none;
   }
-  
+
   .smallDiamond {
     top: calc(25dvh + 15.6rem - 1.9rem);
     left: calc(1dvh + 4.4rem - 0.9rem);
     width: 1.9rem;
     height: 3.75rem;
   }
-  
+
   .rightSmallDiamond {
     top: calc(35dvh + 15.6rem - 1.9rem);
     right: calc(5dvh + 3.125rem - 0.9rem);
     width: 1.9rem;
     height: 3.75rem;
   }
-  
+
   .additionalSmallDiamond {
     display: none;
   }
 }
 
-/* ===== ОЧЕНЬ МАЛЕНЬКИЕ МОБИЛЬНЫЕ (до 480px) ===== */
 @media (max-width: 480px) {
   .section4 {
     height: 100dvh;
   }
-  
+
   .heroBlock {
     position: absolute;
     top: 3dvh;
@@ -649,7 +608,7 @@
     gap: 2vh;
     width: 95%;
   }
-  
+
   .title {
     font-size: 2.5rem;
     line-height: 2.6rem;
@@ -658,7 +617,7 @@
     height: auto;
     margin: 0;
   }
-  
+
   .description {
     width: 85%;
     height: auto;
@@ -667,20 +626,20 @@
     text-align: center;
     margin: 0;
   }
-  
+
   .backgroundImage {
     margin-top: 2dvh;
     width: 100%;
     height: 70dvh;
   }
-  
+
   .diamond {
     top: 25dvh;
-     left:46%;
+    left: 46%;
     width: 3.75rem;
     height: 6.9rem;
   }
-  
+
   .bottomBlock {
     bottom: 50dvh;
     left: 50%;
@@ -691,7 +650,7 @@
     height: auto;
     z-index: 3;
   }
-  
+
   .bottomTitle {
     position: absolute;
     top: 4dvh;
@@ -701,7 +660,7 @@
     width: 62%;
     margin: 0;
   }
-  
+
   .bottomText {
     position: absolute;
     top: 17dvh;
@@ -709,39 +668,39 @@
     align-self: flex-end;
     text-align: left;
   }
-  
+
   .leftImage {
     left: 3dvh;
     top: 25dvh;
     width: 10dvh;
     height: 22dvh;
   }
-  
+
   .rightImage {
     right: 3dvh;
     top: 35dvh;
     width: 10dvh;
     height: 22dvh;
   }
-  
+
   .additionalImage {
     display: none;
   }
-  
+
   .smallDiamond {
     top: calc(27dvh + 20.2dvh - 1.9rem);
     left: calc(2dvh + 5.7dvh - 0.9rem);
     width: 1.9rem;
     height: 3.75rem;
   }
-  
+
   .rightSmallDiamond {
     top: calc(35dvh + 22dvh - 1.9rem);
     right: calc(3dvh + 5dvh - 0.9rem);
     width: 1.9rem;
     height: 3.75rem;
   }
-  
+
   .additionalSmallDiamond {
     display: none;
   }

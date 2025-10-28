@@ -1,35 +1,35 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { motion, useInView } from 'framer-motion';
-import styles from './section5.module.css';
+import React from "react";
+import Image from "next/image";
+import { motion, useInView } from "framer-motion";
+import styles from "./section5.module.css";
 
 // Component for animating text letter by letter
 const AnimatedText = ({ text, delay = 0, isInView }) => {
   const letters = Array.from(text);
-  
+
   const container = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.05, delayChildren: delay }
-    }
+      transition: { staggerChildren: 0.05, delayChildren: delay },
+    },
   };
 
   const child = {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.2
-      }
+        duration: 0.2,
+      },
     },
     hidden: {
       opacity: 0,
       transition: {
-        duration: 0.2
-      }
-    }
+        duration: 0.2,
+      },
+    },
   };
 
   return (
@@ -51,54 +51,53 @@ const AnimatedText = ({ text, delay = 0, isInView }) => {
 export default function Section5() {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.1 });
-  
+
   // Animation variants for imageBox and diamonds
   const imageBoxVariants = {
-    hidden: { 
+    hidden: {
       x: -300,
-      opacity: 0
+      opacity: 0,
     },
-    visible: { 
+    visible: {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.4, 
+        duration: 0.4,
         ease: "easeOut",
-       
-      }
-    }
+      },
+    },
   };
-  
+
   // Animation variants for text block
   const textBlockVariants = {
-    hidden: { 
+    hidden: {
       x: 300,
-      opacity: 0
+      opacity: 0,
     },
-    visible: { 
+    visible: {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.4, 
+        duration: 0.4,
         ease: "easeOut",
-        delay: 0.5 
-      }
-    }
+        delay: 0.5,
+      },
+    },
   };
-  
+
   // Animation variants for CTA button (fade in only, no movement)
   const buttonVariants = {
-    hidden: { 
-      opacity: 0
+    hidden: {
+      opacity: 0,
     },
-    visible: { 
+    visible: {
       opacity: 1,
       transition: {
-        duration: 0.4, 
+        duration: 0.4,
         ease: "easeOut",
-        delay: 0.7 
-      }
-    }
+        delay: 0.7,
+      },
+    },
   };
 
   return (
@@ -131,7 +130,7 @@ export default function Section5() {
             alt="travel inspiration"
             fill
             sizes="(max-width: 480px) 72vw, (max-width: 600px) 60vw, (max-width: 1200px) 244px, 244px"
-            style={{ objectFit: 'cover' }}
+            style={{ objectFit: "cover" }}
             priority
           />
           <div className={styles.diamondRight}></div>
@@ -144,15 +143,20 @@ export default function Section5() {
           animate={isInView ? "visible" : "hidden"}
         >
           <p className={styles.text}>
-            We craft and plan unique itineraries tailored to customers’ interests and with strong attention to detail.
+            We craft and plan unique itineraries tailored to customers’
+            interests and with strong attention to detail.
           </p>
-          <motion.button 
+          <motion.button
             className={styles.ctaButton}
             variants={buttonVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
-            <AnimatedText text="HELP ME PLAN A TRIP" delay={1} isInView={isInView} />
+            <AnimatedText
+              text="HELP ME PLAN A TRIP"
+              delay={1}
+              isInView={isInView}
+            />
           </motion.button>
         </motion.div>
       </div>
